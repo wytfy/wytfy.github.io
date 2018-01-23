@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: linux | 午夜听风吟</title>
+  <title>Linux磁盘管理 | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="午夜听风吟">
-<meta property="og:url" content="http://yoursite.com/tags/linux/index.html">
+  <meta name="description" content="1、查看磁盘和目录容量查看磁盘使用情况  df -h  查看文件或目录容量  du -sh filename">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux磁盘管理">
+<meta property="og:url" content="http://yoursite.com/2018/01/23/Linux磁盘管理/index.html">
 <meta property="og:site_name" content="午夜听风吟">
+<meta property="og:description" content="1、查看磁盘和目录容量查看磁盘使用情况  df -h  查看文件或目录容量  du -sh filename">
+<meta property="og:updated_time" content="2018-01-23T09:33:31.584Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="午夜听风吟">
+<meta name="twitter:title" content="Linux磁盘管理">
+<meta name="twitter:description" content="1、查看磁盘和目录容量查看磁盘使用情况  df -h  查看文件或目录容量  du -sh filename">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -145,36 +150,104 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Linux磁盘管理" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Linux磁盘管理
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/Linux磁盘管理/" class="archive-article-date">
+
+        
+        <a href="/2018/01/23/Linux磁盘管理/" class="archive-article-date">
   	<time datetime="2018-01-23T09:33:31.531Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/Linux磁盘管理/">Linux磁盘管理</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、查看磁盘和目录容量"><a href="#1、查看磁盘和目录容量" class="headerlink" title="1、查看磁盘和目录容量"></a>1、查看磁盘和目录容量</h3><p>查看磁盘使用情况</p>
+<blockquote>
+<p>df -h</p>
+</blockquote>
+<p>查看文件或目录容量</p>
+<blockquote>
+<p>du -sh filename</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="2、分区与格式化"><a href="#2、分区与格式化" class="headerlink" title="2、分区与格式化"></a>2、分区与格式化</h3><p>分区命令：</p>
+<blockquote>
+<p>fdisk -l 或者 fdisk /dev/sda</p>
+</blockquote>
+<p>最多只能创建四个主分区。</p>
+<h3 id="3、格式化磁盘分区"><a href="#3、格式化磁盘分区" class="headerlink" title="3、格式化磁盘分区"></a>3、格式化磁盘分区</h3><p>命令</p>
+<blockquote>
+<p>mke2xf -t ext3 /dev/sda1</p>
+</blockquote>
+<p>或者</p>
+<blockquote>
+<p>mkfs.ext2 mkfs.ext3 mkfs.ext4 mkfs.xfs</p>
+</blockquote>
+<h3 id="4、挂载和卸载磁盘"><a href="#4、挂载和卸载磁盘" class="headerlink" title="4、挂载和卸载磁盘"></a>4、挂载和卸载磁盘</h3><p>挂载分区到目录上</p>
+<blockquote>
+<p>mount /dev/sdb3 /newdir/</p>
+</blockquote>
+<p>卸载分区</p>
+<blockquote>
+<p>umount /newdir/ 或者 umount /dev/sdb3</p>
+</blockquote>
+<h3 id="5、增加虚拟内存"><a href="#5、增加虚拟内存" class="headerlink" title="5、增加虚拟内存"></a>5、增加虚拟内存</h3><p>基本过程：建立swapfile==&gt;格式化为swap格式==&gt;启用虚拟磁盘</p>
+<ul>
+<li>建立swapfile<blockquote>
+<p>dd if=/dev/zero of=/tmp/newdisk bs=1M count=1024</p>
+</blockquote>
+</li>
+<li>格式化为swapfile格式<blockquote>
+<p>mkswap -f /tmp/newdisk</p>
+</blockquote>
+</li>
+<li>启用<blockquote>
+<p>swapon /tmp/newdisk</p>
+</blockquote>
+</li>
+<li>查看swap分区<blockquote>
+<p>free -m</p>
+</blockquote>
+</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -186,133 +259,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/23/Linux磁盘管理/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/centos7用户身份切换/" class="archive-article-date">
-  	<time datetime="2018-01-23T08:57:12.437Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/23/centos7用户身份切换/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">centos7用户身份切换</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/centos7用户身份切换/">centos7用户身份切换</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/21/centos7使用秘钥认证登录/" class="archive-article-date">
-  	<time datetime="2018-01-21T14:52:22.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/21/centos7使用秘钥认证登录/">centos7使用秘钥认证登录</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/21/centos7设置IP地址/" class="archive-article-date">
-  	<time datetime="2018-01-21T07:59:49.155Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/21/centos7设置IP地址/">centos7 手动设置IP地址</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -335,9 +381,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
