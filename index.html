@@ -147,6 +147,108 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-文档压缩与打包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/23/文档压缩与打包/">文档压缩与打包</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/23/文档压缩与打包/" class="archive-article-date">
+  	<time datetime="2018-01-23T12:43:46.857Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、gzip压缩工具"><a href="#1、gzip压缩工具" class="headerlink" title="1、gzip压缩工具"></a>1、gzip压缩工具</h3><p>压缩：</p>
+<blockquote>
+<p>gzip 1.txt</p>
+</blockquote>
+<p>解压：</p>
+<blockquote>
+<p>gzip -d 1.txt.gz</p>
+</blockquote>
+<h3 id="2、bzip2压缩工具"><a href="#2、bzip2压缩工具" class="headerlink" title="2、bzip2压缩工具"></a>2、bzip2压缩工具</h3><p>压缩：</p>
+<blockquote>
+<p>bzip2 1.txt</p>
+</blockquote>
+<p>解压：</p>
+<blockquote>
+<p>bzip2 -d 1.txt.bz2</p>
+</blockquote>
+<h3 id="3、xz压缩工具"><a href="#3、xz压缩工具" class="headerlink" title="3、xz压缩工具"></a>3、xz压缩工具</h3><p>压缩：</p>
+<blockquote>
+<p>xz 1.txt</p>
+</blockquote>
+<p>解压：</p>
+<blockquote>
+<p>xz -d 1.txt.xz</p>
+</blockquote>
+<h3 id="4、tar打包工具"><a href="#4、tar打包工具" class="headerlink" title="4、tar打包工具"></a>4、tar打包工具</h3><p>基本格式`tar [-zjxcvfpP] filename</p>
+<blockquote>
+<p>-z /同时用gzip压缩<br>-j /同时用bzip2压缩<br>-J /同时用xz压缩<br>-x /解压缩、解包<br>-c /创建tar包或者压缩文件包<br>-v /可视化<br>-f /后跟文件名</p>
+</blockquote>
+<p>例如<br>1）压缩：<code>tar -czvf test111.tar.gz test111</code>解压：<code>tar -zxvf test111.tar.gz</code><br>2）压缩：<code>tar -cjvf test111.tar.gz tesr111</code>解压：<code>tar -jxvf test111.tar.bz2</code></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/23/文档压缩与打包/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Linux磁盘管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
