@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yoursite.com">
-  <title>Archives: 2018 | 午夜听风吟</title>
+  <title>shell基础知识 | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="午夜听风吟">
-<meta property="og:url" content="https://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="shell基础知识">
+<meta property="og:url" content="https://yoursite.com/2018/01/25/shell基础知识/index.html">
 <meta property="og:site_name" content="午夜听风吟">
+<meta property="og:description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-25T14:16:53.040Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="午夜听风吟">
+<meta name="twitter:title" content="shell基础知识">
+<meta name="twitter:description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -146,36 +151,113 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-shell基础知识" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      shell基础知识
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/25/shell基础知识/" class="archive-article-date">
+
+        
+        <a href="/2018/01/25/shell基础知识/" class="archive-article-date">
   	<time datetime="2018-01-25T14:16:52.979Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/25/shell基础知识/">shell基础知识</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-什么是shell"><a href="#一-什么是shell" class="headerlink" title="一.什么是shell"></a>一.什么是shell</h3><h4 id="1-记录历史命令"><a href="#1-记录历史命令" class="headerlink" title="1.记录历史命令"></a>1.记录历史命令</h4><blockquote>
+<ul>
+<li>!! /执行上一条命令</li>
+<li>!n /执行历史第n条命令</li>
+<li>!字符串 /执行历史中最近一次以字符串开头的命令</li>
+</ul>
+</blockquote>
+<h4 id="2-命令文件名补全——连续两次tab键"><a href="#2-命令文件名补全——连续两次tab键" class="headerlink" title="2.命令文件名补全——连续两次tab键"></a>2.命令文件名补全——连续两次tab键</h4><h4 id="3-别名"><a href="#3-别名" class="headerlink" title="3.别名"></a>3.别名</h4><blockquote>
+<p>格式为alias 命令别名=’具体命令’<br>例如 alias list=’ls’<br>解除别名 unalias 别名<br>例如 unalias list</p>
+</blockquote>
+<a id="more"></a>
+<h4 id="4-通配符"><a href="#4-通配符" class="headerlink" title="4.通配符"></a>4.通配符</h4><blockquote>
+<p>*代表零个或多个字符<br>?代表一个字符</p>
+</blockquote>
+<h4 id="5-输入-输出重定向"><a href="#5-输入-输出重定向" class="headerlink" title="5.输入/输出重定向"></a>5.输入/输出重定向</h4><blockquote>
+<blockquote>
+<p>表示将命令输入文件中<br>例如:echo “123” &gt;1.txt /会覆盖掉原先的内容</p>
+<blockquote>
+<p>表示将命令追加到文件中<br>例如:echo “456” &gt;1.txt</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h4 id="6-管道符"><a href="#6-管道符" class="headerlink" title="6.管道符"></a>6.管道符</h4><blockquote>
+<p>|用于将前一个指令的输出作为后一个命令的输入<br>例如:cat /etc/passwd|wc -l</p>
+</blockquote>
+<h4 id="7-作业控制"><a href="#7-作业控制" class="headerlink" title="7.作业控制"></a>7.作业控制</h4><blockquote>
+<p>Ctrl+Z /暂停进程<br>fg /命令恢复进程,fg后可加进程编号<br>bg /命令使进程后台运行<br>Ctrl+C /终止进程<br>jobs /命令查看后台或暂停的进程<br>kill 进程pid /结束进程<br>ps aux /查找进程pid</p>
+</blockquote>
+<h3 id="二-变量"><a href="#二-变量" class="headerlink" title="二.变量"></a>二.变量</h3><h4 id="1-命令env"><a href="#1-命令env" class="headerlink" title="1.命令env"></a>1.命令env</h4><blockquote>
+<p>env /列出系统预设的全部系统变量</p>
+<h4 id="2-命令set"><a href="#2-命令set" class="headerlink" title="2.命令set"></a>2.命令set</h4><p>set /列出全部变量<br>echo $变量名 /查看变量值<br>bash /进入子shell<br>export 变量名 /让子shell也能使用该变量<br>unset 变量名 /取消变量</p>
+</blockquote>
+<h3 id="三-特殊符号"><a href="#三-特殊符号" class="headerlink" title="三.特殊符号"></a>三.特殊符号</h3><ul>
+<li>* 表示零个或多个任意字符</li>
+<li>? 表示一个任意字符</li>
+<li># 表示注释</li>
+<li>\ 转义字符</li>
+<li>| 管道符,后面常跟cat less head tail grep cut sort wc uniq tee tr split sed awk</li>
+<li>cut 截取某个字段<br>  -d:后跟分割字符<br>  -c:后跟第几个字符<br>  -f:后跟第几个区块<br>  例1:cat /etc/passwd|cut -d ‘:’ -f 1 |head -5<br>  例2:head -n2 /etc/passwd|cut -c2<br>  例3:head -n2 /etc/passwd|cut -c1-10<br>  例4:head -n2 /etc/passwd|cut -c1,3,10</li>
+<li>sort 排序<br>  格式为sort -t分隔符 -kn1,kn2 -nru<br>  -t:后跟分割符<br>  -n:使用纯数字排序<br>  -r:反向排序<br>  -u:去重复<br>  -kn1,kn2:由区间n1排序到n2,可只对某一区间进行排序</li>
+<li>wc 统计文档<br>  -l:统计行数<br>  -m:统计字符数<br>  -w:统计词数</li>
+<li>uniq 删除重复行,使用之前要先用sort排序<br>  -c:统计重复的行数</li>
+<li>tee 后跟文件名,将前面的内容写入文档中</li>
+<li>tr 替换字符<br>  -d:用于删除某个字符<br>  -s:删除重复字符<br>  例1.将小写字母变成大写字母:tr ‘a-z’ ‘A-Z’<br>  例2.替换字符:tr ‘r’ ‘R’</li>
+<li>split<br>  -b:根据大小切割文档<br>  -l:根据行数切割文档</li>
+<li>#! 表示上条命令的变量<br>  例如:ls #!</li>
+<li>;运行多个命令</li>
+<li>~ 当前用户家目录</li>
+<li>&amp; 加在命令后表示后台运行</li>
+<li>> 重定向取代</li>
+<li>>&gt; 重定向追加</li>
+<li>2&gt; 错误重定向取代</li>
+<li>2&gt;&gt; 错误重定向追加</li>
+<li>[] 中括号中字符的任意一个</li>
+<li>A &amp;&amp; B 只有A命令执行成功才执行B</li>
+<li>A || B A执行若成功则不执行B</li>
+<li></li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -187,312 +269,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/01/25/shell基础知识/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/24/centos7软件安装/" class="archive-article-date">
-  	<time datetime="2018-01-24T07:56:25.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/24/centos7软件安装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">centos7软件安装</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/24/centos7软件安装/">centos7软件安装</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/文档压缩与打包/" class="archive-article-date">
-  	<time datetime="2018-01-23T12:43:46.857Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/文档压缩与打包/">文档压缩与打包</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/Linux磁盘管理/" class="archive-article-date">
-  	<time datetime="2018-01-23T09:33:31.531Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/Linux磁盘管理/">Linux磁盘管理</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/centos7用户身份切换/" class="archive-article-date">
-  	<time datetime="2018-01-23T08:57:12.437Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/centos7用户身份切换/">centos7用户身份切换</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/21/centos7使用秘钥认证登录/" class="archive-article-date">
-  	<time datetime="2018-01-21T14:52:22.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/21/centos7使用秘钥认证登录/">centos7使用秘钥认证登录</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/21/centos7设置IP地址/" class="archive-article-date">
-  	<time datetime="2018-01-21T07:59:49.155Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/21/centos7设置IP地址/">centos7 手动设置IP地址</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/20/关于Markdown/" class="archive-article-date">
-  	<time datetime="2018-01-20T12:02:36.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/20/关于Markdown/">关于 Markdown</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/20/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-20T05:11:14.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -515,8 +391,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
