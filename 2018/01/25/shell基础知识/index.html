@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="午夜听风吟">
 <meta property="og:description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-25T14:16:53.040Z">
+<meta property="og:updated_time" content="2018-01-25T14:21:17.228Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="shell基础知识">
 <meta name="twitter:description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
@@ -186,12 +186,7 @@
 <p>*代表零个或多个字符<br>?代表一个字符</p>
 </blockquote>
 <h4 id="5-输入-输出重定向"><a href="#5-输入-输出重定向" class="headerlink" title="5.输入/输出重定向"></a>5.输入/输出重定向</h4><blockquote>
-<blockquote>
-<p>表示将命令输入文件中<br>例如:echo “123” &gt;1.txt /会覆盖掉原先的内容</p>
-<blockquote>
-<p>表示将命令追加到文件中<br>例如:echo “456” &gt;1.txt</p>
-</blockquote>
-</blockquote>
+<p>>表示将命令输入文件中<br>例如:echo “123” &gt;1.txt /会覆盖掉原先的内容<br>>&gt;表示将命令追加到文件中<br>例如:echo “456” &gt;1.txt</p>
 </blockquote>
 <h4 id="6-管道符"><a href="#6-管道符" class="headerlink" title="6.管道符"></a>6.管道符</h4><blockquote>
 <p>|用于将前一个指令的输出作为后一个命令的输入<br>例如:cat /etc/passwd|wc -l</p>
@@ -227,7 +222,6 @@
 <li>[] 中括号中字符的任意一个</li>
 <li>A &amp;&amp; B 只有A命令执行成功才执行B</li>
 <li>A || B A执行若成功则不执行B</li>
-<li></li>
 </ul>
 
       
