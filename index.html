@@ -148,6 +148,119 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-正则表达式(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/26/正则表达式(一)/">正则表达式(一)</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/26/正则表达式(一)/" class="archive-article-date">
+  	<time datetime="2018-01-26T14:09:57.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>grep命令的基本格式<code>grep [-cinvABC] &#39;word&#39; filename</code></p>
+<blockquote>
+<p>-c:表示打印符合要求的行数<br>-i:表示忽略大小写<br>-n:表示输出符合要求的行及其行数<br>-v:表示打印不符合要求的行及其行号<br>-A:后跟数字,例如A2打印符合的行及其后两行<br>-B:后跟数字,例如B2打印符合的行及其前两行<br>-C:后跟数字,例如C2打印符合的行及其前后各两行</p>
+</blockquote>
+<h4 id="1-过滤出带有某个关键词的行-并输出行号"><a href="#1-过滤出带有某个关键词的行-并输出行号" class="headerlink" title="1.过滤出带有某个关键词的行,并输出行号"></a>1.过滤出带有某个关键词的行,并输出行号</h4><blockquote>
+<p>grep -n ‘word’ filename</p>
+</blockquote>
+<h4 id="2-过滤出不带有某个关键词的行-并输出行号"><a href="#2-过滤出不带有某个关键词的行-并输出行号" class="headerlink" title="2.过滤出不带有某个关键词的行,并输出行号"></a>2.过滤出不带有某个关键词的行,并输出行号</h4><blockquote>
+<p>grep -nv ‘word’ filename</p>
+</blockquote>
+<h4 id="3-过滤出所有包含数字的行"><a href="#3-过滤出所有包含数字的行" class="headerlink" title="3.过滤出所有包含数字的行"></a>3.过滤出所有包含数字的行</h4><blockquote>
+<p>grep ‘[0-9]’ filename</p>
+</blockquote>
+<h4 id="4-过滤出所有不包含数字的行"><a href="#4-过滤出所有不包含数字的行" class="headerlink" title="4.过滤出所有不包含数字的行"></a>4.过滤出所有不包含数字的行</h4><blockquote>
+<p>grep -v ‘[0-9]’ filename</p>
+</blockquote>
+<h4 id="5-过滤掉所有以-开头的行"><a href="#5-过滤掉所有以-开头的行" class="headerlink" title="5.过滤掉所有以#开头的行"></a>5.过滤掉所有以#开头的行</h4><blockquote>
+<p>grep -v ‘^#’ filename</p>
+</blockquote>
+<h4 id="6-过滤所有空行和以-开头的行"><a href="#6-过滤所有空行和以-开头的行" class="headerlink" title="6.过滤所有空行和以#开头的行"></a>6.过滤所有空行和以#开头的行</h4><blockquote>
+<p>grep -v ‘^#’|grep -v ‘^$’<br>注:^表示行的开始,$表示行的结束,空行可用^$表示.[^字符]表示除[]内字符之外的字符</p>
+</blockquote>
+<h4 id="7-过滤出任意一个字符和重复字符"><a href="#7-过滤出任意一个字符和重复字符" class="headerlink" title="7.过滤出任意一个字符和重复字符"></a>7.过滤出任意一个字符和重复字符</h4><blockquote>
+<p>grep ‘r.o’ filename<br>grep ‘ooo*‘ filename<br>注:.表示任意一个字符,*表示零个或多个前面的字符</p>
+</blockquote>
+<h4 id="8-指定要滤出的字符出现次数"><a href="#8-指定要滤出的字符出现次数" class="headerlink" title="8.指定要滤出的字符出现次数"></a>8.指定要滤出的字符出现次数</h4><blockquote>
+<p>grep ‘9{3}‘ filename /表示出现3个9,也可表示出现次数范围{3,5}</p>
+</blockquote>
+<h4 id="9-过滤出一个或多个指定的字符"><a href="#9-过滤出一个或多个指定的字符" class="headerlink" title="9.过滤出一个或多个指定的字符"></a>9.过滤出一个或多个指定的字符</h4><blockquote>
+<p>egrep ‘o+’ filename<br>注:+表示匹配一个或多个前面的字符.{}不用转义</p>
+</blockquote>
+<h4 id="10-过滤出零个或一个指定的字符"><a href="#10-过滤出零个或一个指定的字符" class="headerlink" title="10.过滤出零个或一个指定的字符"></a>10.过滤出零个或一个指定的字符</h4><blockquote>
+<p>grep ‘0000?’ filename<br>注:表示0000或者00000</p>
+</blockquote>
+<h4 id="11-过滤出字符串1或者字符串2"><a href="#11-过滤出字符串1或者字符串2" class="headerlink" title="11.过滤出字符串1或者字符串2"></a>11.过滤出字符串1或者字符串2</h4><blockquote>
+<p>grep ‘字符串1|字符串2|字符串3’ filename</p>
+</blockquote>
+<h4 id="12-egrep中-的应用"><a href="#12-egrep中-的应用" class="headerlink" title="12.egrep中()的应用"></a>12.egrep中()的应用</h4><blockquote>
+<p>egrep ‘r(oo|at)o’ filename<br>注:表示过滤出root或者rato,()表示一个整体</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/26/正则表达式(一)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-shell基础知识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

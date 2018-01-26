@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yoursite.com">
-  <title>shell基础知识 | 午夜听风吟</title>
+  <title>正则表达式(一) | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
+  <meta name="description" content="grep命令的基本格式grep [-cinvABC] &amp;#39;word&amp;#39; filename  -c:表示打印符合要求的行数-i:表示忽略大小写-n:表示输出符合要求的行及其行数-v:表示打印不符合要求的行及其行号-A:后跟数字,例如A2打印符合的行及其后两行-B:后跟数字,例如B2打印符合的行及其前两行-C:后跟数字,例如C2打印符合的行及其前后各两行  1.过滤出带有某个关键词的行,并">
 <meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="shell基础知识">
-<meta property="og:url" content="https://yoursite.com/2018/01/25/shell基础知识/index.html">
+<meta property="og:title" content="正则表达式(一)">
+<meta property="og:url" content="https://yoursite.com/2018/01/26/正则表达式(一)/index.html">
 <meta property="og:site_name" content="午夜听风吟">
-<meta property="og:description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
+<meta property="og:description" content="grep命令的基本格式grep [-cinvABC] &amp;#39;word&amp;#39; filename  -c:表示打印符合要求的行数-i:表示忽略大小写-n:表示输出符合要求的行及其行数-v:表示打印不符合要求的行及其行号-A:后跟数字,例如A2打印符合的行及其后两行-B:后跟数字,例如B2打印符合的行及其前两行-C:后跟数字,例如C2打印符合的行及其前后各两行  1.过滤出带有某个关键词的行,并">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-25T14:21:17.228Z">
+<meta property="og:updated_time" content="2018-01-26T14:31:17.755Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="shell基础知识">
-<meta name="twitter:description" content="一.什么是shell1.记录历史命令  !! /执行上一条命令 !n /执行历史第n条命令 !字符串 /执行历史中最近一次以字符串开头的命令   2.命令文件名补全——连续两次tab键3.别名 格式为alias 命令别名=’具体命令’例如 alias list=’ls’解除别名 unalias 别名例如 unalias list">
+<meta name="twitter:title" content="正则表达式(一)">
+<meta name="twitter:description" content="grep命令的基本格式grep [-cinvABC] &amp;#39;word&amp;#39; filename  -c:表示打印符合要求的行数-i:表示忽略大小写-n:表示输出符合要求的行及其行数-v:表示打印不符合要求的行及其行号-A:后跟数字,例如A2打印符合的行及其后两行-B:后跟数字,例如B2打印符合的行及其前两行-C:后跟数字,例如C2打印符合的行及其前后各两行  1.过滤出带有某个关键词的行,并">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -151,78 +151,66 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-shell基础知识" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-正则表达式(一)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      shell基础知识
+      正则表达式(一)
     </h1>
   
 
         
-        <a href="/2018/01/25/shell基础知识/" class="archive-article-date">
-  	<time datetime="2018-01-25T14:16:52.979Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
+        <a href="/2018/01/26/正则表达式(一)/" class="archive-article-date">
+  	<time datetime="2018-01-26T14:09:57.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一-什么是shell"><a href="#一-什么是shell" class="headerlink" title="一.什么是shell"></a>一.什么是shell</h3><h4 id="1-记录历史命令"><a href="#1-记录历史命令" class="headerlink" title="1.记录历史命令"></a>1.记录历史命令</h4><blockquote>
-<ul>
-<li>!! /执行上一条命令</li>
-<li>!n /执行历史第n条命令</li>
-<li>!字符串 /执行历史中最近一次以字符串开头的命令</li>
-</ul>
+        <p>grep命令的基本格式<code>grep [-cinvABC] &#39;word&#39; filename</code></p>
+<blockquote>
+<p>-c:表示打印符合要求的行数<br>-i:表示忽略大小写<br>-n:表示输出符合要求的行及其行数<br>-v:表示打印不符合要求的行及其行号<br>-A:后跟数字,例如A2打印符合的行及其后两行<br>-B:后跟数字,例如B2打印符合的行及其前两行<br>-C:后跟数字,例如C2打印符合的行及其前后各两行</p>
 </blockquote>
-<h4 id="2-命令文件名补全——连续两次tab键"><a href="#2-命令文件名补全——连续两次tab键" class="headerlink" title="2.命令文件名补全——连续两次tab键"></a>2.命令文件名补全——连续两次tab键</h4><h4 id="3-别名"><a href="#3-别名" class="headerlink" title="3.别名"></a>3.别名</h4><blockquote>
-<p>格式为alias 命令别名=’具体命令’<br>例如 alias list=’ls’<br>解除别名 unalias 别名<br>例如 unalias list</p>
+<h4 id="1-过滤出带有某个关键词的行-并输出行号"><a href="#1-过滤出带有某个关键词的行-并输出行号" class="headerlink" title="1.过滤出带有某个关键词的行,并输出行号"></a>1.过滤出带有某个关键词的行,并输出行号</h4><blockquote>
+<p>grep -n ‘word’ filename</p>
 </blockquote>
-<a id="more"></a>
-<h4 id="4-通配符"><a href="#4-通配符" class="headerlink" title="4.通配符"></a>4.通配符</h4><blockquote>
-<p>*代表零个或多个字符<br>?代表一个字符</p>
+<h4 id="2-过滤出不带有某个关键词的行-并输出行号"><a href="#2-过滤出不带有某个关键词的行-并输出行号" class="headerlink" title="2.过滤出不带有某个关键词的行,并输出行号"></a>2.过滤出不带有某个关键词的行,并输出行号</h4><blockquote>
+<p>grep -nv ‘word’ filename</p>
 </blockquote>
-<h4 id="5-输入-输出重定向"><a href="#5-输入-输出重定向" class="headerlink" title="5.输入/输出重定向"></a>5.输入/输出重定向</h4><blockquote>
-<p>>表示将命令输入文件中<br>例如:echo “123” &gt;1.txt /会覆盖掉原先的内容<br>>&gt;表示将命令追加到文件中<br>例如:echo “456” &gt;1.txt</p>
+<h4 id="3-过滤出所有包含数字的行"><a href="#3-过滤出所有包含数字的行" class="headerlink" title="3.过滤出所有包含数字的行"></a>3.过滤出所有包含数字的行</h4><blockquote>
+<p>grep ‘[0-9]’ filename</p>
 </blockquote>
-<h4 id="6-管道符"><a href="#6-管道符" class="headerlink" title="6.管道符"></a>6.管道符</h4><blockquote>
-<p>|用于将前一个指令的输出作为后一个命令的输入<br>例如:cat /etc/passwd|wc -l</p>
+<h4 id="4-过滤出所有不包含数字的行"><a href="#4-过滤出所有不包含数字的行" class="headerlink" title="4.过滤出所有不包含数字的行"></a>4.过滤出所有不包含数字的行</h4><blockquote>
+<p>grep -v ‘[0-9]’ filename</p>
 </blockquote>
-<h4 id="7-作业控制"><a href="#7-作业控制" class="headerlink" title="7.作业控制"></a>7.作业控制</h4><blockquote>
-<p>Ctrl+Z /暂停进程<br>fg /命令恢复进程,fg后可加进程编号<br>bg /命令使进程后台运行<br>Ctrl+C /终止进程<br>jobs /命令查看后台或暂停的进程<br>kill 进程pid /结束进程<br>ps aux /查找进程pid</p>
+<h4 id="5-过滤掉所有以-开头的行"><a href="#5-过滤掉所有以-开头的行" class="headerlink" title="5.过滤掉所有以#开头的行"></a>5.过滤掉所有以#开头的行</h4><blockquote>
+<p>grep -v ‘^#’ filename</p>
 </blockquote>
-<h3 id="二-变量"><a href="#二-变量" class="headerlink" title="二.变量"></a>二.变量</h3><h4 id="1-命令env"><a href="#1-命令env" class="headerlink" title="1.命令env"></a>1.命令env</h4><blockquote>
-<p>env /列出系统预设的全部系统变量</p>
-<h4 id="2-命令set"><a href="#2-命令set" class="headerlink" title="2.命令set"></a>2.命令set</h4><p>set /列出全部变量<br>echo $变量名 /查看变量值<br>bash /进入子shell<br>export 变量名 /让子shell也能使用该变量<br>unset 变量名 /取消变量</p>
+<h4 id="6-过滤所有空行和以-开头的行"><a href="#6-过滤所有空行和以-开头的行" class="headerlink" title="6.过滤所有空行和以#开头的行"></a>6.过滤所有空行和以#开头的行</h4><blockquote>
+<p>grep -v ‘^#’|grep -v ‘^$’<br>注:^表示行的开始,$表示行的结束,空行可用^$表示.[^字符]表示除[]内字符之外的字符</p>
 </blockquote>
-<h3 id="三-特殊符号"><a href="#三-特殊符号" class="headerlink" title="三.特殊符号"></a>三.特殊符号</h3><ul>
-<li>* 表示零个或多个任意字符</li>
-<li>? 表示一个任意字符</li>
-<li># 表示注释</li>
-<li>\ 转义字符</li>
-<li>| 管道符,后面常跟cat less head tail grep cut sort wc uniq tee tr split sed awk</li>
-<li>cut 截取某个字段<br>  -d:后跟分割字符<br>  -c:后跟第几个字符<br>  -f:后跟第几个区块<br>  例1:cat /etc/passwd|cut -d ‘:’ -f 1 |head -5<br>  例2:head -n2 /etc/passwd|cut -c2<br>  例3:head -n2 /etc/passwd|cut -c1-10<br>  例4:head -n2 /etc/passwd|cut -c1,3,10</li>
-<li>sort 排序<br>  格式为sort -t分隔符 -kn1,kn2 -nru<br>  -t:后跟分割符<br>  -n:使用纯数字排序<br>  -r:反向排序<br>  -u:去重复<br>  -kn1,kn2:由区间n1排序到n2,可只对某一区间进行排序</li>
-<li>wc 统计文档<br>  -l:统计行数<br>  -m:统计字符数<br>  -w:统计词数</li>
-<li>uniq 删除重复行,使用之前要先用sort排序<br>  -c:统计重复的行数</li>
-<li>tee 后跟文件名,将前面的内容写入文档中</li>
-<li>tr 替换字符<br>  -d:用于删除某个字符<br>  -s:删除重复字符<br>  例1.将小写字母变成大写字母:tr ‘a-z’ ‘A-Z’<br>  例2.替换字符:tr ‘r’ ‘R’</li>
-<li>split<br>  -b:根据大小切割文档<br>  -l:根据行数切割文档</li>
-<li>#! 表示上条命令的变量<br>  例如:ls #!</li>
-<li>;运行多个命令</li>
-<li>~ 当前用户家目录</li>
-<li>&amp; 加在命令后表示后台运行</li>
-<li>> 重定向取代</li>
-<li>>&gt; 重定向追加</li>
-<li>2&gt; 错误重定向取代</li>
-<li>2&gt;&gt; 错误重定向追加</li>
-<li>[] 中括号中字符的任意一个</li>
-<li>A &amp;&amp; B 只有A命令执行成功才执行B</li>
-<li>A || B A执行若成功则不执行B</li>
-</ul>
+<h4 id="7-过滤出任意一个字符和重复字符"><a href="#7-过滤出任意一个字符和重复字符" class="headerlink" title="7.过滤出任意一个字符和重复字符"></a>7.过滤出任意一个字符和重复字符</h4><blockquote>
+<p>grep ‘r.o’ filename<br>grep ‘ooo*‘ filename<br>注:.表示任意一个字符,*表示零个或多个前面的字符</p>
+</blockquote>
+<h4 id="8-指定要滤出的字符出现次数"><a href="#8-指定要滤出的字符出现次数" class="headerlink" title="8.指定要滤出的字符出现次数"></a>8.指定要滤出的字符出现次数</h4><blockquote>
+<p>grep ‘9{3}‘ filename /表示出现3个9,也可表示出现次数范围{3,5}</p>
+</blockquote>
+<h4 id="9-过滤出一个或多个指定的字符"><a href="#9-过滤出一个或多个指定的字符" class="headerlink" title="9.过滤出一个或多个指定的字符"></a>9.过滤出一个或多个指定的字符</h4><blockquote>
+<p>egrep ‘o+’ filename<br>注:+表示匹配一个或多个前面的字符.{}不用转义</p>
+</blockquote>
+<h4 id="10-过滤出零个或一个指定的字符"><a href="#10-过滤出零个或一个指定的字符" class="headerlink" title="10.过滤出零个或一个指定的字符"></a>10.过滤出零个或一个指定的字符</h4><blockquote>
+<p>grep ‘0000?’ filename<br>注:表示0000或者00000</p>
+</blockquote>
+<h4 id="11-过滤出字符串1或者字符串2"><a href="#11-过滤出字符串1或者字符串2" class="headerlink" title="11.过滤出字符串1或者字符串2"></a>11.过滤出字符串1或者字符串2</h4><blockquote>
+<p>grep ‘字符串1|字符串2|字符串3’ filename</p>
+</blockquote>
+<h4 id="12-egrep中-的应用"><a href="#12-egrep中-的应用" class="headerlink" title="12.egrep中()的应用"></a>12.egrep中()的应用</h4><blockquote>
+<p>egrep ‘r(oo|at)o’ filename<br>注:表示过滤出root或者rato,()表示一个整体</p>
+</blockquote>
 
       
 
@@ -313,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/01/25/shell基础知识/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/01/26/正则表达式(一)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -327,18 +315,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/26/正则表达式(一)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          正则表达式(一)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/01/24/centos7软件安装/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">centos7软件安装</div>
+    <a href="/2018/01/25/shell基础知识/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">shell基础知识</div>
       <i class="icon-circle-right"></i>
     </a>
   
