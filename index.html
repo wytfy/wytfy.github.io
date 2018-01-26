@@ -148,6 +148,107 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-正则表达式(二)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/26/正则表达式(二)/">正则表达式(二)</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/26/正则表达式(二)/" class="archive-article-date">
+  	<time datetime="2018-01-26T15:45:17.702Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-打印某行"><a href="#1-打印某行" class="headerlink" title="1.打印某行"></a>1.打印某行</h4><p>sed命令基本格式<code>sed -n &#39;n&#39;p filename</code></p>
+<p>第一个n表示显示要打印的行,第二个n表示第几行.</p>
+<p>也可以打印某个区间行如’1,5’</p>
+<p>打印全部行则为’1,$’</p>
+<h4 id="2-打印包含某个字符串的行"><a href="#2-打印包含某个字符串的行" class="headerlink" title="2.打印包含某个字符串的行"></a>2.打印包含某个字符串的行</h4><p>例1:<code>sed -n &#39;/root/&#39;p filename</code></p>
+<p>例2:<code>sed -n &#39;/^1/&#39;p filename</code></p>
+<p>sed加上-e可以实现多行为</p>
+<p>例3:<code>sed -e &#39;1&#39;p -e &#39;/111/&#39;p filename</code></p>
+<p>打印第1行,并且打印有字符串111的行</p>
+<h4 id="3-删除某些行"><a href="#3-删除某些行" class="headerlink" title="3.删除某些行"></a>3.删除某些行</h4><p>例1:<code>sed &#39;1&#39;d filename</code></p>
+<p>删除第1行</p>
+<p>例2:<code>sed &#39;1,3&#39;d filename</code></p>
+<p>删除第1到第3行</p>
+<p>例3:<code>sed &#39;/oot/&#39;d filename</code></p>
+<p>删除带有oot字符的行</p>
+<h4 id="4-替换字符或字符串"><a href="#4-替换字符或字符串" class="headerlink" title="4.替换字符或字符串"></a>4.替换字符或字符串</h4><p>例1:<code>sed &#39;1,2s/ab/ba/g&#39; filename</code></p>
+<p>将第1,2行中ab替换为ba,s代表替换,g代表全局替换,如无g则只替换每行的第一个ab</p>
+<p>#和@也可作为分隔符</p>
+<p>例2:<code>sed &#39;s/[0-9]//g&#39; filename</code></p>
+<p>删除文档中的所有数字</p>
+<h4 id="5-调换两个字符串的位置"><a href="#5-调换两个字符串的位置" class="headerlink" title="5.调换两个字符串的位置"></a>5.调换两个字符串的位置</h4><p>例1:<code>sed &#39;s/\(rot\)\(.*\)\(bash\)/\3\2\1/&#39; filename</code></p>
+<p>将rot与bash调换,123表示位置</p>
+<p>例2:<code>sed -r &#39;s/(rot)(.*)(bash)/\3\2\1/&#39; filename</code></p>
+<p>-r可以去掉()的转义符</p>
+<p>例3:<code>sed &#39;s/^.$/123&amp;/&#39; filename</code></p>
+<p>在行前增加字符123</p>
+<h4 id="6-直接修改文件的内容"><a href="#6-直接修改文件的内容" class="headerlink" title="6.直接修改文件的内容"></a>6.直接修改文件的内容</h4><p>例1:<code>sed -i &#39;s/ab/ba/g&#39; filename</code></p>
+<p>i表示直接修改源文件的内容,修改后会被保存</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/26/正则表达式(二)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-正则表达式(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -869,69 +970,10 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/20/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-20T05:11:14.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
