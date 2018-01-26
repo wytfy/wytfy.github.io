@@ -172,31 +172,7 @@
 <p>第一个n表示显示要打印的行,第二个n表示第几行.</p>
 <p>也可以打印某个区间行如’1,5’</p>
 <p>打印全部行则为’1,$’</p>
-<h4 id="2-打印包含某个字符串的行"><a href="#2-打印包含某个字符串的行" class="headerlink" title="2.打印包含某个字符串的行"></a>2.打印包含某个字符串的行</h4><p>例1:<code>sed -n &#39;/root/&#39;p filename</code></p>
-<p>例2:<code>sed -n &#39;/^1/&#39;p filename</code></p>
-<p>sed加上-e可以实现多行为</p>
-<p>例3:<code>sed -e &#39;1&#39;p -e &#39;/111/&#39;p filename</code></p>
-<p>打印第1行,并且打印有字符串111的行</p>
-<h4 id="3-删除某些行"><a href="#3-删除某些行" class="headerlink" title="3.删除某些行"></a>3.删除某些行</h4><p>例1:<code>sed &#39;1&#39;d filename</code></p>
-<p>删除第1行</p>
-<p>例2:<code>sed &#39;1,3&#39;d filename</code></p>
-<p>删除第1到第3行</p>
-<p>例3:<code>sed &#39;/oot/&#39;d filename</code></p>
-<p>删除带有oot字符的行</p>
-<h4 id="4-替换字符或字符串"><a href="#4-替换字符或字符串" class="headerlink" title="4.替换字符或字符串"></a>4.替换字符或字符串</h4><p>例1:<code>sed &#39;1,2s/ab/ba/g&#39; filename</code></p>
-<p>将第1,2行中ab替换为ba,s代表替换,g代表全局替换,如无g则只替换每行的第一个ab</p>
-<p>#和@也可作为分隔符</p>
-<p>例2:<code>sed &#39;s/[0-9]//g&#39; filename</code></p>
-<p>删除文档中的所有数字</p>
-<h4 id="5-调换两个字符串的位置"><a href="#5-调换两个字符串的位置" class="headerlink" title="5.调换两个字符串的位置"></a>5.调换两个字符串的位置</h4><p>例1:<code>sed &#39;s/\(rot\)\(.*\)\(bash\)/\3\2\1/&#39; filename</code></p>
-<p>将rot与bash调换,123表示位置</p>
-<p>例2:<code>sed -r &#39;s/(rot)(.*)(bash)/\3\2\1/&#39; filename</code></p>
-<p>-r可以去掉()的转义符</p>
-<p>例3:<code>sed &#39;s/^.$/123&amp;/&#39; filename</code></p>
-<p>在行前增加字符123</p>
-<h4 id="6-直接修改文件的内容"><a href="#6-直接修改文件的内容" class="headerlink" title="6.直接修改文件的内容"></a>6.直接修改文件的内容</h4><p>例1:<code>sed -i &#39;s/ab/ba/g&#39; filename</code></p>
-<p>i表示直接修改源文件的内容,修改后会被保存</p>
-
+        
       
 
       
