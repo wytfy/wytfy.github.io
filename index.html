@@ -148,6 +148,94 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-正则表达式(三)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/27/正则表达式(三)/">正则表达式(三)</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/27/正则表达式(三)/" class="archive-article-date">
+  	<time datetime="2018-01-27T03:35:53.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-截取文档中的某个段"><a href="#1-截取文档中的某个段" class="headerlink" title="1.截取文档中的某个段"></a>1.截取文档中的某个段</h4><blockquote>
+<p>head -n2 filename |awk -F’:’ ‘{print $1}’<br>-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段<br>head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’<br>自定义内容要用””包起来</p>
+</blockquote>
+<h4 id="2-匹配字符或者字符串"><a href="#2-匹配字符或者字符串" class="headerlink" title="2.匹配字符或者字符串"></a>2.匹配字符或者字符串</h4><blockquote>
+<p>awk ‘/oo/‘ filename<br>匹配含有oo的行<br>awk -F’:’ ‘$1 ~/oo/‘ filename<br>匹配第1切段中的含有oo的行,~表示匹配<br>awk -F’:’ ‘/root/ {print $1,$3} /test/ {print $1,$3}’ filename<br>先匹配含有root的行,并打印该行的1和3切段,再匹配含有test的行,并打印该行的1和3切段</p>
+</blockquote>
+<h4 id="3-条件操作符"><a href="#3-条件操作符" class="headerlink" title="3.条件操作符"></a>3.条件操作符</h4><blockquote>
+<p>awk -F’:’ ‘$3==”0”‘ /etc/passwd<br>把数字用””括起来,则表示字符<br>awk -F’:’ ‘$3&gt;=500’ /etc/passwd<br>没括起来则表示为数字<br>awk -F’:’ ‘$3!=$4’ /etc/passwd<br>!=表示不匹配<br>$$表示并且<br>||表示或者</p>
+</blockquote>
+<h4 id="4-awk的内置变量"><a href="#4-awk的内置变量" class="headerlink" title="4.awk的内置变量"></a>4.awk的内置变量</h4><blockquote>
+<p>OFS定义输出时的分隔符<br>awk -F’:’ ‘{OFS=”#”}{print $1,$2,$3}’ filename<br>NF表示分隔符分割后一共有多少段<br>awk -F’:’ ‘{print NF}’ filename<br>NR表示行号<br>awk ‘NR&gt;40’ filename</p>
+</blockquote>
+<h4 id="5-awk中的数学运算"><a href="#5-awk中的数学运算" class="headerlink" title="5.awk中的数学运算"></a>5.awk中的数学运算</h4><blockquote>
+<p>更改段值<br>awk -F’:’ ‘$1=”root”‘ filename<br>对各段进行数学运算<br>awk -F’:’ ‘{$7=$3+$4}’ filename</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/27/正则表达式(三)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-正则表达式(二)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -841,82 +929,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/01/21/centos7设置IP地址/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-关于Markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/关于Markdown/">关于 Markdown</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/20/关于Markdown/" class="archive-article-date">
-  	<time datetime="2018-01-20T12:02:36.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>Markdown 会被解释为一种 <strong>“标记语法”</strong>，实际上，可以不用去理解这种看似晦涩的意思。<br>Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。<br>换一种说法，Markdown 是给<strong>专注于“偷懒”</strong>，却不牺牲最终产出的人群使用的。</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/关于Markdown/">展开全文 >></a>
         </p>
       
 
