@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yoursite.com">
-  <title>Archives: 2018/1 | 午夜听风吟</title>
+  <title>shell脚本 | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="午夜听风吟">
-<meta property="og:url" content="https://yoursite.com/archives/2018/01/index.html">
+  <meta name="description" content="一.什么是shell脚本1.shell脚本的创建与执行 #! /bin/bashdateecho “Hello world!”  脚本一般以`#! /bin/bash开头脚本的执行命令有两种:  sh first.sh ./first.sh">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="shell脚本">
+<meta property="og:url" content="https://yoursite.com/2018/01/27/shell脚本/index.html">
 <meta property="og:site_name" content="午夜听风吟">
+<meta property="og:description" content="一.什么是shell脚本1.shell脚本的创建与执行 #! /bin/bashdateecho “Hello world!”  脚本一般以`#! /bin/bash开头脚本的执行命令有两种:  sh first.sh ./first.sh">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-27T13:18:01.707Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="午夜听风吟">
+<meta name="twitter:title" content="shell脚本">
+<meta name="twitter:description" content="一.什么是shell脚本1.shell脚本的创建与执行 #! /bin/bashdateecho “Hello world!”  脚本一般以`#! /bin/bash开头脚本的执行命令有两种:  sh first.sh ./first.sh">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -146,36 +151,119 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-shell脚本" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      shell脚本
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/27/shell脚本/" class="archive-article-date">
+
+        
+        <a href="/2018/01/27/shell脚本/" class="archive-article-date">
   	<time datetime="2018-01-27T08:05:21.514Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/27/shell脚本/">shell脚本</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="一-什么是shell脚本"><a href="#一-什么是shell脚本" class="headerlink" title="一.什么是shell脚本"></a>一.什么是shell脚本</h4><h5 id="1-shell脚本的创建与执行"><a href="#1-shell脚本的创建与执行" class="headerlink" title="1.shell脚本的创建与执行"></a>1.shell脚本的创建与执行</h5><blockquote>
+<p>#! /bin/bash<br>date<br>echo “Hello world!”</p>
+</blockquote>
+<p>脚本一般以`#! /bin/bash开头<br>脚本的执行命令有两种:</p>
+<ul>
+<li>sh first.sh</li>
+<li>./first.sh</li>
+</ul>
+<a id="more"></a>
+<p>若执行过程出现问题可以需要给脚本增加执行权限:<code>chmod +x first.sh</code><br>可在sh后加-x查看脚本的执行过程:<code>sh -x first.sh</code></p>
+<h5 id="2-命令date"><a href="#2-命令date" class="headerlink" title="2.命令date"></a>2.命令date</h5><ul>
+<li>date +%Y:表示以四位数字格式打印年份</li>
+<li>date +%y:表示以两位数字格式打印年份</li>
+<li>date +%m:表示月份</li>
+<li>date +%d:表示日期</li>
+<li>date +%H:表示小时</li>
+<li>date +%M:表示分钟</li>
+<li>date +%S:表示秒</li>
+<li>date +%w:表示星期</li>
+</ul>
+<p>例如<code>date +&quot;%Y-%m-%d %H:%M:%S&quot;</code><br>前一天日期:<code>date -d &quot;-1 day&quot; +%d</code><br>前一小时:<code>date -d &quot;-1 hour&quot; +%H</code></p>
+<h4 id="二-shell脚本中的变量"><a href="#二-shell脚本中的变量" class="headerlink" title="二.shell脚本中的变量"></a>二.shell脚本中的变量</h4><h5 id="1-数学运算"><a href="#1-数学运算" class="headerlink" title="1.数学运算"></a>1.数学运算</h5><blockquote>
+<p>#! /bin/bash<br>a=2<br>b=1<br>sum=$[$a+$b]<br>echo “$a+$b=$sum”</p>
+</blockquote>
+<p>数学计算要用[]括起来</p>
+<h5 id="2-和用户交互"><a href="#2-和用户交互" class="headerlink" title="2.和用户交互"></a>2.和用户交互</h5><blockquote>
+<p>#! /bin/bash<br>read -p “please input a number:” x<br>read -p “please input another number:” y<br>sum=$[$x+$y]<br>echo “the sum of the two numbers is:$sum”</p>
+</blockquote>
+<p>read用于和用户交互,把用户输入的字符串作为变量</p>
+<h5 id="3-shell脚本预设变量"><a href="#3-shell脚本预设变量" class="headerlink" title="3.shell脚本预设变量"></a>3.shell脚本预设变量</h5><blockquote>
+<p>#! /bin/bash<br>sum=$[$1+$2]<br>echo “sum=$sum”</p>
+</blockquote>
+<p>在执行时,输入<code>sh option.sh 1 2</code><br>则输出<code>sum=3</code><br>$0表示脚本名称</p>
+<h4 id="三-shell脚本中的逻辑判断"><a href="#三-shell脚本中的逻辑判断" class="headerlink" title="三.shell脚本中的逻辑判断"></a>三.shell脚本中的逻辑判断</h4><h5 id="1-不带else"><a href="#1-不带else" class="headerlink" title="1.不带else"></a>1.不带else</h5><blockquote>
+<p>if 判断语句; then<br>&nbsp;&nbsp;&nbsp;command<br>fi</p>
+</blockquote>
+<h5 id="2-带有else"><a href="#2-带有else" class="headerlink" title="2.带有else"></a>2.带有else</h5><blockquote>
+<p>if 判断语句; then<br>&nbsp;&nbsp;&nbsp;command<br>else<br>&nbsp;&nbsp;&nbsp;command<br>fi</p>
+</blockquote>
+<h5 id="3-带有elif"><a href="#3-带有elif" class="headerlink" title="3.带有elif"></a>3.带有elif</h5><blockquote>
+<p>if 判断语句; then<br>&nbsp;&nbsp;&nbsp;command<br>elif<br>&nbsp;&nbsp;&nbsp;command<br>else<br>&nbsp;&nbsp;&nbsp;command<br>fi</p>
+</blockquote>
+<h5 id="4-和文档相关的判断"><a href="#4-和文档相关的判断" class="headerlink" title="4.和文档相关的判断"></a>4.和文档相关的判断</h5><blockquote>
+<p>if [ -e filename ] ; then<br>&nbsp;&nbsp;&nbsp;command<br>fi<br><strong>-e:判断文件或目录是否存在</strong><br><strong>-d:判断是不是目录以及是否存在</strong><br><strong>-f:判断是不是普通文件以及是否存在</strong><br><strong>-r:判断是否有读权限</strong><br><strong>-w:判断是否有写权限</strong><br><strong>-x:判断是否可执行</strong></p>
+</blockquote>
+<h5 id="5-case逻辑判断"><a href="#5-case逻辑判断" class="headerlink" title="5.case逻辑判断"></a>5.case逻辑判断</h5><blockquote>
+<p>case 变量 in<br>value1)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>value2)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>value3)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>*)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>esac</p>
+</blockquote>
+<h4 id="四-shell脚本中的循环"><a href="#四-shell脚本中的循环" class="headerlink" title="四.shell脚本中的循环"></a>四.shell脚本中的循环</h4><h5 id="1-for循环"><a href="#1-for循环" class="headerlink" title="1.for循环"></a>1.for循环</h5><blockquote>
+<p>for 变量名 in 循环条件; do<br>&nbsp;&nbsp;&nbsp;command<br>done</p>
+</blockquote>
+<h5 id="2-while循环"><a href="#2-while循环" class="headerlink" title="2.while循环"></a>2.while循环</h5><blockquote>
+<p>while 条件; do<br>&nbsp;&nbsp;&nbsp;command<br>done</p>
+</blockquote>
+<p>若用一个冒号代替循环条件,则可做到死循环</p>
+<h4 id="五-shell脚本中的函数"><a href="#五-shell脚本中的函数" class="headerlink" title="五.shell脚本中的函数"></a>五.shell脚本中的函数</h4><blockquote>
+<p>function 函数名()<br>{<br>&nbsp;&nbsp;&nbsp;command1<br>&nbsp;&nbsp;&nbsp;command2<br>}</p>
+</blockquote>
+<p>函数一定要写在shell脚本前面</p>
+<h4 id="六-shell脚本中的中断和继续"><a href="#六-shell脚本中的中断和继续" class="headerlink" title="六.shell脚本中的中断和继续"></a>六.shell脚本中的中断和继续</h4><ul>
+<li>break–退出该层循环</li>
+<li>continue–结束本次循环</li>
+<li>exit–直接退出整个shell脚本</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -187,364 +275,105 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/01/27/shell脚本/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/27/正则表达式(三)/" class="archive-article-date">
-  	<time datetime="2018-01-27T03:35:53.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/27/正则表达式(三)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">正则表达式(三)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/27/正则表达式(三)/">正则表达式(三)</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/26/正则表达式(二)/" class="archive-article-date">
-  	<time datetime="2018-01-26T15:45:17.702Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/26/正则表达式(二)/">正则表达式(二)</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/26/正则表达式(一)/" class="archive-article-date">
-  	<time datetime="2018-01-26T14:09:57.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/26/正则表达式(一)/">正则表达式(一)</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/25/shell基础知识/" class="archive-article-date">
-  	<time datetime="2018-01-25T14:16:52.979Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/25/shell基础知识/">shell基础知识</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/24/centos7软件安装/" class="archive-article-date">
-  	<time datetime="2018-01-24T07:56:25.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/24/centos7软件安装/">centos7软件安装</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/文档压缩与打包/" class="archive-article-date">
-  	<time datetime="2018-01-23T12:43:46.857Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/文档压缩与打包/">文档压缩与打包</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/Linux磁盘管理/" class="archive-article-date">
-  	<time datetime="2018-01-23T09:33:31.531Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/Linux磁盘管理/">Linux磁盘管理</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/centos7用户身份切换/" class="archive-article-date">
-  	<time datetime="2018-01-23T08:57:12.437Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/centos7用户身份切换/">centos7用户身份切换</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/21/centos7使用秘钥认证登录/" class="archive-article-date">
-  	<time datetime="2018-01-21T14:52:22.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/21/centos7使用秘钥认证登录/">centos7使用秘钥认证登录</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2018/01/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/01/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -568,8 +397,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
