@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/27/shell%E8%84%9A%E6%9C%AC/</loc>
+    <lastmod>2018-01-27T13:18:01.707Z</lastmod>
+    <data>
+        <display>
+        <title>shell脚本</title>
+        <pubTime>2018-01-27T08:05:21.514Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E4%B8%89)/</loc>
+    <lastmod>2018-01-27T04:48:56.012Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式(三)</title>
+        <pubTime>2018-01-27T03:35:53.631Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E4%BA%8C)/</loc>
+    <lastmod>2018-01-26T16:11:05.942Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式(二)</title>
+        <pubTime>2018-01-26T15:45:17.702Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E4%B8%80)/</loc>
+    <lastmod>2018-01-26T14:38:13.264Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式(一)</title>
+        <pubTime>2018-01-26T14:09:57.434Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/25/shell%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2018-01-25T14:21:17.228Z</lastmod>
+    <data>
+        <display>
+        <title>shell基础知识</title>
+        <pubTime>2018-01-25T14:16:52.979Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/24/centos7%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2018-01-24T07:56:25.969Z</lastmod>
+    <data>
+        <display>
+        <title>centos7软件安装</title>
+        <pubTime>2018-01-24T07:56:25.912Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/23/%E6%96%87%E6%A1%A3%E5%8E%8B%E7%BC%A9%E4%B8%8E%E6%89%93%E5%8C%85/</loc>
+    <lastmod>2018-01-23T12:49:56.169Z</lastmod>
+    <data>
+        <display>
+        <title>文档压缩与打包</title>
+        <pubTime>2018-01-23T12:43:46.857Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/23/Linux%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2018-01-23T09:33:31.584Z</lastmod>
+    <data>
+        <display>
+        <title>Linux磁盘管理</title>
+        <pubTime>2018-01-23T09:33:31.531Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/23/centos7%E7%94%A8%E6%88%B7%E8%BA%AB%E4%BB%BD%E5%88%87%E6%8D%A2/</loc>
+    <lastmod>2018-01-23T08:57:12.495Z</lastmod>
+    <data>
+        <display>
+        <title>centos7用户身份切换</title>
+        <pubTime>2018-01-23T08:57:12.437Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/21/centos7%E4%BD%BF%E7%94%A8%E7%A7%98%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/</loc>
+    <lastmod>2018-01-21T14:56:07.906Z</lastmod>
+    <data>
+        <display>
+        <title>centos7使用秘钥认证登录</title>
+        <pubTime>2018-01-21T14:52:22.908Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/20/hello-world/</loc>
+    <lastmod>2018-01-21T08:03:30.417Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-01-20T05:11:14.655Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/20/%E5%85%B3%E4%BA%8EMarkdown/</loc>
+    <lastmod>2018-01-21T08:02:55.452Z</lastmod>
+    <data>
+        <display>
+        <title>关于 Markdown</title>
+        <pubTime>2018-01-20T12:02:36.223Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http:/tonocha.com/2018/01/21/centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%80/</loc>
+    <lastmod>2018-01-21T08:02:18.916Z</lastmod>
+    <data>
+        <display>
+        <title>centos7 手动设置IP地址</title>
+        <pubTime>2018-01-21T07:59:49.155Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
