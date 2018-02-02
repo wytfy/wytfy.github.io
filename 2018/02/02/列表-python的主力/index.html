@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yoursite.com">
-  <title>午夜听风吟</title>
+  <title>列表:python的主力 | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="午夜听风吟">
-<meta property="og:url" content="https://yoursite.com/index.html">
+  <meta name="description" content="一.list函数将字符串转为列表  &amp;gt;&amp;gt;&amp;gt; list(‘Hello’)[‘H’, ‘e’, ‘l’, ‘l’, ‘o’]  将列表转为字符串  ‘’.join(somelist)">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="列表:python的主力">
+<meta property="og:url" content="https://yoursite.com/2018/02/02/列表-python的主力/index.html">
 <meta property="og:site_name" content="午夜听风吟">
+<meta property="og:description" content="一.list函数将字符串转为列表  &amp;gt;&amp;gt;&amp;gt; list(‘Hello’)[‘H’, ‘e’, ‘l’, ‘l’, ‘o’]  将列表转为字符串  ‘’.join(somelist)">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-02T16:00:01.869Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="午夜听风吟">
+<meta name="twitter:title" content="列表:python的主力">
+<meta name="twitter:description" content="一.list函数将字符串转为列表  &amp;gt;&amp;gt;&amp;gt; list(‘Hello’)[‘H’, ‘e’, ‘l’, ‘l’, ‘o’]  将列表转为字符串  ‘’.join(somelist)">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -146,16 +151,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-列表-python的主力" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-列表-python的主力" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/02/列表-python的主力/">列表:python的主力</a>
+    <h1 class="article-title" itemprop="name">
+      列表:python的主力
     </h1>
   
 
@@ -176,9 +179,87 @@
 <blockquote>
 <p>‘’.join(somelist)</p>
 </blockquote>
-        
+<a id="more"></a>
+<h3 id="二-基本的列表操作"><a href="#二-基本的列表操作" class="headerlink" title="二.基本的列表操作"></a>二.基本的列表操作</h3><h4 id="1-修改列表：给元素赋值"><a href="#1-修改列表：给元素赋值" class="headerlink" title="1. 修改列表：给元素赋值"></a>1. 修改列表：给元素赋值</h4><blockquote>
+<p>>&gt;&gt; x = [1, 1, 1]<br>>&gt;&gt; x[1] = 2<br>>&gt;&gt; x<br>[1, 2, 1] </p>
+</blockquote>
+<h4 id="2-删除元素"><a href="#2-删除元素" class="headerlink" title="2.删除元素"></a>2.删除元素</h4><blockquote>
+<p>>&gt;&gt; names = [‘Alice’, ‘Beth’, ‘Cecil’, ‘Dee-Dee’, ‘Earl’]<br>>&gt;&gt; del names[2]<br>>&gt;&gt; names<br>[‘Alice’, ‘Beth’, ‘Dee-Dee’, ‘Earl’] </p>
+</blockquote>
+<h4 id="3-给切片赋值"><a href="#3-给切片赋值" class="headerlink" title="3.给切片赋值"></a>3.给切片赋值</h4><blockquote>
+<p>>&gt;&gt; name = list(‘Perl’)<br>>&gt;&gt; name<br>[‘P’, ‘e’, ‘r’, ‘l’]<br>>&gt;&gt; name[2:] = list(‘ar’)<br>>&gt;&gt; name<br>[‘P’, ‘e’, ‘a’, ‘r’]</p>
+</blockquote>
+<h3 id="三-列表方法"><a href="#三-列表方法" class="headerlink" title="三.列表方法"></a>三.列表方法</h3><h4 id="1-append"><a href="#1-append" class="headerlink" title="1. append"></a>1. append</h4><p>方法append用于将一个对象附加到列表末尾。</p>
+<blockquote>
+<p>>&gt;&gt; lst = [1, 2, 3]<br>>&gt;&gt; lst.append(4)<br>>&gt;&gt; lst<br>[1, 2, 3, 4]</p>
+</blockquote>
+<h4 id="2-clear"><a href="#2-clear" class="headerlink" title="2. clear"></a>2. clear</h4><p>方法clear就地清空列表的内容。</p>
+<blockquote>
+<p>>&gt;&gt; lst = [1, 2, 3]<br>>&gt;&gt; lst.clear()<br>>&gt;&gt; lst<br>[]</p>
+</blockquote>
+<h4 id="3-copy"><a href="#3-copy" class="headerlink" title="3. copy"></a>3. copy</h4><p>方法 copy 复制列表。</p>
+<blockquote>
+<p>>&gt;&gt; a = [1, 2, 3]<br>>&gt;&gt; b = a.copy()<br>>&gt;&gt; b[1] = 4<br>>&gt;&gt; a<br>[1, 2, 3] </p>
+</blockquote>
+<h4 id="4-count"><a href="#4-count" class="headerlink" title="4. count"></a>4. count</h4><p>方法count计算指定的元素在列表中出现了多少次。</p>
+<blockquote>
+<p>>&gt;&gt; [‘to’, ‘be’, ‘or’, ‘not’, ‘to’, ‘be’].count(‘to’)<br>2 </p>
+</blockquote>
+<h4 id="5-extend"><a href="#5-extend" class="headerlink" title="5. extend"></a>5. extend</h4><p>方法extend让你能够同时将多个值附加到列表末尾，为此可将这些值组成的序列作为参数提<br>供给方法extend。换而言之，你可使用一个列表来扩展另一个列表。</p>
+<blockquote>
+<p>>&gt;&gt; a = [1, 2, 3]<br>>&gt;&gt; b = [4, 5, 6]<br>>&gt;&gt; a.extend(b)<br>>&gt;&gt; a<br>[1, 2, 3, 4, 5, 6]</p>
+</blockquote>
+<h4 id="6-index"><a href="#6-index" class="headerlink" title="6. index"></a>6. index</h4><p>方法index在列表中查找指定值第一次出现的索引。</p>
+<blockquote>
+<p>>&gt;&gt; knights = [‘We’, ‘are’, ‘the’, ‘knights’, ‘who’, ‘say’, ‘ni’]<br>>&gt;&gt; knights.index(‘who’)<br>4 </p>
+</blockquote>
+<h4 id="7-insert"><a href="#7-insert" class="headerlink" title="7. insert"></a>7. insert</h4><p>方法insert用于将一个对象插入列表。</p>
+<blockquote>
+<p>>&gt;&gt; numbers = [1, 2, 3, 5, 6, 7]<br>>&gt;&gt; numbers.insert(3, ‘four’)<br>>&gt;&gt; numbers<br>[1, 2, 3, ‘four’, 5, 6, 7]</p>
+</blockquote>
+<h4 id="8-pop"><a href="#8-pop" class="headerlink" title="8. pop"></a>8. pop</h4><p>方法pop从列表中删除一个元素（末尾为最后一个元素），并返回这一元素。</p>
+<blockquote>
+<p>>&gt;&gt; x = [1, 2, 3]<br>>&gt;&gt; x.pop()<br>3 </p>
+</blockquote>
+<h4 id="9-remove"><a href="#9-remove" class="headerlink" title="9. remove"></a>9. remove</h4><p>方法remove用于删除第一个为指定值的元素。</p>
+<blockquote>
+<p>>&gt;&gt; x = [‘to’, ‘be’, ‘or’, ‘not’, ‘to’, ‘be’]<br>>&gt;&gt; x.remove(‘be’)<br>>&gt;&gt; x<br>[‘to’, ‘or’, ‘not’, ‘to’, ‘be’] </p>
+</blockquote>
+<h4 id="10-reverse"><a href="#10-reverse" class="headerlink" title="10. reverse"></a>10. reverse</h4><p>方法reverse按相反的顺序排列列表中的元素（我想你对此应该不会感到惊讶）。</p>
+<blockquote>
+<p>>&gt;&gt; x = [1, 2, 3]<br>>&gt;&gt; x.reverse()<br>>&gt;&gt; x<br>[3, 2, 1]<br>注意:与reversed的区别.</p>
+</blockquote>
+<h4 id="11-sort"><a href="#11-sort" class="headerlink" title="11. sort"></a>11. sort</h4><p>方法sort用于对列表就地排序。就地排序意味着对原来的列表进行修改，使其元素按顺序<br>排列，而不是返回排序后的列表的副本。</p>
+<blockquote>
+<p>>&gt;&gt; x = [4, 6, 2, 1, 7, 9]<br>>&gt;&gt; x.sort()<br>>&gt;&gt; x<br>[1, 2, 4, 6, 7, 9]<br>注意:与sorted的区别.</p>
+</blockquote>
+<h4 id="12-高级排序"><a href="#12-高级排序" class="headerlink" title="12.高级排序"></a>12.高级排序</h4><blockquote>
+<p>>&gt;&gt; x = [‘aardvark’, ‘abalone’, ‘acme’, ‘add’, ‘aerate’]<br>>&gt;&gt; x.sort(key=len)<br>>&gt;&gt; x<br>[‘add’, ‘acme’, ‘aerate’, ‘abalone’, ‘aardvark’]</p>
+</blockquote>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -198,16 +279,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/02/列表-python的主力/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/02/02/列表-python的主力/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/02/通用的序列操作/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">通用的序列操作</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -227,726 +367,14 @@
 
 
 
-
-  
-    <article id="post-通用的序列操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/02/通用的序列操作/">通用的序列操作</a>
-    </h1>
-  
-
-        
-        <a href="/2018/02/02/通用的序列操作/" class="archive-article-date">
-  	<time datetime="2018-02-02T15:21:39.259Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-索引"><a href="#一-索引" class="headerlink" title="一.索引"></a>一.索引</h3><blockquote>
-<p>针对字符串<br>>&gt;&gt;”hello”[3]<br>‘l’<br>针对列表<br>>&gt;&gt;lst=[1,2.,3,4]<br>>&gt;&gt;lst[3]<br>4</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/02/通用的序列操作/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-shell脚本" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/27/shell脚本/">shell脚本</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/27/shell脚本/" class="archive-article-date">
-  	<time datetime="2018-01-27T08:05:21.514Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="一-什么是shell脚本"><a href="#一-什么是shell脚本" class="headerlink" title="一.什么是shell脚本"></a>一.什么是shell脚本</h4><h5 id="1-shell脚本的创建与执行"><a href="#1-shell脚本的创建与执行" class="headerlink" title="1.shell脚本的创建与执行"></a>1.shell脚本的创建与执行</h5><blockquote>
-<p>#! /bin/bash<br>date<br>echo “Hello world!”</p>
-</blockquote>
-<p>脚本一般以<code>#! /bin/bash</code>开头<br>脚本的执行命令有两种:</p>
-<ul>
-<li>sh first.sh</li>
-<li>./first.sh</li>
-</ul>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/27/shell脚本/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-正则表达式(三)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/27/正则表达式(三)/">正则表达式(三)</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/27/正则表达式(三)/" class="archive-article-date">
-  	<time datetime="2018-01-27T03:35:53.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="1-截取文档中的某个段"><a href="#1-截取文档中的某个段" class="headerlink" title="1.截取文档中的某个段"></a>1.截取文档中的某个段</h4><blockquote>
-<p>head -n2 filename |awk -F’:’ ‘{print $1}’<br>-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段<br>head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’<br>自定义内容要用””包起来</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/27/正则表达式(三)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-正则表达式(二)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/26/正则表达式(二)/">正则表达式(二)</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/26/正则表达式(二)/" class="archive-article-date">
-  	<time datetime="2018-01-26T15:45:17.702Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="1-打印某行"><a href="#1-打印某行" class="headerlink" title="1.打印某行"></a>1.打印某行</h4><p>sed命令基本格式<code>sed -n &#39;n&#39;p filename</code></p>
-<p>第一个n表示显示要打印的行,第二个n表示第几行.</p>
-<p>也可以打印某个区间行如’1,5’</p>
-<p>打印全部行则为’1,$’</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/26/正则表达式(二)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-正则表达式(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/26/正则表达式(一)/">正则表达式(一)</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/26/正则表达式(一)/" class="archive-article-date">
-  	<time datetime="2018-01-26T14:09:57.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>grep命令的基本格式<code>grep [-cinvABC] &#39;word&#39; filename</code></p>
-<blockquote>
-<p>-c:表示打印符合要求的行数<br>-i:表示忽略大小写<br>-n:表示输出符合要求的行及其行数<br>-v:表示打印不符合要求的行及其行号<br>-A:后跟数字,例如A2打印符合的行及其后两行<br>-B:后跟数字,例如B2打印符合的行及其前两行<br>-C:后跟数字,例如C2打印符合的行及其前后各两行</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/26/正则表达式(一)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-shell基础知识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/25/shell基础知识/">shell基础知识</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/25/shell基础知识/" class="archive-article-date">
-  	<time datetime="2018-01-25T14:16:52.979Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-什么是shell"><a href="#一-什么是shell" class="headerlink" title="一.什么是shell"></a>一.什么是shell</h3><h4 id="1-记录历史命令"><a href="#1-记录历史命令" class="headerlink" title="1.记录历史命令"></a>1.记录历史命令</h4><blockquote>
-<ul>
-<li>!! /执行上一条命令</li>
-<li>!n /执行历史第n条命令</li>
-<li>!字符串 /执行历史中最近一次以字符串开头的命令</li>
-</ul>
-</blockquote>
-<h4 id="2-命令文件名补全——连续两次tab键"><a href="#2-命令文件名补全——连续两次tab键" class="headerlink" title="2.命令文件名补全——连续两次tab键"></a>2.命令文件名补全——连续两次tab键</h4><h4 id="3-别名"><a href="#3-别名" class="headerlink" title="3.别名"></a>3.别名</h4><blockquote>
-<p>格式为alias 命令别名=’具体命令’<br>例如 alias list=’ls’<br>解除别名 unalias 别名<br>例如 unalias list</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/25/shell基础知识/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-centos7软件安装" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/centos7软件安装/">centos7软件安装</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/24/centos7软件安装/" class="archive-article-date">
-  	<time datetime="2018-01-24T07:56:25.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、RPM工具"><a href="#一、RPM工具" class="headerlink" title="一、RPM工具"></a>一、RPM工具</h2><h3 id="1、安装RPM包"><a href="#1、安装RPM包" class="headerlink" title="1、安装RPM包"></a>1、安装RPM包</h3><blockquote>
-<p>rpm -ivh xxxxxxx.rpm</p>
-</blockquote>
-<h3 id="2、升级RPM包"><a href="#2、升级RPM包" class="headerlink" title="2、升级RPM包"></a>2、升级RPM包</h3><blockquote>
-<p>rpm -Uvh filename</p>
-</blockquote>
-<h3 id="3、卸载RPM包"><a href="#3、卸载RPM包" class="headerlink" title="3、卸载RPM包"></a>3、卸载RPM包</h3><blockquote>
-<p>rpm -e filename</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/24/centos7软件安装/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-文档压缩与打包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/23/文档压缩与打包/">文档压缩与打包</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/23/文档压缩与打包/" class="archive-article-date">
-  	<time datetime="2018-01-23T12:43:46.857Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1、gzip压缩工具"><a href="#1、gzip压缩工具" class="headerlink" title="1、gzip压缩工具"></a>1、gzip压缩工具</h3><p>压缩：</p>
-<blockquote>
-<p>gzip 1.txt</p>
-</blockquote>
-<p>解压：</p>
-<blockquote>
-<p>gzip -d 1.txt.gz</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/23/文档压缩与打包/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Linux磁盘管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/23/Linux磁盘管理/">Linux磁盘管理</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/23/Linux磁盘管理/" class="archive-article-date">
-  	<time datetime="2018-01-23T09:33:31.531Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1、查看磁盘和目录容量"><a href="#1、查看磁盘和目录容量" class="headerlink" title="1、查看磁盘和目录容量"></a>1、查看磁盘和目录容量</h3><p>查看磁盘使用情况</p>
-<blockquote>
-<p>df -h</p>
-</blockquote>
-<p>查看文件或目录容量</p>
-<blockquote>
-<p>du -sh filename</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/23/Linux磁盘管理/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -969,8 +397,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
