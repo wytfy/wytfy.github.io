@@ -148,6 +148,96 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-通用的序列操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/02/通用的序列操作/">通用的序列操作</a>
+    </h1>
+  
+
+        
+        <a href="/2018/02/02/通用的序列操作/" class="archive-article-date">
+  	<time datetime="2018-02-02T15:21:39.259Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-索引"><a href="#一-索引" class="headerlink" title="一.索引"></a>一.索引</h3><blockquote>
+<p>针对字符串<br>>&gt;&gt;”hello”[3]<br>‘l’<br>针对列表<br>>&gt;&gt;lst=[1,2.,3,4]<br>>&gt;&gt;lst[3]<br>4</p>
+</blockquote>
+<h3 id="二-切片"><a href="#二-切片" class="headerlink" title="二.切片"></a>二.切片</h3><blockquote>
+<p>>&gt;&gt;<code>tag = &#39;&lt;a href=&quot;http://www.python.org&quot;&gt;Python web site&lt;/a&gt;&#39;</code><br>>&gt;&gt; tag[9:30]<br>‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘ </p>
+</blockquote>
+<p>有步长时</p>
+<blockquote>
+<p><code>&gt;&gt;&gt; numbers[0:10:1]</code> </p>
+</blockquote>
+<h3 id="三-序列相加"><a href="#三-序列相加" class="headerlink" title="三.序列相加"></a>三.序列相加</h3><blockquote>
+<p>>&gt;&gt; [1, 2, 3] + [4, 5, 6]<br>[1, 2, 3, 4, 5, 6]<br>>&gt;&gt; ‘Hello,’ + ‘world!’<br>‘Hello, world!’ </p>
+</blockquote>
+<h3 id="四-乘法"><a href="#四-乘法" class="headerlink" title="四.乘法"></a>四.乘法</h3><blockquote>
+<p>>&gt;&gt; ‘python’ * 5<br>‘pythonpythonpythonpythonpython’<br>>&gt;&gt; [42] * 10<br>[42, 42, 42, 42, 42, 42, 42, 42, 42, 42]</p>
+<h3 id="五-成员资格检查"><a href="#五-成员资格检查" class="headerlink" title="五.成员资格检查"></a>五.成员资格检查</h3><p>>&gt;&gt; permissions = ‘rw’<br>>&gt;&gt; ‘w’ in permissions<br>True </p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/02/02/通用的序列操作/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-shell脚本" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -871,83 +961,6 @@
 
 
   
-    <article id="post-centos7使用秘钥认证登录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/21/centos7使用秘钥认证登录/">centos7使用秘钥认证登录</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/21/centos7使用秘钥认证登录/" class="archive-article-date">
-  	<time datetime="2018-01-21T14:52:22.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1、生成秘钥对"><a href="#1、生成秘钥对" class="headerlink" title="1、生成秘钥对"></a>1、生成秘钥对</h3><p>利用puTTYgen生成公钥和私钥</p>
-<h3 id="2、保存秘钥"><a href="#2、保存秘钥" class="headerlink" title="2、保存秘钥"></a>2、保存秘钥</h3><h3 id="3、复制公钥到Linux"><a href="#3、复制公钥到Linux" class="headerlink" title="3、复制公钥到Linux"></a>3、复制公钥到Linux</h3><blockquote>
-<p>mkdir /root/.ssh    //创建目录<br>chmod 700 /root/.ssh     //更改权限<br>vi /root/.ssh/authorized_keys //把公钥复制到该文件</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/21/centos7使用秘钥认证登录/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1050,6 +1063,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
             
             <div class="clearfix"></div>

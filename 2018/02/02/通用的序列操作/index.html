@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yoursite.com">
-  <title>正则表达式(三) | 午夜听风吟</title>
+  <title>通用的序列操作 | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.截取文档中的某个段 head -n2 filename |awk -F’:’ ‘{print $1}’-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’自定义内容要用””包起来">
-<meta name="keywords" content="linux">
+  <meta name="description" content="一.索引 针对字符串&amp;gt;&amp;gt;&amp;gt;”hello”[3]‘l’针对列表&amp;gt;&amp;gt;&amp;gt;lst=[1,2.,3,4]&amp;gt;&amp;gt;&amp;gt;lst[3]4  二.切片 &amp;gt;&amp;gt;&amp;gt;tag = &amp;#39;&amp;lt;a href=&amp;quot;http://www.python.org&amp;quot;&amp;gt;Python web site&amp;lt;/a&amp;gt;&amp;#39;&amp;gt;&amp;gt;&amp;gt; tag[9:30]‘">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式(三)">
-<meta property="og:url" content="https://yoursite.com/2018/01/27/正则表达式(三)/index.html">
+<meta property="og:title" content="通用的序列操作">
+<meta property="og:url" content="https://yoursite.com/2018/02/02/通用的序列操作/index.html">
 <meta property="og:site_name" content="午夜听风吟">
-<meta property="og:description" content="1.截取文档中的某个段 head -n2 filename |awk -F’:’ ‘{print $1}’-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’自定义内容要用””包起来">
+<meta property="og:description" content="一.索引 针对字符串&amp;gt;&amp;gt;&amp;gt;”hello”[3]‘l’针对列表&amp;gt;&amp;gt;&amp;gt;lst=[1,2.,3,4]&amp;gt;&amp;gt;&amp;gt;lst[3]4  二.切片 &amp;gt;&amp;gt;&amp;gt;tag = &amp;#39;&amp;lt;a href=&amp;quot;http://www.python.org&amp;quot;&amp;gt;Python web site&amp;lt;/a&amp;gt;&amp;#39;&amp;gt;&amp;gt;&amp;gt; tag[9:30]‘">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-27T04:48:56.012Z">
+<meta property="og:updated_time" content="2018-02-02T15:26:02.156Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正则表达式(三)">
-<meta name="twitter:description" content="1.截取文档中的某个段 head -n2 filename |awk -F’:’ ‘{print $1}’-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’自定义内容要用””包起来">
+<meta name="twitter:title" content="通用的序列操作">
+<meta name="twitter:description" content="一.索引 针对字符串&amp;gt;&amp;gt;&amp;gt;”hello”[3]‘l’针对列表&amp;gt;&amp;gt;&amp;gt;lst=[1,2.,3,4]&amp;gt;&amp;gt;&amp;gt;lst[3]4  二.切片 &amp;gt;&amp;gt;&amp;gt;tag = &amp;#39;&amp;lt;a href=&amp;quot;http://www.python.org&amp;quot;&amp;gt;Python web site&amp;lt;/a&amp;gt;&amp;#39;&amp;gt;&amp;gt;&amp;gt; tag[9:30]‘">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -151,41 +151,42 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-正则表达式(三)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-通用的序列操作" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      正则表达式(三)
+      通用的序列操作
     </h1>
   
 
         
-        <a href="/2018/01/27/正则表达式(三)/" class="archive-article-date">
-  	<time datetime="2018-01-27T03:35:53.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
+        <a href="/2018/02/02/通用的序列操作/" class="archive-article-date">
+  	<time datetime="2018-02-02T15:21:39.259Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="1-截取文档中的某个段"><a href="#1-截取文档中的某个段" class="headerlink" title="1.截取文档中的某个段"></a>1.截取文档中的某个段</h4><blockquote>
-<p>head -n2 filename |awk -F’:’ ‘{print $1}’<br>-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段<br>head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’<br>自定义内容要用””包起来</p>
+        <h3 id="一-索引"><a href="#一-索引" class="headerlink" title="一.索引"></a>一.索引</h3><blockquote>
+<p>针对字符串<br>>&gt;&gt;”hello”[3]<br>‘l’<br>针对列表<br>>&gt;&gt;lst=[1,2.,3,4]<br>>&gt;&gt;lst[3]<br>4</p>
 </blockquote>
-<a id="more"></a>
-<h4 id="2-匹配字符或者字符串"><a href="#2-匹配字符或者字符串" class="headerlink" title="2.匹配字符或者字符串"></a>2.匹配字符或者字符串</h4><blockquote>
-<p>awk ‘/oo/‘ filename<br>匹配含有oo的行<br>awk -F’:’ ‘$1 ~/oo/‘ filename<br>匹配第1切段中的含有oo的行,~表示匹配<br>awk -F’:’ ‘/root/ {print $1,$3} /test/ {print $1,$3}’ filename<br>先匹配含有root的行,并打印该行的1和3切段,再匹配含有test的行,并打印该行的1和3切段</p>
+<h3 id="二-切片"><a href="#二-切片" class="headerlink" title="二.切片"></a>二.切片</h3><blockquote>
+<p>>&gt;&gt;<code>tag = &#39;&lt;a href=&quot;http://www.python.org&quot;&gt;Python web site&lt;/a&gt;&#39;</code><br>>&gt;&gt; tag[9:30]<br>‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘ </p>
 </blockquote>
-<h4 id="3-条件操作符"><a href="#3-条件操作符" class="headerlink" title="3.条件操作符"></a>3.条件操作符</h4><blockquote>
-<p>awk -F’:’ ‘$3==”0”‘ /etc/passwd<br>把数字用””括起来,则表示字符<br>awk -F’:’ ‘$3&gt;=500’ /etc/passwd<br>没括起来则表示为数字<br>awk -F’:’ ‘$3!=$4’ /etc/passwd<br>!=表示不匹配<br>$$表示并且<br>||表示或者</p>
+<p>有步长时</p>
+<blockquote>
+<p><code>&gt;&gt;&gt; numbers[0:10:1]</code> </p>
 </blockquote>
-<h4 id="4-awk的内置变量"><a href="#4-awk的内置变量" class="headerlink" title="4.awk的内置变量"></a>4.awk的内置变量</h4><blockquote>
-<p>OFS定义输出时的分隔符<br>awk -F’:’ ‘{OFS=”#”}{print $1,$2,$3}’ filename<br>NF表示分隔符分割后一共有多少段<br>awk -F’:’ ‘{print NF}’ filename<br>NR表示行号<br>awk ‘NR&gt;40’ filename</p>
+<h3 id="三-序列相加"><a href="#三-序列相加" class="headerlink" title="三.序列相加"></a>三.序列相加</h3><blockquote>
+<p>>&gt;&gt; [1, 2, 3] + [4, 5, 6]<br>[1, 2, 3, 4, 5, 6]<br>>&gt;&gt; ‘Hello,’ + ‘world!’<br>‘Hello, world!’ </p>
 </blockquote>
-<h4 id="5-awk中的数学运算"><a href="#5-awk中的数学运算" class="headerlink" title="5.awk中的数学运算"></a>5.awk中的数学运算</h4><blockquote>
-<p>更改段值<br>awk -F’:’ ‘$1=”root”‘ filename<br>对各段进行数学运算<br>awk -F’:’ ‘{$7=$3+$4}’ filename</p>
+<h3 id="四-乘法"><a href="#四-乘法" class="headerlink" title="四.乘法"></a>四.乘法</h3><blockquote>
+<p>>&gt;&gt; ‘python’ * 5<br>‘pythonpythonpythonpythonpython’<br>>&gt;&gt; [42] * 10<br>[42, 42, 42, 42, 42, 42, 42, 42, 42, 42]</p>
+<h3 id="五-成员资格检查"><a href="#五-成员资格检查" class="headerlink" title="五.成员资格检查"></a>五.成员资格检查</h3><p>>&gt;&gt; permissions = ‘rw’<br>>&gt;&gt; ‘w’ in permissions<br>True </p>
 </blockquote>
 
       
@@ -221,7 +222,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
@@ -277,7 +278,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/01/27/正则表达式(三)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/02/02/通用的序列操作/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -291,18 +292,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/27/shell脚本/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          shell脚本
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/01/26/正则表达式(二)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">正则表达式(二)</div>
+    <a href="/2018/01/27/shell脚本/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">shell脚本</div>
       <i class="icon-circle-right"></i>
     </a>
   
