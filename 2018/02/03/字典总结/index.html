@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yoursite.com">
-  <title>Archives: 2018 | 午夜听风吟</title>
+  <title>字典总结 | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="午夜听风吟">
-<meta property="og:url" content="https://yoursite.com/archives/2018/page/2/index.html">
+  <meta name="description" content="一.创建和使用字典直接创建:  phonebook = {‘Alice’: ‘2341’, ‘Beth’: ‘9102’, ‘Cecil’: ‘3258’}  函数dict创建:  &amp;gt;&amp;gt;&amp;gt; items = [(‘name’, ‘Gumby’), (‘age’, 42)]&amp;gt;&amp;gt;&amp;gt; d = dict(items)&amp;gt;&amp;gt;&amp;gt; d{‘age’: 42, ‘name’: ‘Gu">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字典总结">
+<meta property="og:url" content="https://yoursite.com/2018/02/03/字典总结/index.html">
 <meta property="og:site_name" content="午夜听风吟">
+<meta property="og:description" content="一.创建和使用字典直接创建:  phonebook = {‘Alice’: ‘2341’, ‘Beth’: ‘9102’, ‘Cecil’: ‘3258’}  函数dict创建:  &amp;gt;&amp;gt;&amp;gt; items = [(‘name’, ‘Gumby’), (‘age’, 42)]&amp;gt;&amp;gt;&amp;gt; d = dict(items)&amp;gt;&amp;gt;&amp;gt; d{‘age’: 42, ‘name’: ‘Gu">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-03T06:56:21.299Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="午夜听风吟">
+<meta name="twitter:title" content="字典总结">
+<meta name="twitter:description" content="一.创建和使用字典直接创建:  phonebook = {‘Alice’: ‘2341’, ‘Beth’: ‘9102’, ‘Cecil’: ‘3258’}  函数dict创建:  &amp;gt;&amp;gt;&amp;gt; items = [(‘name’, ‘Gumby’), (‘age’, 42)]&amp;gt;&amp;gt;&amp;gt; d = dict(items)&amp;gt;&amp;gt;&amp;gt; d{‘age’: 42, ‘name’: ‘Gu">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -146,318 +151,249 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-字典总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      字典总结
+    </h1>
+  
+
+        
+        <a href="/2018/02/03/字典总结/" class="archive-article-date">
+  	<time datetime="2018-02-03T06:56:14.275Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-03</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-创建和使用字典"><a href="#一-创建和使用字典" class="headerlink" title="一.创建和使用字典"></a>一.创建和使用字典</h3><p>直接创建:</p>
+<blockquote>
+<p>phonebook = {‘Alice’: ‘2341’, ‘Beth’: ‘9102’, ‘Cecil’: ‘3258’}</p>
+</blockquote>
+<p>函数dict创建:</p>
+<blockquote>
+<p>>&gt;&gt; items = [(‘name’, ‘Gumby’), (‘age’, 42)]<br>>&gt;&gt; d = dict(items)<br>>&gt;&gt; d<br>{‘age’: 42, ‘name’: ‘Gumby’} </p>
+</blockquote>
+<a id="more"></a>
+<p>或者</p>
+<blockquote>
+<p>>&gt;&gt; d = dict(name=’Gumby’, age=42)<br>>&gt;&gt; d<br>{‘age’: 42, ‘name’: ‘Gumby’} </p>
+</blockquote>
+<h3 id="二-基本的字典操作"><a href="#二-基本的字典操作" class="headerlink" title="二.基本的字典操作"></a>二.基本的字典操作</h3><ul>
+<li>len(d)返回字典d包含的项（键-值对）数。</li>
+<li>d[k]返回与键k相关联的值。</li>
+<li>d[k] = v将值v关联到键k。</li>
+<li>del d[k]删除键为k的项。</li>
+<li>k in d检查字典d是否包含键为k的项。<h3 id="三-将字符串格式设置功能用于字典"><a href="#三-将字符串格式设置功能用于字典" class="headerlink" title="三.将字符串格式设置功能用于字典"></a>三.将字符串格式设置功能用于字典</h3><blockquote>
+<p>>&gt;&gt; phonebook<br>{‘Beth’: ‘9102’, ‘Alice’: ‘2341’, ‘Cecil’: ‘3258’}<br>>&gt;&gt; “Cecil’s phone number is {Cecil}.”.format_map(phonebook)<br>“Cecil’s phone number is 3258.” </p>
+</blockquote>
+</li>
+</ul>
+<h3 id="四-字典方法"><a href="#四-字典方法" class="headerlink" title="四.字典方法"></a>四.字典方法</h3><h4 id="1-clear"><a href="#1-clear" class="headerlink" title="1. clear"></a>1. clear</h4><p>方法clear删除所有的字典项，这种操作是就地执行的（就像list.sort一样），因此什么都不返回（或者说返回None）。</p>
+<blockquote>
+<p>>&gt;&gt; d<br>{‘age’: 42, ‘name’: ‘Gumby’}<br>>&gt;&gt; returned_value = d.clear()<br>>&gt;&gt; d<br>{} </p>
+</blockquote>
+<h4 id="2-copy"><a href="#2-copy" class="headerlink" title="2. copy"></a>2. copy</h4><p>方法copy返回一个新字典，其包含的键-值对与原来的字典相同（浅复制）。</p>
+<blockquote>
+<p>>&gt;&gt; x = {‘username’: ‘admin’, ‘machines’: [‘foo’, ‘bar’, ‘baz’]}<br>>&gt;&gt; y = x.copy()<br>替换副本的值不影响原件,修改副本则影响原件.<br>深复制:<br>from copy import deepcopy<br>c=a.deepcopy</p>
+</blockquote>
+<h4 id="3-fromkeys"><a href="#3-fromkeys" class="headerlink" title="3. fromkeys"></a>3. fromkeys</h4><p>方法fromkeys创建一个新字典，其中包含指定的键，且每个键对应的值都是None。</p>
+<blockquote>
+<p>>&gt;&gt; {}.fromkeys([‘name’, ‘age’])<br>{‘age’: None, ‘name’: None} </p>
+</blockquote>
+<h4 id="4-get"><a href="#4-get" class="headerlink" title="4.get"></a>4.get</h4><p>使用get来访问不存在的键时，没有引发异常，而是返回None。</p>
+<blockquote>
+<p>>&gt;&gt; d.get(‘name’, ‘N/A’)<br>\’N/A’ </p>
+</blockquote>
+<h4 id="5-items"><a href="#5-items" class="headerlink" title="5. items"></a>5. items</h4><p>方法items返回一个包含所有字典项的列表，其中每个元素都为(key, value)的形式。</p>
+<blockquote>
+<p>>&gt;&gt; d = {‘title’: ‘Python Web Site’, ‘url’: ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘, ‘spam’: 0}<br>>&gt;&gt; d.items()<br>dict_items([(‘url’, ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘), (‘spam’, 0), (‘title’, ‘Python Web Site’)])</p>
+</blockquote>
+<h4 id="6-keys"><a href="#6-keys" class="headerlink" title="6. keys"></a>6. keys</h4><p>方法keys返回一个字典视图，其中包含指定字典中的键。</p>
+<h4 id="7-pop"><a href="#7-pop" class="headerlink" title="7.pop"></a>7.pop</h4><p>方法pop可用于获取与指定键相关联的值，并将该键-值对从字典中删除。</p>
+<blockquote>
+<p>>&gt;&gt; d = {‘x’: 1, ‘y’: 2}<br>>&gt;&gt; d.pop(‘x’)<br>1 </p>
+</blockquote>
+<h4 id="8-popitem"><a href="#8-popitem" class="headerlink" title="8.popitem"></a>8.popitem</h4><blockquote>
+<p>>&gt;&gt; d = {‘url’: ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘, ‘spam’: 0, ‘title’: ‘Python Web Site’}<br>>&gt; d.popitem()<br>(‘url’, ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘)<br>>&gt;&gt; d<br>{‘spam’: 0, ‘title’: ‘Python Web Site’} </p>
+</blockquote>
+<h4 id="9-setdefault"><a href="#9-setdefault" class="headerlink" title="9. setdefault"></a>9. setdefault</h4><p>方法setdefault有点像get，因为它也获取与指定键相关联的值，但除此之外，setdefault还在字典不包含指定的键时，在字典中添加指定的键-值对。</p>
+<blockquote>
+<p>>&gt;&gt; d = {}<br>>&gt;&gt; d.setdefault(‘name’, ‘N/A’)<br>‘N/A’<br>>&gt;&gt; d<br>{‘name’: ‘N/A’} </p>
+</blockquote>
+<h4 id="10-update"><a href="#10-update" class="headerlink" title="10. update"></a>10. update</h4><p>方法update使用一个字典中的项来更新另一个字典。</p>
+<blockquote>
+<p>>&gt;&gt; d.update(x) </p>
+</blockquote>
+<h4 id="11-values"><a href="#11-values" class="headerlink" title="11. values"></a>11. values</h4><p>方法values返回一个由字典中的值组成的字典视图。</p>
+<blockquote>
+<p>>&gt;&gt; d.values()<br>dict_values([1, 2, 3, 1]) </p>
+</blockquote>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/24/centos7软件安装/" class="archive-article-date">
-  	<time datetime="2018-01-24T07:56:25.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/24/centos7软件安装/">centos7软件安装</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/02/03/字典总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/文档压缩与打包/" class="archive-article-date">
-  	<time datetime="2018-01-23T12:43:46.857Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/03/字符串方法总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">字符串方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/文档压缩与打包/">文档压缩与打包</a>
-    </h1>
+        
+        
+    </div>
+</aside>
+
+
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
+    <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMzgyMS8xMDM3NA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/Linux磁盘管理/" class="archive-article-date">
-  	<time datetime="2018-01-23T09:33:31.531Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/Linux磁盘管理/">Linux磁盘管理</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/23/centos7用户身份切换/" class="archive-article-date">
-  	<time datetime="2018-01-23T08:57:12.437Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/centos7用户身份切换/">centos7用户身份切换</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/21/centos7使用秘钥认证登录/" class="archive-article-date">
-  	<time datetime="2018-01-21T14:52:22.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/21/centos7使用秘钥认证登录/">centos7使用秘钥认证登录</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/21/centos7设置IP地址/" class="archive-article-date">
-  	<time datetime="2018-01-21T07:59:49.155Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/21/centos7设置IP地址/">centos7 手动设置IP地址</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/20/关于Markdown/" class="archive-article-date">
-  	<time datetime="2018-01-20T12:02:36.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/20/关于Markdown/">关于 Markdown</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/20/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-20T05:11:14.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2018/">&laquo; Prev</a><a class="page-number" href="/archives/2018/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -481,8 +417,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
