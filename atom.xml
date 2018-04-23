@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yoursite.com/"/>
-  <updated>2018-04-23T12:53:07.687Z</updated>
+  <updated>2018-04-23T15:21:55.858Z</updated>
   <id>https://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>魔法方法</title>
+    <link href="https://yoursite.com/2018/04/23/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/"/>
+    <id>https://yoursite.com/2018/04/23/魔法方法/</id>
+    <published>2018-04-23T15:10:42.935Z</published>
+    <updated>2018-04-23T15:21:55.858Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-构造函数"><a href="#1-构造函数" class="headerlink" title="1.构造函数"></a>1.构造函数</h3><p>构造函数即是类的初始化方法，在创建类的实例后将自动创建。</p><blockquote><p>class SomeClass:<br>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self,..):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some code</p></blockquote><a id="more"></a><h4 id="1-1-重写普通方法和特殊的构造函数"><a href="#1-1-重写普通方法和特殊的构造函数" class="headerlink" title="1.1 重写普通方法和特殊的构造函数"></a>1.1 重写普通方法和特殊的构造函数</h4><p>对类B的实例调用方法（或访问其属性）时，如果找不到该方法（或属性），将在其超类A中查找。<br>要在子类中添加功能，一种基本方式是添加方法。然而，你可能想重写超类的某些方法，以定制继承而来的行为。<br>重写是继承机制的一个重要方面，对构造函数来说尤其重要。构造函数用于初始化新建对象的状态，而对大多数子类来说，除超类的初始化代码外，还需要有自己的初始化代码。虽然所有方法的重写机制都相同，但与重写普通方法相比，重写构造函数时更有可能遇到一个特别的问题：重写构造函数时，必须调用超类（继承的类）的构造函数，否则可能无法正确地初始化对象。<br>有两种方法：调用未关联的超类构造函数，以及使用函数super。</p><h4 id="1-2-调用未关联的超类构造函数"><a href="#1-2-调用未关联的超类构造函数" class="headerlink" title="1.2 调用未关联的超类构造函数"></a>1.2 调用未关联的超类构造函数</h4><blockquote><p>class B(A):<br>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A.__init__(self)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some new code</p></blockquote><h4 id="1-3-使用super函数"><a href="#1-3-使用super函数" class="headerlink" title="1.3 使用super函数"></a>1.3 使用super函数</h4><p>这个函数只适用于新式类，而你无论如何都应使用新式类。调用这个函数时，将当前类和当前实例作为参数。对其返回的对象调用方法时，调用的将是超类（而不是当前类）的方法。在Python 3中调用函数super时，可不提供任何参数（通常也应该这样做），而它将像变魔术一样完成任务。</p><blockquote><p>class B(A):<br>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super().__init__()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some new code</p></blockquote><h3 id="2-元素访问"><a href="#2-元素访问" class="headerlink" title="2.元素访问"></a>2.元素访问</h3><p>用来创建类似于序列或者映射的对象。</p><h4 id="2-1-基本的序列和映射协议"><a href="#2-1-基本的序列和映射协议" class="headerlink" title="2.1 基本的序列和映射协议"></a>2.1 基本的序列和映射协议</h4><ul><li>__len__(self)：这个方法应返回集合包含的项数，对序列来说为元素个数，对映射来说<br>为键值对数。</li><li>__getitem__(self, key)：这个方法应返回与指定键相关联的值。对序列来说，键应该是0~n-1的整数（也可以是负数，这将在后面说明），其中n为序列的长度。对映射来说，键可以是任何类型。</li><li>__setitem__(self, key, value)：这个方法应以与键相关联的方式存储值，以便以后能够<br>使用__getitem__来获取。当然，仅当对象可变时才需要实现这个方法。</li><li>__delitem__(self, key)：这个方法在对对象的组成部分使用__del__语句时被调用，应<br>删除与key相关联的值。同样，仅当对象可变（且允许其项被删除）时，才需要实现这个方法。</li></ul><h4 id="2-2-从list、dict和str派生"><a href="#2-2-从list、dict和str派生" class="headerlink" title="2.2 从list、dict和str派生"></a>2.2 从list、dict和str派生</h4><p>在标准库中，模块collections提供了抽象和具体的基类，但你也可以继承内置类型。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-构造函数&quot;&gt;&lt;a href=&quot;#1-构造函数&quot; class=&quot;headerlink&quot; title=&quot;1.构造函数&quot;&gt;&lt;/a&gt;1.构造函数&lt;/h3&gt;&lt;p&gt;构造函数即是类的初始化方法，在创建类的实例后将自动创建。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;class SomeClass:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;def __init__(self,..):&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;some code&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>python异常</title>
@@ -494,24 +517,6 @@
     
     
       <category term="随笔" scheme="https://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://yoursite.com/2018/01/20/hello-world/"/>
-    <id>https://yoursite.com/2018/01/20/hello-world/</id>
-    <published>2018-01-20T05:11:14.655Z</published>
-    <updated>2018-01-21T08:03:30.417Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
     
   </entry>
   
