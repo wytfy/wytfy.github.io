@@ -148,6 +148,117 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-python异常" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/23/python异常/">python异常</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/23/python异常/" class="archive-article-date">
+  	<time datetime="2018-04-23T09:10:27.998Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-raise语句"><a href="#1-raise语句" class="headerlink" title="1.raise语句"></a>1.raise语句</h3><p>raise语句来引发异常，将一个类或实例作为参数。</p>
+<blockquote>
+<p>raise Exception<br>raise Exception(‘this is error’)</p>
+</blockquote>
+<h3 id="2-自定义的异常类"><a href="#2-自定义的异常类" class="headerlink" title="2.自定义的异常类"></a>2.自定义的异常类</h3><p>与创建其他类一样，但是要直接或者间接继承Exception类。</p>
+<blockquote>
+<p>class Myclass(Exception): pass</p>
+</blockquote>
+<h3 id="3-捕获异常"><a href="#3-捕获异常" class="headerlink" title="3.捕获异常"></a>3.捕获异常</h3><p>用try/except语句来捕获异常。<br>捕获所有异常。</p>
+<blockquote>
+<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except：<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
+</blockquote>
+<p>或者是捕获特定异常。</p>
+<blockquote>
+<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except ZeroDivisionError：<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
+</blockquote>
+<p>异常捕获后想重新引发，可直接用raise，且不用任何参数。<br>可以用raise…from…来提供异常上下文。</p>
+<p>捕获多个异常，可以用多个except子句。</p>
+<blockquote>
+<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except xxxerror:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except yyyerror:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
+</blockquote>
+<p>一个子句捕获多种异常。</p>
+<blockquote>
+<p>except (error1,error2,..): pass</p>
+</blockquote>
+<p>捕获异常对象本身(e)。</p>
+<blockquote>
+<p>except (error1,error2,..) as e : pass</p>
+</blockquote>
+<h3 id="4-无异常时执行代码"><a href="#4-无异常时执行代码" class="headerlink" title="4.无异常时执行代码"></a>4.无异常时执行代码</h3><p>在无异常时执行else代码。</p>
+<blockquote>
+<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
+</blockquote>
+<p>try代码块若能顺利执行则顺带执行else代码块。</p>
+<h3 id="5-无论有无异常都执行代码"><a href="#5-无论有无异常都执行代码" class="headerlink" title="5.无论有无异常都执行代码"></a>5.无论有无异常都执行代码</h3><p>无论try代码块有无异常，都会执行finally代码块。</p>
+<blockquote>
+<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>finally:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/23/python异常/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-复试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -808,83 +919,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/01/26/正则表达式(二)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-正则表达式(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/26/正则表达式(一)/">正则表达式(一)</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/26/正则表达式(一)/" class="archive-article-date">
-  	<time datetime="2018-01-26T14:09:57.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>grep命令的基本格式<code>grep [-cinvABC] &#39;word&#39; filename</code></p>
-<blockquote>
-<p>-c:表示打印符合要求的行数<br>-i:表示忽略大小写<br>-n:表示输出符合要求的行及其行数<br>-v:表示打印不符合要求的行及其行号<br>-A:后跟数字,例如A2打印符合的行及其后两行<br>-B:后跟数字,例如B2打印符合的行及其前两行<br>-C:后跟数字,例如C2打印符合的行及其前后各两行</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/26/正则表达式(一)/">展开全文 >></a>
         </p>
       
 
