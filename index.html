@@ -176,37 +176,7 @@
 <blockquote>
 <p>class Myclass(Exception): pass</p>
 </blockquote>
-<h3 id="3-捕获异常"><a href="#3-捕获异常" class="headerlink" title="3.捕获异常"></a>3.捕获异常</h3><p>用try/except语句来捕获异常。<br>捕获所有异常。</p>
-<blockquote>
-<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except：<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
-</blockquote>
-<p>或者是捕获特定异常。</p>
-<blockquote>
-<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except ZeroDivisionError：<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
-</blockquote>
-<p>异常捕获后想重新引发，可直接用raise，且不用任何参数。<br>可以用raise…from…来提供异常上下文。</p>
-<p>捕获多个异常，可以用多个except子句。</p>
-<blockquote>
-<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except xxxerror:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except yyyerror:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
-</blockquote>
-<p>一个子句捕获多种异常。</p>
-<blockquote>
-<p>except (error1,error2,..): pass</p>
-</blockquote>
-<p>捕获异常对象本身(e)。</p>
-<blockquote>
-<p>except (error1,error2,..) as e : pass</p>
-</blockquote>
-<h3 id="4-无异常时执行代码"><a href="#4-无异常时执行代码" class="headerlink" title="4.无异常时执行代码"></a>4.无异常时执行代码</h3><p>在无异常时执行else代码。</p>
-<blockquote>
-<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
-</blockquote>
-<p>try代码块若能顺利执行则顺带执行else代码块。</p>
-<h3 id="5-无论有无异常都执行代码"><a href="#5-无论有无异常都执行代码" class="headerlink" title="5.无论有无异常都执行代码"></a>5.无论有无异常都执行代码</h3><p>无论try代码块有无异常，都会执行finally代码块。</p>
-<blockquote>
-<p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>finally:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p>
-</blockquote>
-
+        
       
 
       
