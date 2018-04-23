@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>午夜听风吟</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://yoursite.com/"/>
+  <updated>2018-04-23T12:53:07.687Z</updated>
+  <id>https://yoursite.com/</id>
+  
+  <author>
+    <name>Tonocha</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python异常</title>
+    <link href="https://yoursite.com/2018/04/23/python%E5%BC%82%E5%B8%B8/"/>
+    <id>https://yoursite.com/2018/04/23/python异常/</id>
+    <published>2018-04-23T09:10:27.998Z</published>
+    <updated>2018-04-23T12:53:07.687Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-raise语句"><a href="#1-raise语句" class="headerlink" title="1.raise语句"></a>1.raise语句</h3><p>raise语句来引发异常，将一个类或实例作为参数。</p><blockquote><p>raise Exception<br>raise Exception(‘this is error’)</p></blockquote><h3 id="2-自定义的异常类"><a href="#2-自定义的异常类" class="headerlink" title="2.自定义的异常类"></a>2.自定义的异常类</h3><p>与创建其他类一样，但是要直接或者间接继承Exception类。</p><blockquote><p>class Myclass(Exception): pass</p></blockquote><a id="more"></a><h3 id="3-捕获异常"><a href="#3-捕获异常" class="headerlink" title="3.捕获异常"></a>3.捕获异常</h3><p>用try/except语句来捕获异常。<br>捕获所有异常。</p><blockquote><p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except：<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p></blockquote><p>或者是捕获特定异常。</p><blockquote><p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except ZeroDivisionError：<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p></blockquote><p>异常捕获后想重新引发，可直接用raise，且不用任何参数。<br>可以用raise…from…来提供异常上下文。</p><p>捕获多个异常，可以用多个except子句。</p><blockquote><p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except xxxerror:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except yyyerror:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p></blockquote><p>一个子句捕获多种异常。</p><blockquote><p>except (error1,error2,..): pass</p></blockquote><p>捕获异常对象本身(e)。</p><blockquote><p>except (error1,error2,..) as e : pass</p></blockquote><h3 id="4-无异常时执行代码"><a href="#4-无异常时执行代码" class="headerlink" title="4.无异常时执行代码"></a>4.无异常时执行代码</h3><p>在无异常时执行else代码。</p><blockquote><p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>except:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p></blockquote><p>try代码块若能顺利执行则顺带执行else代码块。</p><h3 id="5-无论有无异常都执行代码"><a href="#5-无论有无异常都执行代码" class="headerlink" title="5.无论有无异常都执行代码"></a>5.无论有无异常都执行代码</h3><p>无论try代码块有无异常，都会执行finally代码块。</p><blockquote><p>try:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code<br>finally:<br>&nbsp;&nbsp;&nbsp;&nbsp;some code</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-raise语句&quot;&gt;&lt;a href=&quot;#1-raise语句&quot; class=&quot;headerlink&quot; title=&quot;1.raise语句&quot;&gt;&lt;/a&gt;1.raise语句&lt;/h3&gt;&lt;p&gt;raise语句来引发异常，将一个类或实例作为参数。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;raise Exception&lt;br&gt;raise Exception(‘this is error’)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;2-自定义的异常类&quot;&gt;&lt;a href=&quot;#2-自定义的异常类&quot; class=&quot;headerlink&quot; title=&quot;2.自定义的异常类&quot;&gt;&lt;/a&gt;2.自定义的异常类&lt;/h3&gt;&lt;p&gt;与创建其他类一样，但是要直接或者间接继承Exception类。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;class Myclass(Exception): pass&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://yoursite.com/2018/02/04/%E5%A4%8D%E8%AF%95/"/>
+    <id>https://yoursite.com/2018/02/04/复试/</id>
+    <published>2018-02-04T04:16:55.036Z</published>
+    <updated>2018-02-04T04:16:55.086Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="复试复习计划"><a href="#复试复习计划" class="headerlink" title="复试复习计划"></a>复试复习计划</h3><h4 id="1-复习的科目"><a href="#1-复习的科目" class="headerlink" title="1.复习的科目"></a>1.复习的科目</h4><ul><li>口语(听力/听力词汇/专业英语)</li><li>高分子物理</li><li>高分子化学</li><li>高分子合成与加工</li><li>复合材料</li></ul><h4 id="2-日程安排"><a href="#2-日程安排" class="headerlink" title="2.日程安排"></a>2.日程安排</h4><ol><li>先联系导师</li><li>每日关注调剂</li><li>复习复习</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;复试复习计划&quot;&gt;&lt;a href=&quot;#复试复习计划&quot; class=&quot;headerlink&quot; title=&quot;复试复习计划&quot;&gt;&lt;/a&gt;复试复习计划&lt;/h3&gt;&lt;h4 id=&quot;1-复习的科目&quot;&gt;&lt;a href=&quot;#1-复习的科目&quot; class=&quot;headerlink&quot; ti
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>字典总结</title>
+    <link href="https://yoursite.com/2018/02/03/%E5%AD%97%E5%85%B8%E6%80%BB%E7%BB%93/"/>
+    <id>https://yoursite.com/2018/02/03/字典总结/</id>
+    <published>2018-02-03T06:56:14.275Z</published>
+    <updated>2018-02-03T06:56:21.299Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一-创建和使用字典"><a href="#一-创建和使用字典" class="headerlink" title="一.创建和使用字典"></a>一.创建和使用字典</h3><p>直接创建:</p><blockquote><p>phonebook = {‘Alice’: ‘2341’, ‘Beth’: ‘9102’, ‘Cecil’: ‘3258’}</p></blockquote><p>函数dict创建:</p><blockquote><p>>&gt;&gt; items = [(‘name’, ‘Gumby’), (‘age’, 42)]<br>>&gt;&gt; d = dict(items)<br>>&gt;&gt; d<br>{‘age’: 42, ‘name’: ‘Gumby’} </p></blockquote><a id="more"></a><p>或者</p><blockquote><p>>&gt;&gt; d = dict(name=’Gumby’, age=42)<br>>&gt;&gt; d<br>{‘age’: 42, ‘name’: ‘Gumby’} </p></blockquote><h3 id="二-基本的字典操作"><a href="#二-基本的字典操作" class="headerlink" title="二.基本的字典操作"></a>二.基本的字典操作</h3><ul><li>len(d)返回字典d包含的项（键-值对）数。</li><li>d[k]返回与键k相关联的值。</li><li>d[k] = v将值v关联到键k。</li><li>del d[k]删除键为k的项。</li><li>k in d检查字典d是否包含键为k的项。<h3 id="三-将字符串格式设置功能用于字典"><a href="#三-将字符串格式设置功能用于字典" class="headerlink" title="三.将字符串格式设置功能用于字典"></a>三.将字符串格式设置功能用于字典</h3><blockquote><p>>&gt;&gt; phonebook<br>{‘Beth’: ‘9102’, ‘Alice’: ‘2341’, ‘Cecil’: ‘3258’}<br>>&gt;&gt; “Cecil’s phone number is {Cecil}.”.format_map(phonebook)<br>“Cecil’s phone number is 3258.” </p></blockquote></li></ul><h3 id="四-字典方法"><a href="#四-字典方法" class="headerlink" title="四.字典方法"></a>四.字典方法</h3><h4 id="1-clear"><a href="#1-clear" class="headerlink" title="1. clear"></a>1. clear</h4><p>方法clear删除所有的字典项，这种操作是就地执行的（就像list.sort一样），因此什么都不返回（或者说返回None）。</p><blockquote><p>>&gt;&gt; d<br>{‘age’: 42, ‘name’: ‘Gumby’}<br>>&gt;&gt; returned_value = d.clear()<br>>&gt;&gt; d<br>{} </p></blockquote><h4 id="2-copy"><a href="#2-copy" class="headerlink" title="2. copy"></a>2. copy</h4><p>方法copy返回一个新字典，其包含的键-值对与原来的字典相同（浅复制）。</p><blockquote><p>>&gt;&gt; x = {‘username’: ‘admin’, ‘machines’: [‘foo’, ‘bar’, ‘baz’]}<br>>&gt;&gt; y = x.copy()<br>替换副本的值不影响原件,修改副本则影响原件.<br>深复制:<br>from copy import deepcopy<br>c=a.deepcopy</p></blockquote><h4 id="3-fromkeys"><a href="#3-fromkeys" class="headerlink" title="3. fromkeys"></a>3. fromkeys</h4><p>方法fromkeys创建一个新字典，其中包含指定的键，且每个键对应的值都是None。</p><blockquote><p>>&gt;&gt; {}.fromkeys([‘name’, ‘age’])<br>{‘age’: None, ‘name’: None} </p></blockquote><h4 id="4-get"><a href="#4-get" class="headerlink" title="4.get"></a>4.get</h4><p>使用get来访问不存在的键时，没有引发异常，而是返回None。</p><blockquote><p>>&gt;&gt; d.get(‘name’, ‘N/A’)<br>\’N/A’ </p></blockquote><h4 id="5-items"><a href="#5-items" class="headerlink" title="5. items"></a>5. items</h4><p>方法items返回一个包含所有字典项的列表，其中每个元素都为(key, value)的形式。</p><blockquote><p>>&gt;&gt; d = {‘title’: ‘Python Web Site’, ‘url’: ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘, ‘spam’: 0}<br>>&gt;&gt; d.items()<br>dict_items([(‘url’, ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘), (‘spam’, 0), (‘title’, ‘Python Web Site’)])</p></blockquote><h4 id="6-keys"><a href="#6-keys" class="headerlink" title="6. keys"></a>6. keys</h4><p>方法keys返回一个字典视图，其中包含指定字典中的键。</p><h4 id="7-pop"><a href="#7-pop" class="headerlink" title="7.pop"></a>7.pop</h4><p>方法pop可用于获取与指定键相关联的值，并将该键-值对从字典中删除。</p><blockquote><p>>&gt;&gt; d = {‘x’: 1, ‘y’: 2}<br>>&gt;&gt; d.pop(‘x’)<br>1 </p></blockquote><h4 id="8-popitem"><a href="#8-popitem" class="headerlink" title="8.popitem"></a>8.popitem</h4><blockquote><p>>&gt;&gt; d = {‘url’: ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘, ‘spam’: 0, ‘title’: ‘Python Web Site’}<br>>&gt; d.popitem()<br>(‘url’, ‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘)<br>>&gt;&gt; d<br>{‘spam’: 0, ‘title’: ‘Python Web Site’} </p></blockquote><h4 id="9-setdefault"><a href="#9-setdefault" class="headerlink" title="9. setdefault"></a>9. setdefault</h4><p>方法setdefault有点像get，因为它也获取与指定键相关联的值，但除此之外，setdefault还在字典不包含指定的键时，在字典中添加指定的键-值对。</p><blockquote><p>>&gt;&gt; d = {}<br>>&gt;&gt; d.setdefault(‘name’, ‘N/A’)<br>‘N/A’<br>>&gt;&gt; d<br>{‘name’: ‘N/A’} </p></blockquote><h4 id="10-update"><a href="#10-update" class="headerlink" title="10. update"></a>10. update</h4><p>方法update使用一个字典中的项来更新另一个字典。</p><blockquote><p>>&gt;&gt; d.update(x) </p></blockquote><h4 id="11-values"><a href="#11-values" class="headerlink" title="11. values"></a>11. values</h4><p>方法values返回一个由字典中的值组成的字典视图。</p><blockquote><p>>&gt;&gt; d.values()<br>dict_values([1, 2, 3, 1]) </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一-创建和使用字典&quot;&gt;&lt;a href=&quot;#一-创建和使用字典&quot; class=&quot;headerlink&quot; title=&quot;一.创建和使用字典&quot;&gt;&lt;/a&gt;一.创建和使用字典&lt;/h3&gt;&lt;p&gt;直接创建:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;phonebook = {‘Alice’: ‘2341’, ‘Beth’: ‘9102’, ‘Cecil’: ‘3258’}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;函数dict创建:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&gt;&amp;gt;&amp;gt; items = [(‘name’, ‘Gumby’), (‘age’, 42)]&lt;br&gt;&gt;&amp;gt;&amp;gt; d = dict(items)&lt;br&gt;&gt;&amp;gt;&amp;gt; d&lt;br&gt;{‘age’: 42, ‘name’: ‘Gumby’} &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字符串方法</title>
+    <link href="https://yoursite.com/2018/02/03/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>https://yoursite.com/2018/02/03/字符串方法总结/</id>
+    <published>2018-02-03T05:55:47.077Z</published>
+    <updated>2018-02-03T05:57:59.184Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-center"><a href="#1-center" class="headerlink" title="1.center"></a>1.center</h4><p>方法center通过在两边添加填充字符（默认为空格）让字符串居中。</p><blockquote><p>>&gt;&gt; “The Middle by Jimmy Eat World”.center(39)<br>‘ The Middle by Jimmy Eat World ‘<br>>&gt;&gt; “The Middle by Jimmy Eat World”.center(39, “*“)<br>‘*****The Middle by Jimmy Eat World*****‘</p></blockquote><a id="more"></a><h4 id="2-find"><a href="#2-find" class="headerlink" title="2.find"></a>2.find</h4><p>方法find在字符串中查找子串。如果找到，就返回子串的第一个字符的索引，否则返回-1。</p><blockquote><p>>&gt;&gt;&gt; subject.find(‘!!!’, 0, 16) # 同时指定了起点和终点<br>-1</p></blockquote><h4 id="3-join"><a href="#3-join" class="headerlink" title="3.join"></a>3.join</h4><p>join是一个非常重要的字符串方法，其作用与split相反，用于合并序列的元素。</p><blockquote><p>>&gt;&gt; seq = [‘1’, ‘2’, ‘3’, ‘4’, ‘5’]<br>>&gt;&gt; sep = ‘+’<br>>&gt;&gt; sep.join(seq) # 合并一个字符串列表<br>‘1+2+3+4+5’ </p></blockquote><h4 id="4-lower"><a href="#4-lower" class="headerlink" title="4.lower"></a>4.lower</h4><blockquote><p>>&gt;&gt; ‘Trondheim Hammer Dance’.lower()<br>‘trondheim hammer dance’</p></blockquote><h4 id="5-replace"><a href="#5-replace" class="headerlink" title="5.replace"></a>5.replace</h4><p>方法replace将指定子串都替换为另一个字符串，并返回替换后的结果。</p><blockquote><p>>&gt;&gt; ‘This is a test’.replace(‘is’, ‘eez’)<br>‘Theez eez a test’</p></blockquote><h4 id="6-split"><a href="#6-split" class="headerlink" title="6.split"></a>6.split</h4><p>split是一个非常重要的字符串方法，其作用与join相反，用于将字符串拆分为序列。</p><blockquote><p>>&gt;&gt; ‘1+2+3+4+5’.split(‘+’)<br>[‘1’, ‘2’, ‘3’, ‘4’, ‘5’] </p></blockquote><h4 id="7-strip"><a href="#7-strip" class="headerlink" title="7.strip"></a>7.strip</h4><p>方法strip将字符串开头和末尾的空白（但不包括中间的空白）删除，并返回删除后的结果。</p><blockquote><p>>&gt;&gt; ‘ internal whitespace is kept ‘.strip()<br>‘internal whitespace is kept’ </p></blockquote><p>()内可指定要删除的两边的字符串,例如(*)</p><h4 id="8-translate"><a href="#8-translate" class="headerlink" title="8.translate"></a>8.translate</h4><p>进行单字符替换,替换前要建立替换表.</p><blockquote><p>>&gt;&gt; table = str.maketrans(‘cs’, ‘kz’)<br>>&gt;&gt; ‘this is an incredible test’.translate(table)<br>‘thiz iz an inkredible tezt’ </p></blockquote><h4 id="9-判断字符串是否满足特定的条件"><a href="#9-判断字符串是否满足特定的条件" class="headerlink" title="9.判断字符串是否满足特定的条件"></a>9.判断字符串是否满足特定的条件</h4><p>isalnum、isalpha、isdecimal、isdigit、isidentifier、islower、isnumeric、<br>isprintable、isspace、istitle、isupper。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-center&quot;&gt;&lt;a href=&quot;#1-center&quot; class=&quot;headerlink&quot; title=&quot;1.center&quot;&gt;&lt;/a&gt;1.center&lt;/h4&gt;&lt;p&gt;方法center通过在两边添加填充字符（默认为空格）让字符串居中。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&gt;&amp;gt;&amp;gt; “The Middle by Jimmy Eat World”.center(39)&lt;br&gt;‘ The Middle by Jimmy Eat World ‘&lt;br&gt;&gt;&amp;gt;&amp;gt; “The Middle by Jimmy Eat World”.center(39, “*“)&lt;br&gt;‘*****The Middle by Jimmy Eat World*****‘&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设置字符串格式</title>
+    <link href="https://yoursite.com/2018/02/03/%E8%AE%BE%E7%BD%AE%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F/"/>
+    <id>https://yoursite.com/2018/02/03/设置字符串格式/</id>
+    <published>2018-02-03T05:17:09.765Z</published>
+    <updated>2018-02-03T05:38:56.735Z</updated>
+    
+    <content type="html"><![CDATA[<p>替换字段的组成:字段名+转换标志+格式说明符</p><h3 id="一-替换字段名"><a href="#一-替换字段名" class="headerlink" title="一.替换字段名"></a>一.替换字段名</h3><p>第一种:</p><blockquote><p>>&gt;&gt; “{foo} {} {bar} {}”.format(1, 2, bar=4, foo=3)<br>‘3 1 4 2’ </p></blockquote><p>第二种:</p><blockquote><p>>&gt;&gt; “{foo} {1} {bar} {0}”.format(1, 2, bar=4, foo=3)<br>‘3 2 4 1’<br><a id="more"></a></p><h3 id="二-基本转换"><a href="#二-基本转换" class="headerlink" title="二.基本转换"></a>二.基本转换</h3><p>>&gt;&gt; print(“{pi!s} {pi!r} {pi!a}”.format(pi=”π”))<br>π ‘π’ ‘\u03c0’ </p></blockquote><p>上述三个标志（s、r和a）指定分别使用str、repr和ascii进行转换。</p><blockquote><p>>&gt;&gt; “The number is {num:f}”.format(num=42)<br>‘The number is 42.000000’ </p><h3 id="三-宽度-精度和千分位分隔符"><a href="#三-宽度-精度和千分位分隔符" class="headerlink" title="三.宽度.精度和千分位分隔符"></a>三.宽度.精度和千分位分隔符</h3><p>设置宽度:<br>>&gt;&gt; “{num:10}”.format(num=3)<br>‘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3’ </p></blockquote><p>设置精度:</p><blockquote><p>>&gt;&gt; “Pi day is {pi:.2f}”.format(pi=pi)<br>‘Pi day is 3.14’ </p></blockquote><p>设置千分位分隔符:</p><blockquote><p>>&gt;&gt; ‘One googol is {:,}’.format(10**100)<br>‘One googol is 10,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,00<br>0,000,000,000,000,000,000,000,000,000,000,000,000,000,000’</p></blockquote><p>同时指定其他格式设置元素时，这个逗号应放在宽度和表示精度的句点之间。</p><h3 id="四-符号-对齐和用0填充"><a href="#四-符号-对齐和用0填充" class="headerlink" title="四.符号.对齐和用0填充"></a>四.符号.对齐和用0填充</h3><p>要指定左对齐、右对齐和居中，可分别使用&lt;、&gt;和^。</p><blockquote><p>>&gt;&gt; print(‘{0:<10.2f}\n{0:^10.2f}\n{0:>10.2f}’.format(pi))<br>3.14<br>&nbsp;&nbsp;&nbsp;&nbsp;3.14<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.14 </10.2f}\n{0:^10.2f}\n{0:></p></blockquote><p>给正数加符号:</p><blockquote><p>>&gt;&gt; print(‘{0:+.2}\n{1:+.2}’.format(pi, -pi))<br>+3.1<br>-3.1 </p></blockquote><p>填充:</p><blockquote><p>>&gt;&gt; “{:$^15}”.format(“ WIN BIG “)<br>‘$$$ WIN BIG $$$’ </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;替换字段的组成:字段名+转换标志+格式说明符&lt;/p&gt;
+&lt;h3 id=&quot;一-替换字段名&quot;&gt;&lt;a href=&quot;#一-替换字段名&quot; class=&quot;headerlink&quot; title=&quot;一.替换字段名&quot;&gt;&lt;/a&gt;一.替换字段名&lt;/h3&gt;&lt;p&gt;第一种:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&gt;&amp;gt;&amp;gt; “{foo} {} {bar} {}”.format(1, 2, bar=4, foo=3)&lt;br&gt;‘3 1 4 2’ &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第二种:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&gt;&amp;gt;&amp;gt; “{foo} {1} {bar} {0}”.format(1, 2, bar=4, foo=3)&lt;br&gt;‘3 2 4 1’&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>列表:python的主力</title>
+    <link href="https://yoursite.com/2018/02/02/%E5%88%97%E8%A1%A8-python%E7%9A%84%E4%B8%BB%E5%8A%9B/"/>
+    <id>https://yoursite.com/2018/02/02/列表-python的主力/</id>
+    <published>2018-02-02T15:49:41.849Z</published>
+    <updated>2018-02-02T16:00:01.869Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一-list函数"><a href="#一-list函数" class="headerlink" title="一.list函数"></a>一.list函数</h3><p>将字符串转为列表</p><blockquote><p>>&gt;&gt; list(‘Hello’)<br>[‘H’, ‘e’, ‘l’, ‘l’, ‘o’]</p></blockquote><p>将列表转为字符串</p><blockquote><p>‘’.join(somelist)</p></blockquote><a id="more"></a><h3 id="二-基本的列表操作"><a href="#二-基本的列表操作" class="headerlink" title="二.基本的列表操作"></a>二.基本的列表操作</h3><h4 id="1-修改列表：给元素赋值"><a href="#1-修改列表：给元素赋值" class="headerlink" title="1. 修改列表：给元素赋值"></a>1. 修改列表：给元素赋值</h4><blockquote><p>>&gt;&gt; x = [1, 1, 1]<br>>&gt;&gt; x[1] = 2<br>>&gt;&gt; x<br>[1, 2, 1] </p></blockquote><h4 id="2-删除元素"><a href="#2-删除元素" class="headerlink" title="2.删除元素"></a>2.删除元素</h4><blockquote><p>>&gt;&gt; names = [‘Alice’, ‘Beth’, ‘Cecil’, ‘Dee-Dee’, ‘Earl’]<br>>&gt;&gt; del names[2]<br>>&gt;&gt; names<br>[‘Alice’, ‘Beth’, ‘Dee-Dee’, ‘Earl’] </p></blockquote><h4 id="3-给切片赋值"><a href="#3-给切片赋值" class="headerlink" title="3.给切片赋值"></a>3.给切片赋值</h4><blockquote><p>>&gt;&gt; name = list(‘Perl’)<br>>&gt;&gt; name<br>[‘P’, ‘e’, ‘r’, ‘l’]<br>>&gt;&gt; name[2:] = list(‘ar’)<br>>&gt;&gt; name<br>[‘P’, ‘e’, ‘a’, ‘r’]</p></blockquote><h3 id="三-列表方法"><a href="#三-列表方法" class="headerlink" title="三.列表方法"></a>三.列表方法</h3><h4 id="1-append"><a href="#1-append" class="headerlink" title="1. append"></a>1. append</h4><p>方法append用于将一个对象附加到列表末尾。</p><blockquote><p>>&gt;&gt; lst = [1, 2, 3]<br>>&gt;&gt; lst.append(4)<br>>&gt;&gt; lst<br>[1, 2, 3, 4]</p></blockquote><h4 id="2-clear"><a href="#2-clear" class="headerlink" title="2. clear"></a>2. clear</h4><p>方法clear就地清空列表的内容。</p><blockquote><p>>&gt;&gt; lst = [1, 2, 3]<br>>&gt;&gt; lst.clear()<br>>&gt;&gt; lst<br>[]</p></blockquote><h4 id="3-copy"><a href="#3-copy" class="headerlink" title="3. copy"></a>3. copy</h4><p>方法 copy 复制列表。</p><blockquote><p>>&gt;&gt; a = [1, 2, 3]<br>>&gt;&gt; b = a.copy()<br>>&gt;&gt; b[1] = 4<br>>&gt;&gt; a<br>[1, 2, 3] </p></blockquote><h4 id="4-count"><a href="#4-count" class="headerlink" title="4. count"></a>4. count</h4><p>方法count计算指定的元素在列表中出现了多少次。</p><blockquote><p>>&gt;&gt; [‘to’, ‘be’, ‘or’, ‘not’, ‘to’, ‘be’].count(‘to’)<br>2 </p></blockquote><h4 id="5-extend"><a href="#5-extend" class="headerlink" title="5. extend"></a>5. extend</h4><p>方法extend让你能够同时将多个值附加到列表末尾，为此可将这些值组成的序列作为参数提<br>供给方法extend。换而言之，你可使用一个列表来扩展另一个列表。</p><blockquote><p>>&gt;&gt; a = [1, 2, 3]<br>>&gt;&gt; b = [4, 5, 6]<br>>&gt;&gt; a.extend(b)<br>>&gt;&gt; a<br>[1, 2, 3, 4, 5, 6]</p></blockquote><h4 id="6-index"><a href="#6-index" class="headerlink" title="6. index"></a>6. index</h4><p>方法index在列表中查找指定值第一次出现的索引。</p><blockquote><p>>&gt;&gt; knights = [‘We’, ‘are’, ‘the’, ‘knights’, ‘who’, ‘say’, ‘ni’]<br>>&gt;&gt; knights.index(‘who’)<br>4 </p></blockquote><h4 id="7-insert"><a href="#7-insert" class="headerlink" title="7. insert"></a>7. insert</h4><p>方法insert用于将一个对象插入列表。</p><blockquote><p>>&gt;&gt; numbers = [1, 2, 3, 5, 6, 7]<br>>&gt;&gt; numbers.insert(3, ‘four’)<br>>&gt;&gt; numbers<br>[1, 2, 3, ‘four’, 5, 6, 7]</p></blockquote><h4 id="8-pop"><a href="#8-pop" class="headerlink" title="8. pop"></a>8. pop</h4><p>方法pop从列表中删除一个元素（末尾为最后一个元素），并返回这一元素。</p><blockquote><p>>&gt;&gt; x = [1, 2, 3]<br>>&gt;&gt; x.pop()<br>3 </p></blockquote><h4 id="9-remove"><a href="#9-remove" class="headerlink" title="9. remove"></a>9. remove</h4><p>方法remove用于删除第一个为指定值的元素。</p><blockquote><p>>&gt;&gt; x = [‘to’, ‘be’, ‘or’, ‘not’, ‘to’, ‘be’]<br>>&gt;&gt; x.remove(‘be’)<br>>&gt;&gt; x<br>[‘to’, ‘or’, ‘not’, ‘to’, ‘be’] </p></blockquote><h4 id="10-reverse"><a href="#10-reverse" class="headerlink" title="10. reverse"></a>10. reverse</h4><p>方法reverse按相反的顺序排列列表中的元素（我想你对此应该不会感到惊讶）。</p><blockquote><p>>&gt;&gt; x = [1, 2, 3]<br>>&gt;&gt; x.reverse()<br>>&gt;&gt; x<br>[3, 2, 1]<br>注意:与reversed的区别.</p></blockquote><h4 id="11-sort"><a href="#11-sort" class="headerlink" title="11. sort"></a>11. sort</h4><p>方法sort用于对列表就地排序。就地排序意味着对原来的列表进行修改，使其元素按顺序<br>排列，而不是返回排序后的列表的副本。</p><blockquote><p>>&gt;&gt; x = [4, 6, 2, 1, 7, 9]<br>>&gt;&gt; x.sort()<br>>&gt;&gt; x<br>[1, 2, 4, 6, 7, 9]<br>注意:与sorted的区别.</p></blockquote><h4 id="12-高级排序"><a href="#12-高级排序" class="headerlink" title="12.高级排序"></a>12.高级排序</h4><blockquote><p>>&gt;&gt; x = [‘aardvark’, ‘abalone’, ‘acme’, ‘add’, ‘aerate’]<br>>&gt;&gt; x.sort(key=len)<br>>&gt;&gt; x<br>[‘add’, ‘acme’, ‘aerate’, ‘abalone’, ‘aardvark’]</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一-list函数&quot;&gt;&lt;a href=&quot;#一-list函数&quot; class=&quot;headerlink&quot; title=&quot;一.list函数&quot;&gt;&lt;/a&gt;一.list函数&lt;/h3&gt;&lt;p&gt;将字符串转为列表&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&gt;&amp;gt;&amp;gt; list(‘Hello’)&lt;br&gt;[‘H’, ‘e’, ‘l’, ‘l’, ‘o’]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;将列表转为字符串&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;‘’.join(somelist)&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通用的序列操作</title>
+    <link href="https://yoursite.com/2018/02/02/%E9%80%9A%E7%94%A8%E7%9A%84%E5%BA%8F%E5%88%97%E6%93%8D%E4%BD%9C/"/>
+    <id>https://yoursite.com/2018/02/02/通用的序列操作/</id>
+    <published>2018-02-02T15:21:39.259Z</published>
+    <updated>2018-02-02T16:00:37.200Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一-索引"><a href="#一-索引" class="headerlink" title="一.索引"></a>一.索引</h3><blockquote><p>针对字符串<br>>&gt;&gt;”hello”[3]<br>‘l’<br>针对列表<br>>&gt;&gt;lst=[1,2.,3,4]<br>>&gt;&gt;lst[3]<br>4</p></blockquote><a id="more"></a><h3 id="二-切片"><a href="#二-切片" class="headerlink" title="二.切片"></a>二.切片</h3><blockquote><p>>&gt;&gt;<code>tag = &#39;&lt;a href=&quot;http://www.python.org&quot;&gt;Python web site&lt;/a&gt;&#39;</code><br>>&gt;&gt; tag[9:30]<br>‘<a href="http://www.python.org" target="_blank" rel="noopener">http://www.python.org</a>‘ </p></blockquote><p>有步长时</p><blockquote><p><code>&gt;&gt;&gt; numbers[0:10:1]</code> </p></blockquote><h3 id="三-序列相加"><a href="#三-序列相加" class="headerlink" title="三.序列相加"></a>三.序列相加</h3><blockquote><p>>&gt;&gt; [1, 2, 3] + [4, 5, 6]<br>[1, 2, 3, 4, 5, 6]<br>>&gt;&gt; ‘Hello,’ + ‘world!’<br>‘Hello, world!’ </p></blockquote><h3 id="四-乘法"><a href="#四-乘法" class="headerlink" title="四.乘法"></a>四.乘法</h3><blockquote><p>>&gt;&gt; ‘python’ * 5<br>‘pythonpythonpythonpythonpython’<br>>&gt;&gt; [42] * 10<br>[42, 42, 42, 42, 42, 42, 42, 42, 42, 42]</p><h3 id="五-成员资格检查"><a href="#五-成员资格检查" class="headerlink" title="五.成员资格检查"></a>五.成员资格检查</h3><p>>&gt;&gt; permissions = ‘rw’<br>>&gt;&gt; ‘w’ in permissions<br>True </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一-索引&quot;&gt;&lt;a href=&quot;#一-索引&quot; class=&quot;headerlink&quot; title=&quot;一.索引&quot;&gt;&lt;/a&gt;一.索引&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;针对字符串&lt;br&gt;&gt;&amp;gt;&amp;gt;”hello”[3]&lt;br&gt;‘l’&lt;br&gt;针对列表&lt;br&gt;&gt;&amp;gt;&amp;gt;lst=[1,2.,3,4]&lt;br&gt;&gt;&amp;gt;&amp;gt;lst[3]&lt;br&gt;4&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell脚本</title>
+    <link href="https://yoursite.com/2018/01/27/shell%E8%84%9A%E6%9C%AC/"/>
+    <id>https://yoursite.com/2018/01/27/shell脚本/</id>
+    <published>2018-01-27T08:05:21.514Z</published>
+    <updated>2018-02-02T14:38:06.013Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="一-什么是shell脚本"><a href="#一-什么是shell脚本" class="headerlink" title="一.什么是shell脚本"></a>一.什么是shell脚本</h4><h5 id="1-shell脚本的创建与执行"><a href="#1-shell脚本的创建与执行" class="headerlink" title="1.shell脚本的创建与执行"></a>1.shell脚本的创建与执行</h5><blockquote><p>#! /bin/bash<br>date<br>echo “Hello world!”</p></blockquote><p>脚本一般以<code>#! /bin/bash</code>开头<br>脚本的执行命令有两种:</p><ul><li>sh first.sh</li><li>./first.sh</li></ul><a id="more"></a><p>若执行过程出现问题可以需要给脚本增加执行权限:<code>chmod +x first.sh</code><br>可在sh后加-x查看脚本的执行过程:<code>sh -x first.sh</code></p><h5 id="2-命令date"><a href="#2-命令date" class="headerlink" title="2.命令date"></a>2.命令date</h5><ul><li>date +%Y:表示以四位数字格式打印年份</li><li>date +%y:表示以两位数字格式打印年份</li><li>date +%m:表示月份</li><li>date +%d:表示日期</li><li>date +%H:表示小时</li><li>date +%M:表示分钟</li><li>date +%S:表示秒</li><li>date +%w:表示星期</li></ul><p>例如<code>date +&quot;%Y-%m-%d %H:%M:%S&quot;</code><br>前一天日期:<code>date -d &quot;-1 day&quot; +%d</code><br>前一小时:<code>date -d &quot;-1 hour&quot; +%H</code></p><h4 id="二-shell脚本中的变量"><a href="#二-shell脚本中的变量" class="headerlink" title="二.shell脚本中的变量"></a>二.shell脚本中的变量</h4><h5 id="1-数学运算"><a href="#1-数学运算" class="headerlink" title="1.数学运算"></a>1.数学运算</h5><blockquote><p>#! /bin/bash<br>a=2<br>b=1<br>sum=$[$a+$b]<br>echo “$a+$b=$sum”</p></blockquote><p>数学计算要用[]括起来</p><h5 id="2-和用户交互"><a href="#2-和用户交互" class="headerlink" title="2.和用户交互"></a>2.和用户交互</h5><blockquote><p>#! /bin/bash<br>read -p “please input a number:” x<br>read -p “please input another number:” y<br>sum=$[$x+$y]<br>echo “the sum of the two numbers is:$sum”</p></blockquote><p>read用于和用户交互,把用户输入的字符串作为变量</p><h5 id="3-shell脚本预设变量"><a href="#3-shell脚本预设变量" class="headerlink" title="3.shell脚本预设变量"></a>3.shell脚本预设变量</h5><blockquote><p>#! /bin/bash<br>sum=$[$1+$2]<br>echo “sum=$sum”</p></blockquote><p>在执行时,输入<code>sh option.sh 1 2</code><br>则输出<code>sum=3</code><br>$0表示脚本名称</p><h4 id="三-shell脚本中的逻辑判断"><a href="#三-shell脚本中的逻辑判断" class="headerlink" title="三.shell脚本中的逻辑判断"></a>三.shell脚本中的逻辑判断</h4><h5 id="1-不带else"><a href="#1-不带else" class="headerlink" title="1.不带else"></a>1.不带else</h5><blockquote><p>if 判断语句; then<br>&nbsp;&nbsp;&nbsp;command<br>fi</p></blockquote><h5 id="2-带有else"><a href="#2-带有else" class="headerlink" title="2.带有else"></a>2.带有else</h5><blockquote><p>if 判断语句; then<br>&nbsp;&nbsp;&nbsp;command<br>else<br>&nbsp;&nbsp;&nbsp;command<br>fi</p></blockquote><h5 id="3-带有elif"><a href="#3-带有elif" class="headerlink" title="3.带有elif"></a>3.带有elif</h5><blockquote><p>if 判断语句; then<br>&nbsp;&nbsp;&nbsp;command<br>elif<br>&nbsp;&nbsp;&nbsp;command<br>else<br>&nbsp;&nbsp;&nbsp;command<br>fi</p></blockquote><h5 id="4-和文档相关的判断"><a href="#4-和文档相关的判断" class="headerlink" title="4.和文档相关的判断"></a>4.和文档相关的判断</h5><blockquote><p>if [ -e filename ] ; then<br>&nbsp;&nbsp;&nbsp;command<br>fi<br><strong>-e:判断文件或目录是否存在</strong><br><strong>-d:判断是不是目录以及是否存在</strong><br><strong>-f:判断是不是普通文件以及是否存在</strong><br><strong>-r:判断是否有读权限</strong><br><strong>-w:判断是否有写权限</strong><br><strong>-x:判断是否可执行</strong></p></blockquote><h5 id="5-case逻辑判断"><a href="#5-case逻辑判断" class="headerlink" title="5.case逻辑判断"></a>5.case逻辑判断</h5><blockquote><p>case 变量 in<br>value1)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>value2)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>value3)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>*)<br>&nbsp;&nbsp;&nbsp;command<br>&nbsp;&nbsp;&nbsp;;;<br>esac</p></blockquote><h4 id="四-shell脚本中的循环"><a href="#四-shell脚本中的循环" class="headerlink" title="四.shell脚本中的循环"></a>四.shell脚本中的循环</h4><h5 id="1-for循环"><a href="#1-for循环" class="headerlink" title="1.for循环"></a>1.for循环</h5><blockquote><p>for 变量名 in 循环条件; do<br>&nbsp;&nbsp;&nbsp;command<br>done</p></blockquote><h5 id="2-while循环"><a href="#2-while循环" class="headerlink" title="2.while循环"></a>2.while循环</h5><blockquote><p>while 条件; do<br>&nbsp;&nbsp;&nbsp;command<br>done</p></blockquote><p>若用一个冒号代替循环条件,则可做到死循环</p><h4 id="五-shell脚本中的函数"><a href="#五-shell脚本中的函数" class="headerlink" title="五.shell脚本中的函数"></a>五.shell脚本中的函数</h4><blockquote><p>function 函数名()<br>{<br>&nbsp;&nbsp;&nbsp;command1<br>&nbsp;&nbsp;&nbsp;command2<br>}</p></blockquote><p>函数一定要写在shell脚本前面</p><h4 id="六-shell脚本中的中断和继续"><a href="#六-shell脚本中的中断和继续" class="headerlink" title="六.shell脚本中的中断和继续"></a>六.shell脚本中的中断和继续</h4><ul><li>break–退出该层循环</li><li>continue–结束本次循环</li><li>exit–直接退出整个shell脚本</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;一-什么是shell脚本&quot;&gt;&lt;a href=&quot;#一-什么是shell脚本&quot; class=&quot;headerlink&quot; title=&quot;一.什么是shell脚本&quot;&gt;&lt;/a&gt;一.什么是shell脚本&lt;/h4&gt;&lt;h5 id=&quot;1-shell脚本的创建与执行&quot;&gt;&lt;a href=&quot;#1-shell脚本的创建与执行&quot; class=&quot;headerlink&quot; title=&quot;1.shell脚本的创建与执行&quot;&gt;&lt;/a&gt;1.shell脚本的创建与执行&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;#! /bin/bash&lt;br&gt;date&lt;br&gt;echo “Hello world!”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;脚本一般以&lt;code&gt;#! /bin/bash&lt;/code&gt;开头&lt;br&gt;脚本的执行命令有两种:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sh first.sh&lt;/li&gt;
+&lt;li&gt;./first.sh&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式(三)</title>
+    <link href="https://yoursite.com/2018/01/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E4%B8%89)/"/>
+    <id>https://yoursite.com/2018/01/27/正则表达式(三)/</id>
+    <published>2018-01-27T03:35:53.631Z</published>
+    <updated>2018-01-27T04:48:56.012Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-截取文档中的某个段"><a href="#1-截取文档中的某个段" class="headerlink" title="1.截取文档中的某个段"></a>1.截取文档中的某个段</h4><blockquote><p>head -n2 filename |awk -F’:’ ‘{print $1}’<br>-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段<br>head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’<br>自定义内容要用””包起来</p></blockquote><a id="more"></a><h4 id="2-匹配字符或者字符串"><a href="#2-匹配字符或者字符串" class="headerlink" title="2.匹配字符或者字符串"></a>2.匹配字符或者字符串</h4><blockquote><p>awk ‘/oo/‘ filename<br>匹配含有oo的行<br>awk -F’:’ ‘$1 ~/oo/‘ filename<br>匹配第1切段中的含有oo的行,~表示匹配<br>awk -F’:’ ‘/root/ {print $1,$3} /test/ {print $1,$3}’ filename<br>先匹配含有root的行,并打印该行的1和3切段,再匹配含有test的行,并打印该行的1和3切段</p></blockquote><h4 id="3-条件操作符"><a href="#3-条件操作符" class="headerlink" title="3.条件操作符"></a>3.条件操作符</h4><blockquote><p>awk -F’:’ ‘$3==”0”‘ /etc/passwd<br>把数字用””括起来,则表示字符<br>awk -F’:’ ‘$3&gt;=500’ /etc/passwd<br>没括起来则表示为数字<br>awk -F’:’ ‘$3!=$4’ /etc/passwd<br>!=表示不匹配<br>$$表示并且<br>||表示或者</p></blockquote><h4 id="4-awk的内置变量"><a href="#4-awk的内置变量" class="headerlink" title="4.awk的内置变量"></a>4.awk的内置变量</h4><blockquote><p>OFS定义输出时的分隔符<br>awk -F’:’ ‘{OFS=”#”}{print $1,$2,$3}’ filename<br>NF表示分隔符分割后一共有多少段<br>awk -F’:’ ‘{print NF}’ filename<br>NR表示行号<br>awk ‘NR&gt;40’ filename</p></blockquote><h4 id="5-awk中的数学运算"><a href="#5-awk中的数学运算" class="headerlink" title="5.awk中的数学运算"></a>5.awk中的数学运算</h4><blockquote><p>更改段值<br>awk -F’:’ ‘$1=”root”‘ filename<br>对各段进行数学运算<br>awk -F’:’ ‘{$7=$3+$4}’ filename</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-截取文档中的某个段&quot;&gt;&lt;a href=&quot;#1-截取文档中的某个段&quot; class=&quot;headerlink&quot; title=&quot;1.截取文档中的某个段&quot;&gt;&lt;/a&gt;1.截取文档中的某个段&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;head -n2 filename |awk -F’:’ ‘{print $1}’&lt;br&gt;-F表示指定分隔符,后紧跟’’,print为打印的动作,$1指定第一段,$0表示全段&lt;br&gt;head -n2 filename |awk -F’:’ ‘{print $1”hello”$2}’&lt;br&gt;自定义内容要用””包起来&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式(二)</title>
+    <link href="https://yoursite.com/2018/01/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E4%BA%8C)/"/>
+    <id>https://yoursite.com/2018/01/26/正则表达式(二)/</id>
+    <published>2018-01-26T15:45:17.702Z</published>
+    <updated>2018-01-26T16:11:05.942Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-打印某行"><a href="#1-打印某行" class="headerlink" title="1.打印某行"></a>1.打印某行</h4><p>sed命令基本格式<code>sed -n &#39;n&#39;p filename</code></p><p>第一个n表示显示要打印的行,第二个n表示第几行.</p><p>也可以打印某个区间行如’1,5’</p><p>打印全部行则为’1,$’</p><a id="more"></a><h4 id="2-打印包含某个字符串的行"><a href="#2-打印包含某个字符串的行" class="headerlink" title="2.打印包含某个字符串的行"></a>2.打印包含某个字符串的行</h4><p>例1:<code>sed -n &#39;/root/&#39;p filename</code></p><p>例2:<code>sed -n &#39;/^1/&#39;p filename</code></p><p>sed加上-e可以实现多行为</p><p>例3:<code>sed -e &#39;1&#39;p -e &#39;/111/&#39;p filename</code></p><p>打印第1行,并且打印有字符串111的行</p><h4 id="3-删除某些行"><a href="#3-删除某些行" class="headerlink" title="3.删除某些行"></a>3.删除某些行</h4><p>例1:<code>sed &#39;1&#39;d filename</code></p><p>删除第1行</p><p>例2:<code>sed &#39;1,3&#39;d filename</code></p><p>删除第1到第3行</p><p>例3:<code>sed &#39;/oot/&#39;d filename</code></p><p>删除带有oot字符的行</p><h4 id="4-替换字符或字符串"><a href="#4-替换字符或字符串" class="headerlink" title="4.替换字符或字符串"></a>4.替换字符或字符串</h4><p>例1:<code>sed &#39;1,2s/ab/ba/g&#39; filename</code></p><p>将第1,2行中ab替换为ba,s代表替换,g代表全局替换,如无g则只替换每行的第一个ab</p><p>#和@也可作为分隔符</p><p>例2:<code>sed &#39;s/[0-9]//g&#39; filename</code></p><p>删除文档中的所有数字</p><h4 id="5-调换两个字符串的位置"><a href="#5-调换两个字符串的位置" class="headerlink" title="5.调换两个字符串的位置"></a>5.调换两个字符串的位置</h4><p>例1:<code>sed &#39;s/\(rot\)\(.*\)\(bash\)/\3\2\1/&#39; filename</code></p><p>将rot与bash调换,123表示位置</p><p>例2:<code>sed -r &#39;s/(rot)(.*)(bash)/\3\2\1/&#39; filename</code></p><p>-r可以去掉()的转义符</p><p>例3:<code>sed &#39;s/^.$/123&amp;/&#39; filename</code></p><p>在行前增加字符123</p><h4 id="6-直接修改文件的内容"><a href="#6-直接修改文件的内容" class="headerlink" title="6.直接修改文件的内容"></a>6.直接修改文件的内容</h4><p>例1:<code>sed -i &#39;s/ab/ba/g&#39; filename</code></p><p>i表示直接修改源文件的内容,修改后会被保存</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-打印某行&quot;&gt;&lt;a href=&quot;#1-打印某行&quot; class=&quot;headerlink&quot; title=&quot;1.打印某行&quot;&gt;&lt;/a&gt;1.打印某行&lt;/h4&gt;&lt;p&gt;sed命令基本格式&lt;code&gt;sed -n &amp;#39;n&amp;#39;p filename&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;第一个n表示显示要打印的行,第二个n表示第几行.&lt;/p&gt;
+&lt;p&gt;也可以打印某个区间行如’1,5’&lt;/p&gt;
+&lt;p&gt;打印全部行则为’1,$’&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式(一)</title>
+    <link href="https://yoursite.com/2018/01/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E4%B8%80)/"/>
+    <id>https://yoursite.com/2018/01/26/正则表达式(一)/</id>
+    <published>2018-01-26T14:09:57.434Z</published>
+    <updated>2018-01-26T14:38:13.264Z</updated>
+    
+    <content type="html"><![CDATA[<p>grep命令的基本格式<code>grep [-cinvABC] &#39;word&#39; filename</code></p><blockquote><p>-c:表示打印符合要求的行数<br>-i:表示忽略大小写<br>-n:表示输出符合要求的行及其行数<br>-v:表示打印不符合要求的行及其行号<br>-A:后跟数字,例如A2打印符合的行及其后两行<br>-B:后跟数字,例如B2打印符合的行及其前两行<br>-C:后跟数字,例如C2打印符合的行及其前后各两行</p></blockquote><a id="more"></a><h4 id="1-过滤出带有某个关键词的行-并输出行号"><a href="#1-过滤出带有某个关键词的行-并输出行号" class="headerlink" title="1.过滤出带有某个关键词的行,并输出行号"></a>1.过滤出带有某个关键词的行,并输出行号</h4><blockquote><p>grep -n ‘word’ filename</p></blockquote><h4 id="2-过滤出不带有某个关键词的行-并输出行号"><a href="#2-过滤出不带有某个关键词的行-并输出行号" class="headerlink" title="2.过滤出不带有某个关键词的行,并输出行号"></a>2.过滤出不带有某个关键词的行,并输出行号</h4><blockquote><p>grep -nv ‘word’ filename</p></blockquote><h4 id="3-过滤出所有包含数字的行"><a href="#3-过滤出所有包含数字的行" class="headerlink" title="3.过滤出所有包含数字的行"></a>3.过滤出所有包含数字的行</h4><blockquote><p>grep ‘[0-9]’ filename</p></blockquote><h4 id="4-过滤出所有不包含数字的行"><a href="#4-过滤出所有不包含数字的行" class="headerlink" title="4.过滤出所有不包含数字的行"></a>4.过滤出所有不包含数字的行</h4><blockquote><p>grep -v ‘[0-9]’ filename</p></blockquote><h4 id="5-过滤掉所有以-开头的行"><a href="#5-过滤掉所有以-开头的行" class="headerlink" title="5.过滤掉所有以#开头的行"></a>5.过滤掉所有以#开头的行</h4><blockquote><p>grep -v ‘^#’ filename</p></blockquote><h4 id="6-过滤所有空行和以-开头的行"><a href="#6-过滤所有空行和以-开头的行" class="headerlink" title="6.过滤所有空行和以#开头的行"></a>6.过滤所有空行和以#开头的行</h4><blockquote><p>grep -v ‘^#’|grep -v ‘^$’<br>注:^表示行的开始,$表示行的结束,空行可用^$表示.[^字符]表示除[]内字符之外的字符</p></blockquote><h4 id="7-过滤出任意一个字符和重复字符"><a href="#7-过滤出任意一个字符和重复字符" class="headerlink" title="7.过滤出任意一个字符和重复字符"></a>7.过滤出任意一个字符和重复字符</h4><blockquote><p>grep ‘r.o’ filename<br>grep ‘ooo*‘ filename<br>注:.表示任意一个字符,*表示零个或多个前面的字符</p></blockquote><h4 id="8-指定要滤出的字符出现次数"><a href="#8-指定要滤出的字符出现次数" class="headerlink" title="8.指定要滤出的字符出现次数"></a>8.指定要滤出的字符出现次数</h4><blockquote><p>grep ‘9{3}‘ filename /表示出现3个9,也可表示出现次数范围{3,5}</p></blockquote><h4 id="9-过滤出一个或多个指定的字符"><a href="#9-过滤出一个或多个指定的字符" class="headerlink" title="9.过滤出一个或多个指定的字符"></a>9.过滤出一个或多个指定的字符</h4><blockquote><p>egrep ‘o+’ filename<br>注:+表示匹配一个或多个前面的字符.{}不用转义</p></blockquote><h4 id="10-过滤出零个或一个指定的字符"><a href="#10-过滤出零个或一个指定的字符" class="headerlink" title="10.过滤出零个或一个指定的字符"></a>10.过滤出零个或一个指定的字符</h4><blockquote><p>grep ‘0000?’ filename<br>注:表示0000或者00000</p></blockquote><h4 id="11-过滤出字符串1或者字符串2"><a href="#11-过滤出字符串1或者字符串2" class="headerlink" title="11.过滤出字符串1或者字符串2"></a>11.过滤出字符串1或者字符串2</h4><blockquote><p>grep ‘字符串1|字符串2|字符串3’ filename</p></blockquote><h4 id="12-egrep中-的应用"><a href="#12-egrep中-的应用" class="headerlink" title="12.egrep中()的应用"></a>12.egrep中()的应用</h4><blockquote><p>egrep ‘r(oo|at)o’ filename<br>注:表示过滤出root或者rato,()表示一个整体</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;grep命令的基本格式&lt;code&gt;grep [-cinvABC] &amp;#39;word&amp;#39; filename&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-c:表示打印符合要求的行数&lt;br&gt;-i:表示忽略大小写&lt;br&gt;-n:表示输出符合要求的行及其行数&lt;br&gt;-v:表示打印不符合要求的行及其行号&lt;br&gt;-A:后跟数字,例如A2打印符合的行及其后两行&lt;br&gt;-B:后跟数字,例如B2打印符合的行及其前两行&lt;br&gt;-C:后跟数字,例如C2打印符合的行及其前后各两行&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell基础知识</title>
+    <link href="https://yoursite.com/2018/01/25/shell%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://yoursite.com/2018/01/25/shell基础知识/</id>
+    <published>2018-01-25T14:16:52.979Z</published>
+    <updated>2018-01-25T14:21:17.228Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一-什么是shell"><a href="#一-什么是shell" class="headerlink" title="一.什么是shell"></a>一.什么是shell</h3><h4 id="1-记录历史命令"><a href="#1-记录历史命令" class="headerlink" title="1.记录历史命令"></a>1.记录历史命令</h4><blockquote><ul><li>!! /执行上一条命令</li><li>!n /执行历史第n条命令</li><li>!字符串 /执行历史中最近一次以字符串开头的命令</li></ul></blockquote><h4 id="2-命令文件名补全——连续两次tab键"><a href="#2-命令文件名补全——连续两次tab键" class="headerlink" title="2.命令文件名补全——连续两次tab键"></a>2.命令文件名补全——连续两次tab键</h4><h4 id="3-别名"><a href="#3-别名" class="headerlink" title="3.别名"></a>3.别名</h4><blockquote><p>格式为alias 命令别名=’具体命令’<br>例如 alias list=’ls’<br>解除别名 unalias 别名<br>例如 unalias list</p></blockquote><a id="more"></a><h4 id="4-通配符"><a href="#4-通配符" class="headerlink" title="4.通配符"></a>4.通配符</h4><blockquote><p>*代表零个或多个字符<br>?代表一个字符</p></blockquote><h4 id="5-输入-输出重定向"><a href="#5-输入-输出重定向" class="headerlink" title="5.输入/输出重定向"></a>5.输入/输出重定向</h4><blockquote><p>>表示将命令输入文件中<br>例如:echo “123” &gt;1.txt /会覆盖掉原先的内容<br>>&gt;表示将命令追加到文件中<br>例如:echo “456” &gt;1.txt</p></blockquote><h4 id="6-管道符"><a href="#6-管道符" class="headerlink" title="6.管道符"></a>6.管道符</h4><blockquote><p>|用于将前一个指令的输出作为后一个命令的输入<br>例如:cat /etc/passwd|wc -l</p></blockquote><h4 id="7-作业控制"><a href="#7-作业控制" class="headerlink" title="7.作业控制"></a>7.作业控制</h4><blockquote><p>Ctrl+Z /暂停进程<br>fg /命令恢复进程,fg后可加进程编号<br>bg /命令使进程后台运行<br>Ctrl+C /终止进程<br>jobs /命令查看后台或暂停的进程<br>kill 进程pid /结束进程<br>ps aux /查找进程pid</p></blockquote><h3 id="二-变量"><a href="#二-变量" class="headerlink" title="二.变量"></a>二.变量</h3><h4 id="1-命令env"><a href="#1-命令env" class="headerlink" title="1.命令env"></a>1.命令env</h4><blockquote><p>env /列出系统预设的全部系统变量</p><h4 id="2-命令set"><a href="#2-命令set" class="headerlink" title="2.命令set"></a>2.命令set</h4><p>set /列出全部变量<br>echo $变量名 /查看变量值<br>bash /进入子shell<br>export 变量名 /让子shell也能使用该变量<br>unset 变量名 /取消变量</p></blockquote><h3 id="三-特殊符号"><a href="#三-特殊符号" class="headerlink" title="三.特殊符号"></a>三.特殊符号</h3><ul><li>* 表示零个或多个任意字符</li><li>? 表示一个任意字符</li><li># 表示注释</li><li>\ 转义字符</li><li>| 管道符,后面常跟cat less head tail grep cut sort wc uniq tee tr split sed awk</li><li>cut 截取某个字段<br>  -d:后跟分割字符<br>  -c:后跟第几个字符<br>  -f:后跟第几个区块<br>  例1:cat /etc/passwd|cut -d ‘:’ -f 1 |head -5<br>  例2:head -n2 /etc/passwd|cut -c2<br>  例3:head -n2 /etc/passwd|cut -c1-10<br>  例4:head -n2 /etc/passwd|cut -c1,3,10</li><li>sort 排序<br>  格式为sort -t分隔符 -kn1,kn2 -nru<br>  -t:后跟分割符<br>  -n:使用纯数字排序<br>  -r:反向排序<br>  -u:去重复<br>  -kn1,kn2:由区间n1排序到n2,可只对某一区间进行排序</li><li>wc 统计文档<br>  -l:统计行数<br>  -m:统计字符数<br>  -w:统计词数</li><li>uniq 删除重复行,使用之前要先用sort排序<br>  -c:统计重复的行数</li><li>tee 后跟文件名,将前面的内容写入文档中</li><li>tr 替换字符<br>  -d:用于删除某个字符<br>  -s:删除重复字符<br>  例1.将小写字母变成大写字母:tr ‘a-z’ ‘A-Z’<br>  例2.替换字符:tr ‘r’ ‘R’</li><li>split<br>  -b:根据大小切割文档<br>  -l:根据行数切割文档</li><li>#! 表示上条命令的变量<br>  例如:ls #!</li><li>;运行多个命令</li><li>~ 当前用户家目录</li><li>&amp; 加在命令后表示后台运行</li><li>> 重定向取代</li><li>>&gt; 重定向追加</li><li>2&gt; 错误重定向取代</li><li>2&gt;&gt; 错误重定向追加</li><li>[] 中括号中字符的任意一个</li><li>A &amp;&amp; B 只有A命令执行成功才执行B</li><li>A || B A执行若成功则不执行B</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一-什么是shell&quot;&gt;&lt;a href=&quot;#一-什么是shell&quot; class=&quot;headerlink&quot; title=&quot;一.什么是shell&quot;&gt;&lt;/a&gt;一.什么是shell&lt;/h3&gt;&lt;h4 id=&quot;1-记录历史命令&quot;&gt;&lt;a href=&quot;#1-记录历史命令&quot; class=&quot;headerlink&quot; title=&quot;1.记录历史命令&quot;&gt;&lt;/a&gt;1.记录历史命令&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;!! /执行上一条命令&lt;/li&gt;
+&lt;li&gt;!n /执行历史第n条命令&lt;/li&gt;
+&lt;li&gt;!字符串 /执行历史中最近一次以字符串开头的命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;2-命令文件名补全——连续两次tab键&quot;&gt;&lt;a href=&quot;#2-命令文件名补全——连续两次tab键&quot; class=&quot;headerlink&quot; title=&quot;2.命令文件名补全——连续两次tab键&quot;&gt;&lt;/a&gt;2.命令文件名补全——连续两次tab键&lt;/h4&gt;&lt;h4 id=&quot;3-别名&quot;&gt;&lt;a href=&quot;#3-别名&quot; class=&quot;headerlink&quot; title=&quot;3.别名&quot;&gt;&lt;/a&gt;3.别名&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;格式为alias 命令别名=’具体命令’&lt;br&gt;例如 alias list=’ls’&lt;br&gt;解除别名 unalias 别名&lt;br&gt;例如 unalias list&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos7软件安装</title>
+    <link href="https://yoursite.com/2018/01/24/centos7%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    <id>https://yoursite.com/2018/01/24/centos7软件安装/</id>
+    <published>2018-01-24T07:56:25.912Z</published>
+    <updated>2018-01-24T07:56:25.969Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、RPM工具"><a href="#一、RPM工具" class="headerlink" title="一、RPM工具"></a>一、RPM工具</h2><h3 id="1、安装RPM包"><a href="#1、安装RPM包" class="headerlink" title="1、安装RPM包"></a>1、安装RPM包</h3><blockquote><p>rpm -ivh xxxxxxx.rpm</p></blockquote><h3 id="2、升级RPM包"><a href="#2、升级RPM包" class="headerlink" title="2、升级RPM包"></a>2、升级RPM包</h3><blockquote><p>rpm -Uvh filename</p></blockquote><h3 id="3、卸载RPM包"><a href="#3、卸载RPM包" class="headerlink" title="3、卸载RPM包"></a>3、卸载RPM包</h3><blockquote><p>rpm -e filename</p></blockquote><a id="more"></a><h3 id="4、查询包信息"><a href="#4、查询包信息" class="headerlink" title="4、查询包信息"></a>4、查询包信息</h3><blockquote><p>rpm -q RPM包名 /查询包是否安装<br>rpm -qi 包名 /查询包的相关信息<br>rpm -ql 包名 /列出一个RPM包的安装文件<br>rpm -qf 文件绝对路径 /查询文件所属的包</p></blockquote><h2 id="二、yum工具"><a href="#二、yum工具" class="headerlink" title="二、yum工具"></a>二、yum工具</h2><h3 id="1、搜索RPM包"><a href="#1、搜索RPM包" class="headerlink" title="1、搜索RPM包"></a>1、搜索RPM包</h3><blockquote><p>rpm search [关键词]</p></blockquote><h3 id="2、安装RPM包"><a href="#2、安装RPM包" class="headerlink" title="2、安装RPM包"></a>2、安装RPM包</h3><blockquote><p>rpm install [-y] [RPM包名]</p></blockquote><h3 id="3、卸载RPM包-1"><a href="#3、卸载RPM包-1" class="headerlink" title="3、卸载RPM包"></a>3、卸载RPM包</h3><blockquote><p>yum remove [-y] [RPM包名]</p></blockquote><h3 id="4、升级RPM包"><a href="#4、升级RPM包" class="headerlink" title="4、升级RPM包"></a>4、升级RPM包</h3><blockquote><p>yum update [-y] [RPM包名]</p></blockquote><h2 id="三、安装源码包"><a href="#三、安装源码包" class="headerlink" title="三、安装源码包"></a>三、安装源码包</h2><h3 id="1、配置"><a href="#1、配置" class="headerlink" title="1、配置"></a>1、配置</h3><blockquote><p>./configure –prefix=PREFIX</p></blockquote><h3 id="2、编译"><a href="#2、编译" class="headerlink" title="2、编译"></a>2、编译</h3><blockquote><p>make</p></blockquote><h3 id="3、安装"><a href="#3、安装" class="headerlink" title="3、安装"></a>3、安装</h3><blockquote><p>make install</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、RPM工具&quot;&gt;&lt;a href=&quot;#一、RPM工具&quot; class=&quot;headerlink&quot; title=&quot;一、RPM工具&quot;&gt;&lt;/a&gt;一、RPM工具&lt;/h2&gt;&lt;h3 id=&quot;1、安装RPM包&quot;&gt;&lt;a href=&quot;#1、安装RPM包&quot; class=&quot;headerlink&quot; title=&quot;1、安装RPM包&quot;&gt;&lt;/a&gt;1、安装RPM包&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;rpm -ivh xxxxxxx.rpm&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;2、升级RPM包&quot;&gt;&lt;a href=&quot;#2、升级RPM包&quot; class=&quot;headerlink&quot; title=&quot;2、升级RPM包&quot;&gt;&lt;/a&gt;2、升级RPM包&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;rpm -Uvh filename&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;3、卸载RPM包&quot;&gt;&lt;a href=&quot;#3、卸载RPM包&quot; class=&quot;headerlink&quot; title=&quot;3、卸载RPM包&quot;&gt;&lt;/a&gt;3、卸载RPM包&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;rpm -e filename&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文档压缩与打包</title>
+    <link href="https://yoursite.com/2018/01/23/%E6%96%87%E6%A1%A3%E5%8E%8B%E7%BC%A9%E4%B8%8E%E6%89%93%E5%8C%85/"/>
+    <id>https://yoursite.com/2018/01/23/文档压缩与打包/</id>
+    <published>2018-01-23T12:43:46.857Z</published>
+    <updated>2018-01-23T12:49:56.169Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、gzip压缩工具"><a href="#1、gzip压缩工具" class="headerlink" title="1、gzip压缩工具"></a>1、gzip压缩工具</h3><p>压缩：</p><blockquote><p>gzip 1.txt</p></blockquote><p>解压：</p><blockquote><p>gzip -d 1.txt.gz</p></blockquote><a id="more"></a><h3 id="2、bzip2压缩工具"><a href="#2、bzip2压缩工具" class="headerlink" title="2、bzip2压缩工具"></a>2、bzip2压缩工具</h3><p>压缩：</p><blockquote><p>bzip2 1.txt</p></blockquote><p>解压：</p><blockquote><p>bzip2 -d 1.txt.bz2</p></blockquote><h3 id="3、xz压缩工具"><a href="#3、xz压缩工具" class="headerlink" title="3、xz压缩工具"></a>3、xz压缩工具</h3><p>压缩：</p><blockquote><p>xz 1.txt</p></blockquote><p>解压：</p><blockquote><p>xz -d 1.txt.xz</p></blockquote><h3 id="4、tar打包工具"><a href="#4、tar打包工具" class="headerlink" title="4、tar打包工具"></a>4、tar打包工具</h3><p>基本格式<code>tar [-zjxcvfpP] filename</code></p><blockquote><p>-z /同时用gzip压缩<br>-j /同时用bzip2压缩<br>-J /同时用xz压缩<br>-x /解压缩、解包<br>-c /创建tar包或者压缩文件包<br>-v /可视化<br>-f /后跟文件名</p></blockquote><p>例如<br>1）压缩：<code>tar -czvf test111.tar.gz test111</code>解压：<code>tar -zxvf test111.tar.gz</code><br>2）压缩：<code>tar -cjvf test111.tar.gz tesr111</code>解压：<code>tar -jxvf test111.tar.bz2</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1、gzip压缩工具&quot;&gt;&lt;a href=&quot;#1、gzip压缩工具&quot; class=&quot;headerlink&quot; title=&quot;1、gzip压缩工具&quot;&gt;&lt;/a&gt;1、gzip压缩工具&lt;/h3&gt;&lt;p&gt;压缩：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;gzip 1.txt&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解压：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;gzip -d 1.txt.gz&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux磁盘管理</title>
+    <link href="https://yoursite.com/2018/01/23/Linux%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/"/>
+    <id>https://yoursite.com/2018/01/23/Linux磁盘管理/</id>
+    <published>2018-01-23T09:33:31.531Z</published>
+    <updated>2018-01-23T09:33:31.584Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、查看磁盘和目录容量"><a href="#1、查看磁盘和目录容量" class="headerlink" title="1、查看磁盘和目录容量"></a>1、查看磁盘和目录容量</h3><p>查看磁盘使用情况</p><blockquote><p>df -h</p></blockquote><p>查看文件或目录容量</p><blockquote><p>du -sh filename</p></blockquote><a id="more"></a><h3 id="2、分区与格式化"><a href="#2、分区与格式化" class="headerlink" title="2、分区与格式化"></a>2、分区与格式化</h3><p>分区命令：</p><blockquote><p>fdisk -l 或者 fdisk /dev/sda</p></blockquote><p>最多只能创建四个主分区。</p><h3 id="3、格式化磁盘分区"><a href="#3、格式化磁盘分区" class="headerlink" title="3、格式化磁盘分区"></a>3、格式化磁盘分区</h3><p>命令</p><blockquote><p>mke2xf -t ext3 /dev/sda1</p></blockquote><p>或者</p><blockquote><p>mkfs.ext2 mkfs.ext3 mkfs.ext4 mkfs.xfs</p></blockquote><h3 id="4、挂载和卸载磁盘"><a href="#4、挂载和卸载磁盘" class="headerlink" title="4、挂载和卸载磁盘"></a>4、挂载和卸载磁盘</h3><p>挂载分区到目录上</p><blockquote><p>mount /dev/sdb3 /newdir/</p></blockquote><p>卸载分区</p><blockquote><p>umount /newdir/ 或者 umount /dev/sdb3</p></blockquote><h3 id="5、增加虚拟内存"><a href="#5、增加虚拟内存" class="headerlink" title="5、增加虚拟内存"></a>5、增加虚拟内存</h3><p>基本过程：建立swapfile==&gt;格式化为swap格式==&gt;启用虚拟磁盘</p><ul><li>建立swapfile<blockquote><p>dd if=/dev/zero of=/tmp/newdisk bs=1M count=1024</p></blockquote></li><li>格式化为swapfile格式<blockquote><p>mkswap -f /tmp/newdisk</p></blockquote></li><li>启用<blockquote><p>swapon /tmp/newdisk</p></blockquote></li><li>查看swap分区<blockquote><p>free -m</p></blockquote></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1、查看磁盘和目录容量&quot;&gt;&lt;a href=&quot;#1、查看磁盘和目录容量&quot; class=&quot;headerlink&quot; title=&quot;1、查看磁盘和目录容量&quot;&gt;&lt;/a&gt;1、查看磁盘和目录容量&lt;/h3&gt;&lt;p&gt;查看磁盘使用情况&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;df -h&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;查看文件或目录容量&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;du -sh filename&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos7用户身份切换</title>
+    <link href="https://yoursite.com/2018/01/23/centos7%E7%94%A8%E6%88%B7%E8%BA%AB%E4%BB%BD%E5%88%87%E6%8D%A2/"/>
+    <id>https://yoursite.com/2018/01/23/centos7用户身份切换/</id>
+    <published>2018-01-23T08:57:12.437Z</published>
+    <updated>2018-01-23T08:57:12.495Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、切换用户——su"><a href="#1、切换用户——su" class="headerlink" title="1、切换用户——su"></a>1、切换用户——su</h3><p>切换到user</p><blockquote><p>su user</p></blockquote><p>切换到root</p><blockquote><p>su - //或者su root</p></blockquote><h3 id="2、当前用户使用root权限"><a href="#2、当前用户使用root权限" class="headerlink" title="2、当前用户使用root权限"></a>2、当前用户使用root权限</h3><p>在root用户下</p><blockquote><p>visudo //编辑/etc/sudoers</p></blockquote><a id="more"></a><p>将<code>user    ALL=(ALL)ALL    ALL</code>加入</p><h3 id="3、禁止root远程登录"><a href="#3、禁止root远程登录" class="headerlink" title="3、禁止root远程登录"></a>3、禁止root远程登录</h3><p>在root用户下编辑/etc/ssh/sshd_config文件<br>将<code>#PermitRootLogin    yes</code>改为<code>PermitRootLogin    no</code><br>重新启动服务</p><blockquote><p>systemctl restart sshd.service</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1、切换用户——su&quot;&gt;&lt;a href=&quot;#1、切换用户——su&quot; class=&quot;headerlink&quot; title=&quot;1、切换用户——su&quot;&gt;&lt;/a&gt;1、切换用户——su&lt;/h3&gt;&lt;p&gt;切换到user&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;su user&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;切换到root&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;su - //或者su root&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;2、当前用户使用root权限&quot;&gt;&lt;a href=&quot;#2、当前用户使用root权限&quot; class=&quot;headerlink&quot; title=&quot;2、当前用户使用root权限&quot;&gt;&lt;/a&gt;2、当前用户使用root权限&lt;/h3&gt;&lt;p&gt;在root用户下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;visudo //编辑/etc/sudoers&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos7使用秘钥认证登录</title>
+    <link href="https://yoursite.com/2018/01/21/centos7%E4%BD%BF%E7%94%A8%E7%A7%98%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/"/>
+    <id>https://yoursite.com/2018/01/21/centos7使用秘钥认证登录/</id>
+    <published>2018-01-21T14:52:22.908Z</published>
+    <updated>2018-01-21T14:56:07.906Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、生成秘钥对"><a href="#1、生成秘钥对" class="headerlink" title="1、生成秘钥对"></a>1、生成秘钥对</h3><p>利用puTTYgen生成公钥和私钥</p><h3 id="2、保存秘钥"><a href="#2、保存秘钥" class="headerlink" title="2、保存秘钥"></a>2、保存秘钥</h3><h3 id="3、复制公钥到Linux"><a href="#3、复制公钥到Linux" class="headerlink" title="3、复制公钥到Linux"></a>3、复制公钥到Linux</h3><blockquote><p>mkdir /root/.ssh    //创建目录<br>chmod 700 /root/.ssh     //更改权限<br>vi /root/.ssh/authorized_keys //把公钥复制到该文件</p></blockquote><a id="more"></a><h3 id="4、关闭SELinux"><a href="#4、关闭SELinux" class="headerlink" title="4、关闭SELinux"></a>4、关闭SELinux</h3><blockquote><p>setenforce 0 //暂时关闭<br>vi /etc/selinux/config //将SELINUX=enforcing改为SELINUX=disabled 重启</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1、生成秘钥对&quot;&gt;&lt;a href=&quot;#1、生成秘钥对&quot; class=&quot;headerlink&quot; title=&quot;1、生成秘钥对&quot;&gt;&lt;/a&gt;1、生成秘钥对&lt;/h3&gt;&lt;p&gt;利用puTTYgen生成公钥和私钥&lt;/p&gt;
+&lt;h3 id=&quot;2、保存秘钥&quot;&gt;&lt;a href=&quot;#2、保存秘钥&quot; class=&quot;headerlink&quot; title=&quot;2、保存秘钥&quot;&gt;&lt;/a&gt;2、保存秘钥&lt;/h3&gt;&lt;h3 id=&quot;3、复制公钥到Linux&quot;&gt;&lt;a href=&quot;#3、复制公钥到Linux&quot; class=&quot;headerlink&quot; title=&quot;3、复制公钥到Linux&quot;&gt;&lt;/a&gt;3、复制公钥到Linux&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;mkdir /root/.ssh    //创建目录&lt;br&gt;chmod 700 /root/.ssh     //更改权限&lt;br&gt;vi /root/.ssh/authorized_keys //把公钥复制到该文件&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos7 手动设置IP地址</title>
+    <link href="https://yoursite.com/2018/01/21/centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%80/"/>
+    <id>https://yoursite.com/2018/01/21/centos7设置IP地址/</id>
+    <published>2018-01-21T07:59:49.155Z</published>
+    <updated>2018-01-21T08:02:18.916Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、预先准备"><a href="#一、预先准备" class="headerlink" title="一、预先准备"></a>一、预先准备</h3><ul><li>IP地址</li><li>子网掩码</li><li>网关</li><li>DNS</li></ul><a id="more"></a><h3 id="二、设置步骤"><a href="#二、设置步骤" class="headerlink" title="二、设置步骤"></a>二、设置步骤</h3><blockquote><p>   vi /etc/sysconfig/network-scripts/ifcfg-ens33</p></blockquote><p>对文档进行编辑：<br>    更改：</p><blockquote><p>ONBOOT=no ==&gt; ONBOOT=yes<br>BOOTPROTO=dhcp ==&gt; BOOTPROTO=static</p></blockquote><p>对文档进行追加：</p><blockquote><p>IPADDR=主机IP地址<br>NETMASK=255.255.255.0<br>GATEWAY=网关<br>DNS1=119.29.29.29</p></blockquote><p>重启网络服务：</p><blockquote><p>systemctl restart network.service</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、预先准备&quot;&gt;&lt;a href=&quot;#一、预先准备&quot; class=&quot;headerlink&quot; title=&quot;一、预先准备&quot;&gt;&lt;/a&gt;一、预先准备&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;IP地址&lt;/li&gt;
+&lt;li&gt;子网掩码&lt;/li&gt;
+&lt;li&gt;网关&lt;/li&gt;
+&lt;li&gt;DNS&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于 Markdown</title>
+    <link href="https://yoursite.com/2018/01/20/%E5%85%B3%E4%BA%8EMarkdown/"/>
+    <id>https://yoursite.com/2018/01/20/关于Markdown/</id>
+    <published>2018-01-20T12:02:36.223Z</published>
+    <updated>2018-01-21T08:02:55.452Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Markdown 会被解释为一种 <strong>“标记语法”</strong>，实际上，可以不用去理解这种看似晦涩的意思。<br>Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。<br>换一种说法，Markdown 是给<strong>专注于“偷懒”</strong>，却不牺牲最终产出的人群使用的。</p></blockquote><a id="more"></a><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure><p>分别对应HTML中的<code>&lt;h1&gt;一级标题&lt;/h1&gt;</code>，以此类推。</p><p><code>**用两个星号标记起来，表示加粗**</code>，<code>*一个星号，表示斜体*</code>，<code>~~这样子表示删除~~</code>，这些就是最基本的语法了。</p><h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><p><strong>插入链接:</strong><br>这是一个 <code>[链接](http://url.com/)</code></p><p><strong>快速链接:</strong><br>只需要在网址头尾用尖括号包裹即可，比如<code>&lt;http://url.com&gt;</code></p><p><strong>特别支持:</strong><br><code>[Google (target=_blank id=google_link)](google.com)</code>  其中内容括号内的<code>target=_blank id=google_link</code> 会自动扩展到最终 HTML 对应 A 标签下的属性，另外，<code>google.com</code> 作为一个域名，不需要补全<code>http://</code>, 最终会自动补全。</p><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>跟插入链接的方式很像，就是前面多一个<code>!</code>， 但是在一般的客户端编辑器，比如 <a href="http://markeditor.com" target="_blank" rel="noopener">MarkEditor</a> 中直接拖入图片就可以。<br><code>![)](图片的url)</code></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p><strong>无序列表:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-   Red</span><br><span class="line">-   Green</span><br><span class="line">-   Blue</span><br></pre></td></tr></table></figure></p><p><strong>有序列表则使用数字接着一个英文句点：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.  Bird</span><br><span class="line">2.  McHale</span><br><span class="line">3.  Parish</span><br></pre></td></tr></table></figure></p><h2 id="居中与居右"><a href="#居中与居右" class="headerlink" title="居中与居右"></a>居中与居右</h2><p>单独一行的时候，<code>[文本内容]</code>表示居中对齐，<code>[文本内容]]</code>表示居右(右侧再多一个<code>]</code>)，其它默认情况下都是居左。</p><h2 id="内容引用"><a href="#内容引用" class="headerlink" title="内容引用"></a>内容引用</h2><p>用<code>&gt;</code>放在段首，之后是空格，输入文字:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 你</span><br><span class="line">&gt; 一会看我</span><br><span class="line">&gt; 一会看云</span><br></pre></td></tr></table></figure><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p><strong><code>-</code>加上空格组成，三个以上:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- - - - - -</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Markdown 会被解释为一种 &lt;strong&gt;“标记语法”&lt;/strong&gt;，实际上，可以不用去理解这种看似晦涩的意思。&lt;br&gt;Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。&lt;br&gt;换一种说法，Markdown 是给&lt;strong&gt;专注于“偷懒”&lt;/strong&gt;，却不牺牲最终产出的人群使用的。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://yoursite.com/2018/01/20/hello-world/"/>
+    <id>https://yoursite.com/2018/01/20/hello-world/</id>
+    <published>2018-01-20T05:11:14.655Z</published>
+    <updated>2018-01-21T08:03:30.417Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
