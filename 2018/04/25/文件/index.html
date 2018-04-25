@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yoursite.com">
-  <title>午夜听风吟</title>
+  <title>文件 | 午夜听风吟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="午夜听风吟">
-<meta property="og:url" content="https://yoursite.com/page/3/index.html">
+  <meta name="description" content="1.打开文件打开文件的基本方法为:f = open(‘somefile.txt’)可选参数为：  ‘r’:读取模式，默认值 ‘w’:写入模式 ‘a’:附加模式 ‘x’:独占写入模式 ‘t’:文本模式，默认值 ‘b’:二进制模式，读取图片、音频等 ‘+’:读写模式  关键字参数newline可以设置换行符。">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文件">
+<meta property="og:url" content="https://yoursite.com/2018/04/25/文件/index.html">
 <meta property="og:site_name" content="午夜听风吟">
+<meta property="og:description" content="1.打开文件打开文件的基本方法为:f = open(‘somefile.txt’)可选参数为：  ‘r’:读取模式，默认值 ‘w’:写入模式 ‘a’:附加模式 ‘x’:独占写入模式 ‘t’:文本模式，默认值 ‘b’:二进制模式，读取图片、音频等 ‘+’:读写模式  关键字参数newline可以设置换行符。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-25T15:40:26.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="午夜听风吟">
+<meta name="twitter:title" content="文件">
+<meta name="twitter:description" content="1.打开文件打开文件的基本方法为:f = open(‘somefile.txt’)可选参数为：  ‘r’:读取模式，默认值 ‘w’:写入模式 ‘a’:附加模式 ‘x’:独占写入模式 ‘t’:文本模式，默认值 ‘b’:二进制模式，读取图片、音频等 ‘+’:读写模式  关键字参数newline可以设置换行符。">
   
     <link rel="alternative" href="/atom.xml" title="午夜听风吟" type="application/atom+xml">
   
@@ -146,34 +151,77 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-关于Markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-文件" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/关于Markdown/">关于 Markdown</a>
+    <h1 class="article-title" itemprop="name">
+      文件
     </h1>
   
 
         
-        <a href="/2018/01/20/关于Markdown/" class="archive-article-date">
-  	<time datetime="2018-01-20T12:02:36.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
+        <a href="/2018/04/25/文件/" class="archive-article-date">
+  	<time datetime="2018-04-25T15:40:26.447Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>Markdown 会被解释为一种 <strong>“标记语法”</strong>，实际上，可以不用去理解这种看似晦涩的意思。<br>Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。<br>换一种说法，Markdown 是给<strong>专注于“偷懒”</strong>，却不牺牲最终产出的人群使用的。</p>
+        <h3 id="1-打开文件"><a href="#1-打开文件" class="headerlink" title="1.打开文件"></a>1.打开文件</h3><p>打开文件的基本方法为:f = open(‘somefile.txt’)<br>可选参数为：</p>
+<ul>
+<li>‘r’:读取模式，默认值</li>
+<li>‘w’:写入模式</li>
+<li>‘a’:附加模式</li>
+<li>‘x’:独占写入模式</li>
+<li>‘t’:文本模式，默认值</li>
+<li>‘b’:二进制模式，读取图片、音频等</li>
+<li>‘+’:读写模式</li>
+</ul>
+<p>关键字参数newline可以设置换行符。<br><a id="more"></a></p>
+<h3 id="2-文件的基本方法"><a href="#2-文件的基本方法" class="headerlink" title="2.文件的基本方法"></a>2.文件的基本方法</h3><h4 id="2-1读取和写入"><a href="#2-1读取和写入" class="headerlink" title="2.1读取和写入"></a>2.1读取和写入</h4><p>.write(‘hello world!’)：写入数据<br>.read(4)：读取数据</p>
+<h4 id="2-2使用管道重定向输出"><a href="#2-2使用管道重定向输出" class="headerlink" title="2.2使用管道重定向输出"></a>2.2使用管道重定向输出</h4><blockquote>
+<p>$ cat somefile.txt | python somescript.py | sort</p>
 </blockquote>
-        
+<h4 id="2-3读取和写入行"><a href="#2-3读取和写入行" class="headerlink" title="2.3读取和写入行"></a>2.3读取和写入行</h4><p>.readline()：读取一行，括号参数为读取的字符数<br>.readlines()：读取全部行，并返回一个列表<br>.writelines()：接受一个字符串列表，并写入文件，需自己添加换行符</p>
+<h4 id="2-4关闭文件"><a href="#2-4关闭文件" class="headerlink" title="2.4关闭文件"></a>2.4关闭文件</h4><p>基本模式：f.close()<br>自动关闭模式：with open(file) as:pass</p>
+<h3 id="3-迭代文件"><a href="#3-迭代文件" class="headerlink" title="3.迭代文件"></a>3.迭代文件</h3><h4 id="3-1每次一个字符"><a href="#3-1每次一个字符" class="headerlink" title="3.1每次一个字符"></a>3.1每次一个字符</h4><p>使用while True/break循环，并在循环中使用read方法。</p>
+<h4 id="3-2每次一行"><a href="#3-2每次一行" class="headerlink" title="3.2每次一行"></a>3.2每次一行</h4><p>使用while True/break循环，并在循环中使用readline方法。</p>
+<h4 id="3-3读取所有内容"><a href="#3-3读取所有内容" class="headerlink" title="3.3读取所有内容"></a>3.3读取所有内容</h4><p>用readlines，读取后再用for循环列表。</p>
+<h4 id="3-4使用fileinput实现延迟迭代"><a href="#3-4使用fileinput实现延迟迭代" class="headerlink" title="3.4使用fileinput实现延迟迭代"></a>3.4使用fileinput实现延迟迭代</h4><blockquote>
+<p>import fileinput<br>for line in fileinput.input(filename):<br>&nbsp;&nbsp;&nbsp;&nbsp;process(line)</p>
+</blockquote>
+<p>可以使用print来写入文件，具体如下：</p>
+<blockquote>
+<p>print(‘hello world!’,file=xxxx)</p>
+</blockquote>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -184,7 +232,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
         		</li>
       		
 		</ul>
@@ -193,16 +241,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/关于Markdown/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite.com/2018/04/25/文件/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/23/魔法方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">魔法方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -222,75 +329,35 @@
 
 
 
+  
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+    <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMzgyMS8xMDM3NA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/20/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-20T05:11:14.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
+
+  
+
+  
+
   
 
 
@@ -313,8 +380,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

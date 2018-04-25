@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yoursite.com/"/>
-  <updated>2018-04-23T15:21:55.858Z</updated>
+  <updated>2018-04-25T15:40:26.619Z</updated>
   <id>https://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文件</title>
+    <link href="https://yoursite.com/2018/04/25/%E6%96%87%E4%BB%B6/"/>
+    <id>https://yoursite.com/2018/04/25/文件/</id>
+    <published>2018-04-25T15:40:26.447Z</published>
+    <updated>2018-04-25T15:40:26.619Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-打开文件"><a href="#1-打开文件" class="headerlink" title="1.打开文件"></a>1.打开文件</h3><p>打开文件的基本方法为:f = open(‘somefile.txt’)<br>可选参数为：</p><ul><li>‘r’:读取模式，默认值</li><li>‘w’:写入模式</li><li>‘a’:附加模式</li><li>‘x’:独占写入模式</li><li>‘t’:文本模式，默认值</li><li>‘b’:二进制模式，读取图片、音频等</li><li>‘+’:读写模式</li></ul><p>关键字参数newline可以设置换行符。<br><a id="more"></a></p><h3 id="2-文件的基本方法"><a href="#2-文件的基本方法" class="headerlink" title="2.文件的基本方法"></a>2.文件的基本方法</h3><h4 id="2-1读取和写入"><a href="#2-1读取和写入" class="headerlink" title="2.1读取和写入"></a>2.1读取和写入</h4><p>.write(‘hello world!’)：写入数据<br>.read(4)：读取数据</p><h4 id="2-2使用管道重定向输出"><a href="#2-2使用管道重定向输出" class="headerlink" title="2.2使用管道重定向输出"></a>2.2使用管道重定向输出</h4><blockquote><p>$ cat somefile.txt | python somescript.py | sort</p></blockquote><h4 id="2-3读取和写入行"><a href="#2-3读取和写入行" class="headerlink" title="2.3读取和写入行"></a>2.3读取和写入行</h4><p>.readline()：读取一行，括号参数为读取的字符数<br>.readlines()：读取全部行，并返回一个列表<br>.writelines()：接受一个字符串列表，并写入文件，需自己添加换行符</p><h4 id="2-4关闭文件"><a href="#2-4关闭文件" class="headerlink" title="2.4关闭文件"></a>2.4关闭文件</h4><p>基本模式：f.close()<br>自动关闭模式：with open(file) as:pass</p><h3 id="3-迭代文件"><a href="#3-迭代文件" class="headerlink" title="3.迭代文件"></a>3.迭代文件</h3><h4 id="3-1每次一个字符"><a href="#3-1每次一个字符" class="headerlink" title="3.1每次一个字符"></a>3.1每次一个字符</h4><p>使用while True/break循环，并在循环中使用read方法。</p><h4 id="3-2每次一行"><a href="#3-2每次一行" class="headerlink" title="3.2每次一行"></a>3.2每次一行</h4><p>使用while True/break循环，并在循环中使用readline方法。</p><h4 id="3-3读取所有内容"><a href="#3-3读取所有内容" class="headerlink" title="3.3读取所有内容"></a>3.3读取所有内容</h4><p>用readlines，读取后再用for循环列表。</p><h4 id="3-4使用fileinput实现延迟迭代"><a href="#3-4使用fileinput实现延迟迭代" class="headerlink" title="3.4使用fileinput实现延迟迭代"></a>3.4使用fileinput实现延迟迭代</h4><blockquote><p>import fileinput<br>for line in fileinput.input(filename):<br>&nbsp;&nbsp;&nbsp;&nbsp;process(line)</p></blockquote><p>可以使用print来写入文件，具体如下：</p><blockquote><p>print(‘hello world!’,file=xxxx)</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-打开文件&quot;&gt;&lt;a href=&quot;#1-打开文件&quot; class=&quot;headerlink&quot; title=&quot;1.打开文件&quot;&gt;&lt;/a&gt;1.打开文件&lt;/h3&gt;&lt;p&gt;打开文件的基本方法为:f = open(‘somefile.txt’)&lt;br&gt;可选参数为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘r’:读取模式，默认值&lt;/li&gt;
+&lt;li&gt;‘w’:写入模式&lt;/li&gt;
+&lt;li&gt;‘a’:附加模式&lt;/li&gt;
+&lt;li&gt;‘x’:独占写入模式&lt;/li&gt;
+&lt;li&gt;‘t’:文本模式，默认值&lt;/li&gt;
+&lt;li&gt;‘b’:二进制模式，读取图片、音频等&lt;/li&gt;
+&lt;li&gt;‘+’:读写模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关键字参数newline可以设置换行符。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>魔法方法</title>
@@ -495,28 +525,6 @@
     
     
       <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于 Markdown</title>
-    <link href="https://yoursite.com/2018/01/20/%E5%85%B3%E4%BA%8EMarkdown/"/>
-    <id>https://yoursite.com/2018/01/20/关于Markdown/</id>
-    <published>2018-01-20T12:02:36.223Z</published>
-    <updated>2018-01-21T08:02:55.452Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Markdown 会被解释为一种 <strong>“标记语法”</strong>，实际上，可以不用去理解这种看似晦涩的意思。<br>Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。<br>换一种说法，Markdown 是给<strong>专注于“偷懒”</strong>，却不牺牲最终产出的人群使用的。</p></blockquote><a id="more"></a><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure><p>分别对应HTML中的<code>&lt;h1&gt;一级标题&lt;/h1&gt;</code>，以此类推。</p><p><code>**用两个星号标记起来，表示加粗**</code>，<code>*一个星号，表示斜体*</code>，<code>~~这样子表示删除~~</code>，这些就是最基本的语法了。</p><h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><p><strong>插入链接:</strong><br>这是一个 <code>[链接](http://url.com/)</code></p><p><strong>快速链接:</strong><br>只需要在网址头尾用尖括号包裹即可，比如<code>&lt;http://url.com&gt;</code></p><p><strong>特别支持:</strong><br><code>[Google (target=_blank id=google_link)](google.com)</code>  其中内容括号内的<code>target=_blank id=google_link</code> 会自动扩展到最终 HTML 对应 A 标签下的属性，另外，<code>google.com</code> 作为一个域名，不需要补全<code>http://</code>, 最终会自动补全。</p><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>跟插入链接的方式很像，就是前面多一个<code>!</code>， 但是在一般的客户端编辑器，比如 <a href="http://markeditor.com" target="_blank" rel="noopener">MarkEditor</a> 中直接拖入图片就可以。<br><code>![)](图片的url)</code></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p><strong>无序列表:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-   Red</span><br><span class="line">-   Green</span><br><span class="line">-   Blue</span><br></pre></td></tr></table></figure></p><p><strong>有序列表则使用数字接着一个英文句点：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.  Bird</span><br><span class="line">2.  McHale</span><br><span class="line">3.  Parish</span><br></pre></td></tr></table></figure></p><h2 id="居中与居右"><a href="#居中与居右" class="headerlink" title="居中与居右"></a>居中与居右</h2><p>单独一行的时候，<code>[文本内容]</code>表示居中对齐，<code>[文本内容]]</code>表示居右(右侧再多一个<code>]</code>)，其它默认情况下都是居左。</p><h2 id="内容引用"><a href="#内容引用" class="headerlink" title="内容引用"></a>内容引用</h2><p>用<code>&gt;</code>放在段首，之后是空格，输入文字:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 你</span><br><span class="line">&gt; 一会看我</span><br><span class="line">&gt; 一会看云</span><br></pre></td></tr></table></figure><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p><strong><code>-</code>加上空格组成，三个以上:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- - - - - -</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Markdown 会被解释为一种 &lt;strong&gt;“标记语法”&lt;/strong&gt;，实际上，可以不用去理解这种看似晦涩的意思。&lt;br&gt;Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。&lt;br&gt;换一种说法，Markdown 是给&lt;strong&gt;专注于“偷懒”&lt;/strong&gt;，却不牺牲最终产出的人群使用的。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="https://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
