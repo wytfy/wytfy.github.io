@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yoursite.com/"/>
-  <updated>2018-04-25T15:40:26.619Z</updated>
+  <updated>2018-04-27T13:02:09.932Z</updated>
   <id>https://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>创建数据库和表</title>
+    <link href="https://yoursite.com/2018/04/27/%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E8%A1%A8md/"/>
+    <id>https://yoursite.com/2018/04/27/创建数据库和表md/</id>
+    <published>2018-04-27T13:01:52.391Z</published>
+    <updated>2018-04-27T13:02:09.932Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h3><p>创建数据库</p><blockquote><p>CREATE DATABASE XXXXX;</p></blockquote><p>删除数据库</p><blockquote><p>DROP DATABASE XXXXX;</p></blockquote><p>查看数据库列表</p><blockquote><p>SHOW DATABASES;</p></blockquote><p>设置默认数据库</p><blockquote><p>USE XXXX</p></blockquote><a id="more"></a><h3 id="2-创建表"><a href="#2-创建表" class="headerlink" title="2.创建表"></a>2.创建表</h3><p>创建基本的表</p><blockquote><p>CREATE TABLE XXXX(<br>名称 类型 设定<br>名称 类型 设定<br>名称 类型 设定);</p></blockquote><p>删除表</p><blockquote><p>DROP TABLE XXXX;</p></blockquote><h3 id="3-插入数据"><a href="#3-插入数据" class="headerlink" title="3.插入数据"></a>3.插入数据</h3><p>插入数据</p><blockquote><p>INSERT INTO table_name(item_1,item_2)<br>VALUES(‘data_1,data_2),<br>(‘data_3’,’data_4’),<br>(‘data_5’,’data_5’);</p></blockquote><p>查看表的内容</p><blockquote><p>SELECT * FROM table;</p></blockquote><p>*：表示全部</p><blockquote><p>SHOW CREATE TABLE XXXX \G</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-创建数据库&quot;&gt;&lt;a href=&quot;#1-创建数据库&quot; class=&quot;headerlink&quot; title=&quot;1.创建数据库&quot;&gt;&lt;/a&gt;1.创建数据库&lt;/h3&gt;&lt;p&gt;创建数据库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CREATE DATABASE XXXXX;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;删除数据库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DROP DATABASE XXXXX;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;查看数据库列表&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SHOW DATABASES;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;设置默认数据库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;USE XXXX&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="https://yoursite.com/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>文件</title>
@@ -495,31 +530,6 @@
 &lt;h3 id=&quot;2、保存秘钥&quot;&gt;&lt;a href=&quot;#2、保存秘钥&quot; class=&quot;headerlink&quot; title=&quot;2、保存秘钥&quot;&gt;&lt;/a&gt;2、保存秘钥&lt;/h3&gt;&lt;h3 id=&quot;3、复制公钥到Linux&quot;&gt;&lt;a href=&quot;#3、复制公钥到Linux&quot; class=&quot;headerlink&quot; title=&quot;3、复制公钥到Linux&quot;&gt;&lt;/a&gt;3、复制公钥到Linux&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;mkdir /root/.ssh    //创建目录&lt;br&gt;chmod 700 /root/.ssh     //更改权限&lt;br&gt;vi /root/.ssh/authorized_keys //把公钥复制到该文件&lt;/p&gt;
 &lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>centos7 手动设置IP地址</title>
-    <link href="https://yoursite.com/2018/01/21/centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%80/"/>
-    <id>https://yoursite.com/2018/01/21/centos7设置IP地址/</id>
-    <published>2018-01-21T07:59:49.155Z</published>
-    <updated>2018-01-21T08:02:18.916Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一、预先准备"><a href="#一、预先准备" class="headerlink" title="一、预先准备"></a>一、预先准备</h3><ul><li>IP地址</li><li>子网掩码</li><li>网关</li><li>DNS</li></ul><a id="more"></a><h3 id="二、设置步骤"><a href="#二、设置步骤" class="headerlink" title="二、设置步骤"></a>二、设置步骤</h3><blockquote><p>   vi /etc/sysconfig/network-scripts/ifcfg-ens33</p></blockquote><p>对文档进行编辑：<br>    更改：</p><blockquote><p>ONBOOT=no ==&gt; ONBOOT=yes<br>BOOTPROTO=dhcp ==&gt; BOOTPROTO=static</p></blockquote><p>对文档进行追加：</p><blockquote><p>IPADDR=主机IP地址<br>NETMASK=255.255.255.0<br>GATEWAY=网关<br>DNS1=119.29.29.29</p></blockquote><p>重启网络服务：</p><blockquote><p>systemctl restart network.service</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;一、预先准备&quot;&gt;&lt;a href=&quot;#一、预先准备&quot; class=&quot;headerlink&quot; title=&quot;一、预先准备&quot;&gt;&lt;/a&gt;一、预先准备&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;IP地址&lt;/li&gt;
-&lt;li&gt;子网掩码&lt;/li&gt;
-&lt;li&gt;网关&lt;/li&gt;
-&lt;li&gt;DNS&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     
