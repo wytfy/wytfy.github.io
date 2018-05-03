@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yoursite.com/"/>
-  <updated>2018-04-27T13:02:09.932Z</updated>
+  <updated>2018-05-03T15:26:32.688Z</updated>
   <id>https://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ipython基本知识</title>
+    <link href="https://yoursite.com/2018/05/02/Ipython%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+    <id>https://yoursite.com/2018/05/02/Ipython基本知识/</id>
+    <published>2018-05-02T14:42:47.822Z</published>
+    <updated>2018-05-03T15:26:32.688Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-shell还是Notebook"><a href="#1-shell还是Notebook" class="headerlink" title="1.shell还是Notebook"></a>1.shell还是Notebook</h3><h4 id="1-1启动IPython-shell"><a href="#1-1启动IPython-shell" class="headerlink" title="1.1启动IPython shell"></a>1.1启动IPython shell</h4><p>命令行中键入ipython，直接进入。</p><h4 id="1-2启动Jupyter-Notebook"><a href="#1-2启动Jupyter-Notebook" class="headerlink" title="1.2启动Jupyter Notebook"></a>1.2启动Jupyter Notebook</h4><p>命令行键入ipython notebook，直接进入。</p><h3 id="2-IPython的帮助和文档"><a href="#2-IPython的帮助和文档" class="headerlink" title="2.IPython的帮助和文档"></a>2.IPython的帮助和文档</h3><p>符号 ? 用于浏览文档，符号 ?? 用于浏览源代码，而 Tab 键可以用于自动补全。<br><a id="more"></a></p><h4 id="2-1用符号-获取文档"><a href="#2-1用符号-获取文档" class="headerlink" title="2.1用符号?获取文档"></a>2.1用符号?获取文档</h4><p>用python内置函数help()实现。<br>ipython 中可以用?来实现，例如len?<br>这种表示方式几乎适用于一切，包括对象方法，甚至对于对象本身以及相关类型的文档也适用，重要的是，这种方法也适用于你自己创建的函数或者其他对象！</p><h4 id="2-2通过符号-获取源代码"><a href="#2-2通过符号-获取源代码" class="headerlink" title="2.2通过符号??获取源代码"></a>2.2通过符号??获取源代码</h4><p>IPython 提供了获取源代码的快捷方式（使用两个问号 ??），例如square??</p><h4 id="2-3用Tab补全的方式探索模块"><a href="#2-3用Tab补全的方式探索模块" class="headerlink" title="2.3用Tab补全的方式探索模块"></a>2.3用Tab补全的方式探索模块</h4><h5 id="2-3-1对象内容的Tab自动补全"><a href="#2-3-1对象内容的Tab自动补全" class="headerlink" title="2.3.1对象内容的Tab自动补全"></a>2.3.1对象内容的Tab自动补全</h5><p>要想看到对象所有可用属性的列表，可以输入这个对象的名称，再加上一个句点.和 Tab 键。</p><blockquote><p>L.TAB</p></blockquote><h5 id="2-3-2导入时的Tab自动补全"><a href="#2-3-2导入时的Tab自动补全" class="headerlink" title="2.3.2导入时的Tab自动补全"></a>2.3.2导入时的Tab自动补全</h5><p>Tab 自动补全在从包中导入对象时也非常有用。</p><blockquote><p>from itertools import co TAB</p></blockquote><h5 id="2-3-3超越Tab自动补全：通配符匹配"><a href="#2-3-3超越Tab自动补全：通配符匹配" class="headerlink" title="2.3.3超越Tab自动补全：通配符匹配"></a>2.3.3超越Tab自动补全：通配符匹配</h5><p>当你知道所寻找的对象或属性的第一个或者前几个字符时，Tab 自动补全将非常有用。但是当你想匹配中间或者末尾的几个字符时，它就束手无策了。对于这样的场景，IPython提供了用 * 符号来实现的通配符匹配方法。</p><blockquote><p>*Warning?</p></blockquote><h3 id="3-IPython-shell中的快捷键"><a href="#3-IPython-shell中的快捷键" class="headerlink" title="3.IPython shell中的快捷键"></a>3.IPython shell中的快捷键</h3><h4 id="3-1导航快捷键"><a href="#3-1导航快捷键" class="headerlink" title="3.1导航快捷键"></a>3.1导航快捷键</h4><p>Ctrl + a 将光标移到本行的开始处<br>Ctrl + e 将光标移到本行的结尾处<br>Ctrl + b（或左箭头键） 将光标回退一个字符<br>Ctrl + f（或右箭头键） 将光标前进一个字符</p><h4 id="3-2文本输入快捷键"><a href="#3-2文本输入快捷键" class="headerlink" title="3.2文本输入快捷键"></a>3.2文本输入快捷键</h4><p>Backspace 键 删除前一个字符<br>Ctrl + d 删除后一个字符<br>Ctrl + k 从光标开始剪切至行的末尾<br>Ctrl + u 从行的开头剪切至光标<br>Ctrl + y yank（即粘贴）之前剪切的文本<br>Ctrl + t transpose（即交换）前两个字符</p><h4 id="3-3命令历史快捷键"><a href="#3-3命令历史快捷键" class="headerlink" title="3.3命令历史快捷键"></a>3.3命令历史快捷键</h4><p>Ctrl + p（或向上箭头） 获取前一个历史命令<br>Ctrl + n（或向下箭头） 获取后一个历史命令<br>Ctrl + r 对历史命令的反向搜索</p><h4 id="3-4其他快捷键"><a href="#3-4其他快捷键" class="headerlink" title="3.4其他快捷键"></a>3.4其他快捷键</h4><p>Ctrl + l 清除终端屏幕的内容<br>Ctrl + c 中断当前的 Python 命令<br>Ctrl + d 退出 IPython 会话</p><h3 id="4-IPython魔法命令"><a href="#4-IPython魔法命令" class="headerlink" title="4.IPython魔法命令"></a>4.IPython魔法命令</h3><p>魔法命令有两种形式：行魔法（line magic）和单元魔法（cell magic）。行魔法以单个 % 字符作为前缀，作用于单行输入；单元魔法以两个 %% 作为前缀，作用于多行输入。</p><h4 id="4-1粘贴代码块：-paste和-cpaste"><a href="#4-1粘贴代码块：-paste和-cpaste" class="headerlink" title="4.1粘贴代码块：%paste和%cpaste"></a>4.1粘贴代码块：%paste和%cpaste</h4><p>IPython 的%paste 魔法函数可以解决包含符号的多行输入问题。<br>%cpaste 命令打开一个交互式多行输入提示，你可以在这个提示下粘贴并执行一个或多个代码块。</p><h4 id="4-2执行外部代码：-run"><a href="#4-2执行外部代码：-run" class="headerlink" title="4.2执行外部代码：%run"></a>4.2执行外部代码：%run</h4><p>在 IPython 会话中运行之前的代码非常方便，不用在另一个新窗口中运行这些程序代码。这个功能可以通过 %run 魔法命令来实现。</p><blockquote><p>%run xxx.py</p></blockquote><h4 id="4-3计算代码运行时间：-timeit"><a href="#4-3计算代码运行时间：-timeit" class="headerlink" title="4.3计算代码运行时间：%timeit"></a>4.3计算代码运行时间：%timeit</h4><p>%timeit 会自动计算接下来一行的 Python 语句的执行时间。</p><blockquote><p>%timeit L = [n ** 2 for n in range(1000)]</p></blockquote><h4 id="4-4魔法函数的帮助：-、-magic和-lsmagic"><a href="#4-4魔法函数的帮助：-、-magic和-lsmagic" class="headerlink" title="4.4魔法函数的帮助：?、%magic和%lsmagic"></a>4.4魔法函数的帮助：?、%magic和%lsmagic</h4><p>魔法函数的文档字符串。</p><blockquote><p>%timeit?</p></blockquote><p>为了获得可用魔法函数的通用描述以及一些示例，可以输入以下命令：</p><blockquote><p>%magic</p></blockquote><p>为了快速而简单地获得所有可用魔法函数的列表，可以输入以下命令：</p><blockquote><p>%lsmagic</p></blockquote><h3 id="5-输入和输出历史"><a href="#5-输入和输出历史" class="headerlink" title="5.输入和输出历史"></a>5.输入和输出历史</h3><h4 id="5-1IPython的输入和输出对象"><a href="#5-1IPython的输入和输出对象" class="headerlink" title="5.1IPython的输入和输出对象"></a>5.1IPython的输入和输出对象</h4><p>In 对象是一个列表，按照顺序记录所有的命令。<br>可以直接引用，例如：<code>In[1]</code><br>Out 对象不是一个列表，而是一个字典。它将输入数字映射到相应的输出。<br>也可以直接引用，例如：<code>Out[1]*Out[2]</code><br>请注意，不是所有操作都有输出，例如 import 语句和 print 语句就不影响输出。</p><h4 id="5-2下划线快捷键和以前的输出"><a href="#5-2下划线快捷键和以前的输出" class="headerlink" title="5.2下划线快捷键和以前的输出"></a>5.2下划线快捷键和以前的输出</h4><p>标准的 Python shell 仅仅包括一个用于获取以前的输出的简单快捷键。变量 _（单下划线）<br>用于更新以前的输出,但是 IPython 更进了一步——你可以用两条下划线获得倒数第二个历史输出，用三条下划线获得倒数第三个历史输出（跳过任何没有输出的命令）,IPython 的这一功能就此停止：超过三条下划线开始变得比较难计数，并且在这种情况下通过行号来指定输出更方便。Out[X] 的简写形式是_X（即一条下划线加行号）。</p><blockquote><p>print(_)#打印上一条命令<br>print(__)#打印倒数第二条命令<br>print(_34)</p></blockquote><h4 id="5-3禁止输出"><a href="#5-3禁止输出" class="headerlink" title="5.3禁止输出"></a>5.3禁止输出</h4><p>要禁止一个命令的输出，最简单的方式就是在行末尾处添加一个分号,这个结果被默默地计算了，并且输出结果既不会显示在屏幕上，也不会存储在Out 路径下。</p><blockquote><p>math.sin(2) + math.cos(2);</p></blockquote><h4 id="5-4相关的魔法命令"><a href="#5-4相关的魔法命令" class="headerlink" title="5.4相关的魔法命令"></a>5.4相关的魔法命令</h4><p>如果想一次性获取此前所有的输入历史，%history 魔法命令会非常有用。<br>%rerun 该命令将重新执行部分历史命令。<br>%save 该命令将部分历史命令保存到一个文件中。</p><h3 id="6-IPython和shell命令"><a href="#6-IPython和shell命令" class="headerlink" title="6.IPython和shell命令"></a>6.IPython和shell命令</h3><p>一行中任何在 ! 之后的内容将不会通过 Python 内核运行，而是通过系统命令行运行。</p><h4 id="6-1shell快速入门"><a href="#6-1shell快速入门" class="headerlink" title="6.1shell快速入门"></a>6.1shell快速入门</h4><h4 id="6-2IPython中的shell命令"><a href="#6-2IPython中的shell命令" class="headerlink" title="6.2IPython中的shell命令"></a>6.2IPython中的shell命令</h4><p>你可以通过将 ! 符号作为前缀在 IPython 中执行任何命令行命令。</p><blockquote><p>!ls</p></blockquote><h4 id="6-3在shell中传入或传出值"><a href="#6-3在shell中传入或传出值" class="headerlink" title="6.3在shell中传入或传出值"></a>6.3在shell中传入或传出值</h4><p>shell 命令不仅可以从 IPython 中调用，还可以和 IPython 命名空间进行交互。</p><blockquote><p>contents = !ls</p></blockquote><h3 id="7-与shell相关的魔法命令"><a href="#7-与shell相关的魔法命令" class="headerlink" title="7.与shell相关的魔法命令"></a>7.与shell相关的魔法命令</h3><p>自动魔法（automagic）函数，可以通过 %automagic 魔法函数进行翻转。<br>除了 %cd，其他可用的类似 shell 的魔法函数还有 %cat、%cp、%env、%ls、%man、%mkdir、%more、%mv、%pwd、%rm 和 %rmdir。如果 automagic 被打开，以上任何一个魔法命令都可以省略 % 符号，这使得你可以将 IPython 提示符当作普通 shell 一样使用。</p><h3 id="8-错误和调试"><a href="#8-错误和调试" class="headerlink" title="8.错误和调试"></a>8.错误和调试</h3><h4 id="8-1控制异常：-xmode"><a href="#8-1控制异常：-xmode" class="headerlink" title="8.1控制异常：%xmode"></a>8.1控制异常：%xmode</h4><p>利用 %xmode 魔法函数，IPython 允许你在异常发生时控制打印信息的数量。<br>%xmode 有一个输入参数，即模式。模式有 3 个可选项：Plain、Context 和 Verbose。默认情况下是 Context，该模式的输出结果我们已经见过。Plain 更紧凑，给出的信息更少。Verbose 模式加入了一些额外的信息，包括任何被调用的函数的参数。</p><blockquote><p>%xmode Plain</p></blockquote><h4 id="8-2调试：当阅读轨迹追溯不足以解决问题时"><a href="#8-2调试：当阅读轨迹追溯不足以解决问题时" class="headerlink" title="8.2调试：当阅读轨迹追溯不足以解决问题时"></a>8.2调试：当阅读轨迹追溯不足以解决问题时</h4><p>IPython 中最方便的调试界面可能就是 %debug 魔法命令了。如果你在捕获异常后调用该调试器，它会在异常点自动打开一个交互式调试提示符。ipdb 提示符让你可以探索栈空间的当前状态，探索可用变量，甚至运行 Python 命令！<br>如果你希望在发生任何异常时都自动启动调试器，可以用 %pdb 魔法函数来启动这个自动过程。<br>最后，如果你有一个脚本，并且希望以交互式模式运行，则可以用 %run -d 命令来运行，并利用 next 命令单步向下交互地运行代码。<br>部分调试命令：<br>list： 显示文件的当前路径<br>h(elp)： 显示命令列表，或查找特定命令的帮助信息<br>q(uit)： 退出调试器和程序<br>c(ontinue)： 退出调试器，继续运行程序<br>n(ext)： 跳到程序的下一步<br>enter键： 重复前一个命令<br>p(rint)： 打印变量<br>s(tep)： 步入子进程<br>r(eturn)： 从子进程跳出</p><h3 id="9-代码的分析和计时"><a href="#9-代码的分析和计时" class="headerlink" title="9.代码的分析和计时"></a>9.代码的分析和计时</h3><h4 id="9-1代码段计时：-timeit和-time"><a href="#9-1代码段计时：-timeit和-time" class="headerlink" title="9.1代码段计时：%timeit和%time"></a>9.1代码段计时：%timeit和%time</h4><p>%%timeit 可以让代码段重复运行来计算代码的运行时间。<br>和 %timeit 一样，%time 魔法命令也可以通过双百分号语法实现多行代码的计时。</p><h4 id="9-2分析整个脚本：-prun"><a href="#9-2分析整个脚本：-prun" class="headerlink" title="9.2分析整个脚本：%prun"></a>9.2分析整个脚本：%prun</h4><p>对整个脚本计时，通过魔法函数 %prun 实现。</p><h4 id="9-3用-lprun进行逐行分析"><a href="#9-3用-lprun进行逐行分析" class="headerlink" title="9.3用%lprun进行逐行分析"></a>9.3用%lprun进行逐行分析</h4><p>该功能并没有内置于 Python 或 IPython，但是可以通过安装 line_profiler 包来实现。</p><h4 id="9-4用-memit和-mprun进行内存分析"><a href="#9-4用-memit和-mprun进行内存分析" class="headerlink" title="9.4用%memit和%mprun进行内存分析"></a>9.4用%memit和%mprun进行内存分析</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-shell还是Notebook&quot;&gt;&lt;a href=&quot;#1-shell还是Notebook&quot; class=&quot;headerlink&quot; title=&quot;1.shell还是Notebook&quot;&gt;&lt;/a&gt;1.shell还是Notebook&lt;/h3&gt;&lt;h4 id=&quot;1-1启动IPython-shell&quot;&gt;&lt;a href=&quot;#1-1启动IPython-shell&quot; class=&quot;headerlink&quot; title=&quot;1.1启动IPython shell&quot;&gt;&lt;/a&gt;1.1启动IPython shell&lt;/h4&gt;&lt;p&gt;命令行中键入ipython，直接进入。&lt;/p&gt;
+&lt;h4 id=&quot;1-2启动Jupyter-Notebook&quot;&gt;&lt;a href=&quot;#1-2启动Jupyter-Notebook&quot; class=&quot;headerlink&quot; title=&quot;1.2启动Jupyter Notebook&quot;&gt;&lt;/a&gt;1.2启动Jupyter Notebook&lt;/h4&gt;&lt;p&gt;命令行键入ipython notebook，直接进入。&lt;/p&gt;
+&lt;h3 id=&quot;2-IPython的帮助和文档&quot;&gt;&lt;a href=&quot;#2-IPython的帮助和文档&quot; class=&quot;headerlink&quot; title=&quot;2.IPython的帮助和文档&quot;&gt;&lt;/a&gt;2.IPython的帮助和文档&lt;/h3&gt;&lt;p&gt;符号 ? 用于浏览文档，符号 ?? 用于浏览源代码，而 Tab 键可以用于自动补全。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Ipython" scheme="https://yoursite.com/tags/Ipython/"/>
+    
+  </entry>
   
   <entry>
     <title>创建数据库和表</title>
@@ -506,29 +528,6 @@
 &lt;h3 id=&quot;2、当前用户使用root权限&quot;&gt;&lt;a href=&quot;#2、当前用户使用root权限&quot; class=&quot;headerlink&quot; title=&quot;2、当前用户使用root权限&quot;&gt;&lt;/a&gt;2、当前用户使用root权限&lt;/h3&gt;&lt;p&gt;在root用户下&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;visudo //编辑/etc/sudoers&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>centos7使用秘钥认证登录</title>
-    <link href="https://yoursite.com/2018/01/21/centos7%E4%BD%BF%E7%94%A8%E7%A7%98%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/"/>
-    <id>https://yoursite.com/2018/01/21/centos7使用秘钥认证登录/</id>
-    <published>2018-01-21T14:52:22.908Z</published>
-    <updated>2018-01-21T14:56:07.906Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1、生成秘钥对"><a href="#1、生成秘钥对" class="headerlink" title="1、生成秘钥对"></a>1、生成秘钥对</h3><p>利用puTTYgen生成公钥和私钥</p><h3 id="2、保存秘钥"><a href="#2、保存秘钥" class="headerlink" title="2、保存秘钥"></a>2、保存秘钥</h3><h3 id="3、复制公钥到Linux"><a href="#3、复制公钥到Linux" class="headerlink" title="3、复制公钥到Linux"></a>3、复制公钥到Linux</h3><blockquote><p>mkdir /root/.ssh    //创建目录<br>chmod 700 /root/.ssh     //更改权限<br>vi /root/.ssh/authorized_keys //把公钥复制到该文件</p></blockquote><a id="more"></a><h3 id="4、关闭SELinux"><a href="#4、关闭SELinux" class="headerlink" title="4、关闭SELinux"></a>4、关闭SELinux</h3><blockquote><p>setenforce 0 //暂时关闭<br>vi /etc/selinux/config //将SELINUX=enforcing改为SELINUX=disabled 重启</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;1、生成秘钥对&quot;&gt;&lt;a href=&quot;#1、生成秘钥对&quot; class=&quot;headerlink&quot; title=&quot;1、生成秘钥对&quot;&gt;&lt;/a&gt;1、生成秘钥对&lt;/h3&gt;&lt;p&gt;利用puTTYgen生成公钥和私钥&lt;/p&gt;
-&lt;h3 id=&quot;2、保存秘钥&quot;&gt;&lt;a href=&quot;#2、保存秘钥&quot; class=&quot;headerlink&quot; title=&quot;2、保存秘钥&quot;&gt;&lt;/a&gt;2、保存秘钥&lt;/h3&gt;&lt;h3 id=&quot;3、复制公钥到Linux&quot;&gt;&lt;a href=&quot;#3、复制公钥到Linux&quot; class=&quot;headerlink&quot; title=&quot;3、复制公钥到Linux&quot;&gt;&lt;/a&gt;3、复制公钥到Linux&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;mkdir /root/.ssh    //创建目录&lt;br&gt;chmod 700 /root/.ssh     //更改权限&lt;br&gt;vi /root/.ssh/authorized_keys //把公钥复制到该文件&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
