@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yoursite.com/"/>
-  <updated>2018-05-04T01:52:13.944Z</updated>
+  <updated>2018-05-04T12:38:21.477Z</updated>
   <id>https://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos7安装python3.5并与2.7兼容共存</title>
+    <link href="https://yoursite.com/2018/05/04/centos7%E5%AE%89%E8%A3%85python3.5%E5%B9%B6%E4%B8%8E2.7%E5%85%BC%E5%AE%B9%E5%85%B1%E5%AD%98/"/>
+    <id>https://yoursite.com/2018/05/04/centos7安装python3.5并与2.7兼容共存/</id>
+    <published>2018-05-04T12:38:21.348Z</published>
+    <updated>2018-05-04T12:38:21.477Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-安装依赖"><a href="#1-安装依赖" class="headerlink" title="1.安装依赖"></a>1.安装依赖</h4><blockquote><p>yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel</p></blockquote><h4 id="2-下载python3-5源码，解压"><a href="#2-下载python3-5源码，解压" class="headerlink" title="2.下载python3.5源码，解压"></a>2.下载python3.5源码，解压</h4><a id="more"></a><h4 id="3-安装python3-5"><a href="#3-安装python3-5" class="headerlink" title="3.安装python3.5"></a>3.安装python3.5</h4><p>配置：</p><blockquote><p>./configure –prefix=安装路径</p></blockquote><p>编译：</p><blockquote><p>make</p></blockquote><p>安装：</p><blockquote><p>make install</p></blockquote><h4 id="4-共存设置"><a href="#4-共存设置" class="headerlink" title="4.共存设置"></a>4.共存设置</h4><p>将安装路径下的lib目录中的python3文件移到/usr/bin下，记得先备份。</p><blockquote><p>mv /usr/bin/python python.bak<br>sudo ln -s /python3.5/lib/python3 /usr/bin/python #建立软链接</p></blockquote><h4 id="5-修改yum文件"><a href="#5-修改yum文件" class="headerlink" title="5.修改yum文件"></a>5.修改yum文件</h4><blockquote><p>vi /usr/bin/yum</p></blockquote><p>将第一行的修改为:</p><blockquote><p>#!/usr/bin/python2.7</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-安装依赖&quot;&gt;&lt;a href=&quot;#1-安装依赖&quot; class=&quot;headerlink&quot; title=&quot;1.安装依赖&quot;&gt;&lt;/a&gt;1.安装依赖&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;2-下载python3-5源码，解压&quot;&gt;&lt;a href=&quot;#2-下载python3-5源码，解压&quot; class=&quot;headerlink&quot; title=&quot;2.下载python3.5源码，解压&quot;&gt;&lt;/a&gt;2.下载python3.5源码，解压&lt;/h4&gt;
+    
+    </summary>
+    
+    
+      <category term="centos7" scheme="https://yoursite.com/tags/centos7/"/>
+    
+  </entry>
   
   <entry>
     <title>virtualenv基础</title>
@@ -495,33 +518,6 @@
 &lt;p&gt;解压：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;gzip -d 1.txt.gz&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux磁盘管理</title>
-    <link href="https://yoursite.com/2018/01/23/Linux%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/"/>
-    <id>https://yoursite.com/2018/01/23/Linux磁盘管理/</id>
-    <published>2018-01-23T09:33:31.531Z</published>
-    <updated>2018-01-23T09:33:31.584Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1、查看磁盘和目录容量"><a href="#1、查看磁盘和目录容量" class="headerlink" title="1、查看磁盘和目录容量"></a>1、查看磁盘和目录容量</h3><p>查看磁盘使用情况</p><blockquote><p>df -h</p></blockquote><p>查看文件或目录容量</p><blockquote><p>du -sh filename</p></blockquote><a id="more"></a><h3 id="2、分区与格式化"><a href="#2、分区与格式化" class="headerlink" title="2、分区与格式化"></a>2、分区与格式化</h3><p>分区命令：</p><blockquote><p>fdisk -l 或者 fdisk /dev/sda</p></blockquote><p>最多只能创建四个主分区。</p><h3 id="3、格式化磁盘分区"><a href="#3、格式化磁盘分区" class="headerlink" title="3、格式化磁盘分区"></a>3、格式化磁盘分区</h3><p>命令</p><blockquote><p>mke2xf -t ext3 /dev/sda1</p></blockquote><p>或者</p><blockquote><p>mkfs.ext2 mkfs.ext3 mkfs.ext4 mkfs.xfs</p></blockquote><h3 id="4、挂载和卸载磁盘"><a href="#4、挂载和卸载磁盘" class="headerlink" title="4、挂载和卸载磁盘"></a>4、挂载和卸载磁盘</h3><p>挂载分区到目录上</p><blockquote><p>mount /dev/sdb3 /newdir/</p></blockquote><p>卸载分区</p><blockquote><p>umount /newdir/ 或者 umount /dev/sdb3</p></blockquote><h3 id="5、增加虚拟内存"><a href="#5、增加虚拟内存" class="headerlink" title="5、增加虚拟内存"></a>5、增加虚拟内存</h3><p>基本过程：建立swapfile==&gt;格式化为swap格式==&gt;启用虚拟磁盘</p><ul><li>建立swapfile<blockquote><p>dd if=/dev/zero of=/tmp/newdisk bs=1M count=1024</p></blockquote></li><li>格式化为swapfile格式<blockquote><p>mkswap -f /tmp/newdisk</p></blockquote></li><li>启用<blockquote><p>swapon /tmp/newdisk</p></blockquote></li><li>查看swap分区<blockquote><p>free -m</p></blockquote></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;1、查看磁盘和目录容量&quot;&gt;&lt;a href=&quot;#1、查看磁盘和目录容量&quot; class=&quot;headerlink&quot; title=&quot;1、查看磁盘和目录容量&quot;&gt;&lt;/a&gt;1、查看磁盘和目录容量&lt;/h3&gt;&lt;p&gt;查看磁盘使用情况&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;df -h&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;查看文件或目录容量&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;du -sh filename&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>

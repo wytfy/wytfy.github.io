@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://tonocha.com/2018/05/04/centos7%E5%AE%89%E8%A3%85python3.5%E5%B9%B6%E4%B8%8E2.7%E5%85%BC%E5%AE%B9%E5%85%B1%E5%AD%98/</loc>
+    
+    <lastmod>2018-05-04T12:38:21.477Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://tonocha.com/2018/05/04/virtualenv%E5%9F%BA%E7%A1%80/</loc>
     
     <lastmod>2018-05-04T01:52:13.944Z</lastmod>
